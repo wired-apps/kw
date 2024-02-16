@@ -1,0 +1,2233 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet"/>
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC3sUW1ZxHe-iUSw98Chy55p-K90Fej0E&sensor=false&libraries=places"></script>
+    <style>
+        :root {
+            --theme-color: #ba3642;
+        }
+        
+        @media all{
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                outline: none;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+            body {
+                margin: 0;
+                font-family: Merriweather,georgia,serif;
+                font-size: 15px;
+                line-height: 1.8;
+                color: #2c393c;
+                background-color: #fff;
+                overflow-x: hidden;
+                background: #fff;
+                background-position: top center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                background-repeat-x: no-repeat;
+                background-repeat-y: no-repeat;
+            }
+        }
+        
+        body {
+            font-family: Merriweather,sans-serif;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        
+        @media all{
+            html {
+                font-family: serif;
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                font-size: 100%;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                overflow-x: hidden;
+                margin: 0;
+            }
+            
+            :root {
+                --heading-font: 'Poppins', sans-serif;
+                --body-font: 'Poppins', sans-serif;
+            }
+        }
+        @media all{
+            :before,:after {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            
+            *,:before,:after {
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        }
+        
+        :selection {
+            background: #006aa7;
+            color: #fff;
+        }
+        
+        @media all{
+            .container-lcm {
+                margin-right: auto;
+                margin-left: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        
+        @media all{
+            .container-lcm {
+                margin-right: auto;
+                margin-left: auto;
+                padding: 0;
+                width: 1020px;
+            }
+        }
+        
+        @media (min-width: 1024px){
+            .container-lcm {
+                width: 1020px;
+            }
+        }
+        
+        div.container-lcm {
+            padding-top: 0;
+        }
+        
+        @media all{
+            .clearfix:before,.clearfix:after,dd:before ,dd:after ,.container-lcm:before,.container-lcm:after,.container-fluid:before,.container-fluid:after,.row-zdo:before,.row-zdo:after,.form-group-19l:before ,.form-group-19l:after ,.btn-toolbar:before,.btn-toolbar:after,.btn-group-vertical > .btn-group:before ,.btn-group-vertical > .btn-group:after ,.nav-may:before,.nav-may:after,.navbar:before,.navbar:after,.navbar-header:before,.navbar-header:after,.navbar-collapse:before,.navbar-collapse:after,.pager:before,.pager:after,.panel-body:before,.panel-body:after,.modal-header:before,.modal-header:after,.modal-footer:before,.modal-footer:after {
+                content: " ";
+                display: table;
+            }
+            
+            .container-lcm:before,.container-lcm:after {
+                display: table;
+                content: "";
+                line-height: 0;
+            }
+            
+            .clearfix:after,dd:after ,.container-lcm:after,.container-fluid:after,.row-zdo:after,.form-group-19l:after ,.btn-toolbar:after,.btn-group-vertical > .btn-group:after ,.nav-may:after,.navbar:after,.navbar-header:after,.navbar-collapse:after,.pager:after,.panel-body:after,.modal-header:after,.modal-footer:after {
+                clear: both;
+            }
+            
+            .container-lcm:after {
+                clear: both;
+            }
+            
+            .row-zdo {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            
+            .col-4fx {
+                position: relative;
+                min-height: 1px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        
+        @media (min-width: 992px){
+            .col-4fx {
+                float: left;
+                width: 50%;
+            }
+        }
+        
+        div#don-m2n {
+            background: #fff;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+            margin: 15px auto;
+        }
+        
+        .info-s48 {
+            padding: 30px 0;
+        }
+        
+        @media all{
+            ul {
+                box-sizing: border-box;
+                margin-top: 0;
+                margin-bottom: 10px;
+                margin: 0 0 24px;
+                padding-left: 28px;
+                list-style-type: square;
+            }
+            
+            .nav-may {
+                margin-bottom: 0;
+                padding-left: 0;
+                list-style: none;
+            }
+            
+            .tabs-tgb {
+                border-bottom: 1px solid #ddd;
+            }
+        }
+        
+        #don-m2n * {
+            font-family: Oswald, sans-serif;
+        }
+        
+        #don-m2n ul.nav-may.tabs-tgb {
+            border: 0;
+        }
+        
+        @media all{
+            h2 {
+                font-family: Oswald,sans-serif;
+                font-weight: 700;
+                line-height: 1.3;
+                color: #000;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                font-size: 24px;
+                margin: 0 0 24px;
+            }
+        }
+        
+        h2 {
+            font-family: Oswald,sans-serif;
+        }
+        
+        .title-31o {
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        @media all{
+            hr {
+                -webkit-box-sizing: content-box;
+                -moz-box-sizing: content-box;
+                box-sizing: content-box;
+                height: 0;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border: 0;
+                border-top: 1px solid #eee;
+            }
+            
+            p {
+                margin: 0 0 24px;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                hyphens: auto;
+                margin-bottom: 10px;
+            }
+        }
+        
+        p {
+            font-family: Oswald,sans-serif;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        
+        .info-7xe {
+            line-height: 1.9!important;
+            font-size: 14px!important;
+            color: #636363;
+        }
+        
+        @media all{
+            li {
+                line-height: 1.5;
+            }
+            
+            .nav-may > li {
+                position: relative;
+                display: block;
+            }
+            
+            .tabs-tgb > li {
+                float: left;
+                margin-bottom: -1px;
+            }
+        }
+        
+        #don-m2n ul.nav-may.tabs-tgb li {
+            width: 50%;
+            color: #fff;
+            text-align: center;
+        }
+        
+        @media all{
+            .fa-k37 {
+                -webkit-transition: opacity .15s linear;
+                -o-transition: opacity .15s linear;
+                transition: opacity .15s linear;
+            }
+        }
+        
+        .tab-ln5 {
+            padding: 20px;
+        }
+        
+        @media all{
+            .fa-k37.okqqh {
+                opacity: 1;
+            }
+            
+            .content-pjj > .act-c8g {
+                display: block;
+            }
+            
+            b {
+                font-weight: 700;
+            }
+            
+            strong {
+                font-weight: 700;
+            }
+            
+            a {
+                background-color: transparent;
+                color: var(--theme-color,#ba3642);
+                text-decoration: none;
+                font-family: var(--heading-font);
+                outline: none;
+            }
+        }
+        
+        a {
+            color: var(--theme-color,#ba3642);
+            font-family: Oswald,sans-serif!important;
+            cursor: pointer;
+        }
+        
+        @media all{
+            a:active,a:hover {
+                outline: 0;
+            }
+            
+            a:hover {
+                color: #781212;
+                text-decoration: underline;
+            }
+            
+            a,a:hover,a:active {
+                text-decoration: none;
+                outline: none;
+                color: inherit;
+            }
+            
+            a:hover,a:active {
+                outline: 0;
+            }
+        }
+        
+        a:hover {
+            color: var(--theme-color,#ba3642);
+        }
+        
+        @media all{
+            .nav-may > li > a {
+                position: relative;
+                display: block;
+                padding: 10px 15px;
+            }
+            
+            .tabs-tgb > li > a {
+                margin-right: 2px;
+                line-height: 1.42857143;
+                border: 1px solid transparent;
+                border-radius: 4px 4px 0 0;
+            }
+            
+            .tabs-tgb > li.act-c8g > a {
+                color: #555;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-bottom-color: transparent;
+                cursor: default;
+            }
+        }
+        
+        ul.nav-may li.act-c8g a {
+            background-color: none!important;
+            box-shadow: none;
+        }
+        
+        #don-m2n ul.nav-may.tabs-tgb li a {
+            border: 0;
+            border-radius: 0;
+            background: #e1e1e1;
+            color: #000;
+            margin: 0;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        
+        #don-m2n ul.nav-may.tabs-tgb li.act-c8g a {
+            background: var(--theme-color,#ba3642);
+            color: #fff;
+            text-align: center;
+        }
+        
+        @media all{
+            .nav-may > li > a:hover {
+                text-decoration: none;
+                background-color: #eee;
+            }
+            
+            .tabs-tgb > li > a:hover {
+                border-color: #eee #eee #ddd;
+            }
+            
+            .tabs-tgb > li.act-c8g > a ,.tabs-tgb > li.act-c8g > a:hover {
+                color: #555;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-bottom-color: transparent;
+                cursor: default;
+            }
+            
+            .text-5sg {
+                text-align: center;
+            }
+        }
+        
+        .title-q84 {
+            margin-bottom: 10px;
+        }
+        
+        @media all{
+            input {
+                color: inherit;
+                font: inherit;
+                margin: 0;
+                line-height: inherit;
+                font-family: inherit;
+                font-size: 100%;
+                vertical-align: middle;
+                max-width: 100%;
+                background: 0 0;
+            }
+            
+            .form-control-te5 {
+                display: block;
+                width: 100%;
+                height: 34px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+                -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            }
+        }
+        
+        .form-control-te5 {
+            border-radius: 0;
+            box-shadow: none!important;
+            border-color: #ccc!important;
+        }
+        
+        @media all{
+            .hid-5p5 {
+                /*display: none !important;*/
+            }
+        }
+        
+        .container-wph {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        @media all{
+            .form-group-19l {
+                margin-bottom: 15px;
+            }
+            
+            .btn-a9x {
+                display: inline-block;
+                margin-bottom: 0;
+                font-weight: normal;
+                text-align: center;
+                vertical-align: middle;
+                -ms-touch-action: manipulation;
+                touch-action: manipulation;
+                cursor: pointer;
+                background-image: none;
+                border: 1px solid transparent;
+                white-space: nowrap;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                border-radius: 4px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+        }
+        
+        .btn-a9x {
+            border: 0;
+            border-radius: 0;
+            text-transform: lowercase;
+        }
+        
+        .btn-rvo {
+            width: 100%;
+            height: 40px;
+            font-weight: normal;
+            background: var(--theme-color,#ba3642);
+            border-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        @media all{
+            .btn-a9x:hover {
+                color: #333;
+                text-decoration: none;
+            }
+        }
+        
+        .btn-rvo,.btn-rvo:hover {
+            width: 100%;
+            height: 40px;
+            font-weight: normal;
+            background: var(--theme-color,#ba3642);
+            border-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .row-zdo.row-w6i {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .rec-oht {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        @media (min-width: 768px){
+            p.donate-h8v {
+                width: 90%;
+                margin: 30px auto 0 auto;
+            }
+        }
+        
+        p.donate-h8v.text-5sg {
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        
+        #one-ggq div.amount-2i1 {
+            width: calc(33.33% - 10px);
+            border: 1px solid var(--theme-color,#ba3642);
+            color: var(--theme-color,#ba3642);
+            font-weight: 700;
+            font-size: 16px;
+            margin: 15px 5px;
+            padding: 8px;
+            text-align: center;
+            border-radius: 0;
+            cursor: pointer;
+        }
+        
+        .text-ooz {
+            padding: 10px;
+            border: 1px solid var(--theme-color,#ba3642);
+            border-radius: 0;
+            background: var(--theme-color,#ba3642);
+            color: #fff;
+        }
+        
+        #one-ggq div.amount-2i1.act-c8g {
+            background-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+            padding: 8px;
+            border-radius: 0;
+        }
+        
+        @media all{
+            input[type="text"] {
+                color: #2c393c;
+                font-size: 16px;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                border: 1px solid;
+                outline: none;
+                background: 0 0;
+                height: 36px;
+                line-height: 20px;
+                padding: 8px;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        
+        input#oth-3mv {
+            height: 45px;
+            width: 100%;
+            border: 1px solid var(--theme-color,#ba3642);
+        }
+        
+        @media all{
+            textarea {
+                color: #2c393c;
+                font: inherit;
+                margin: 0;
+                overflow: auto;
+                font-family: inherit;
+                font-size: 16px;
+                line-height: 20px;
+                vertical-align: middle;
+                max-width: 100%;
+                background: 0 0;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                border: 1px solid;
+                outline: none;
+                height: 180px;
+                padding: 8px;
+                width: 100%;
+            }
+            
+            textarea.form-control-te5 {
+                height: auto;
+            }
+            
+            .col-ax9 {
+                position: relative;
+                min-height: 1px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        
+        @media (min-width: 992px){
+            .col-ax9 {
+                float: left;
+                width: 33.33333333%;
+            }
+        }
+        
+        .row-zdo.row-w6i .col-ax9 {
+            margin-right: auto;
+        }
+        
+        @media all{
+            .col-xwd {
+                position: relative;
+                min-height: 1px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        
+        @media (min-width: 992px){
+            .col-xwd {
+                float: left;
+                width: 66.66666667%;
+            }
+        }
+        
+        #mon-bjv div.amount-2i1 {
+            width: calc( 33.33% - 10px );
+            border: 1px solid var(--theme-color,#ba3642);
+            color: var(--theme-color,#ba3642);
+            font-weight: 700;
+            font-size: 16px;
+            margin: 15px 0;
+            padding: 8px;
+            text-align: center;
+            border-radius: 0;
+            cursor: pointer;
+        }
+        
+        #mon-bjv div.amount-2i1.act-c8g {
+            background-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+            padding: 8px;
+            border-radius: 0;
+        }
+        
+        .rec-oht .rec-bgy {
+            width: calc( 50% - 10px );
+            border: 1px solid var(--theme-color,#ba3642);
+            color: var(--theme-color,#ba3642);
+            font-weight: 700;
+            font-size: 16px;
+            margin: 15px 0;
+            padding: 8px;
+            text-align: center;
+            border-radius: 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .rec-oht .rec-bgy.act-c8g {
+            background-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            box-shadow: 0px 0px 10px rgb(0 0 0 / 60%);
+            padding: 8px;
+            border-radius: 0;
+        }
+        
+        p.amt-7dy {
+            font-size: 14px;
+            text-align: center;
+            font-weight: 300;
+            margin: 0;
+        }
+        
+        a#ste-yg4 {
+            background-color: #ccc;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            border-radius: 0;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        a#pay-s59 {
+            width: 100%;
+            height: 45px;
+            font-weight: normal;
+            background: var(--theme-color,#ba3642);
+            border-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+            letter-spacing: 0;
+        }
+        
+        button#ste-yct {
+            padding: 5px 12px;
+            width: 100%;
+            height: 45px;
+            background: #000;
+            border-color: #000;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+            letter-spacing: 0;
+            text-align: center;
+        }
+        
+        @media all{
+            button {
+                display: block;
+                color: #fff;
+                font: inherit;
+                margin: 0;
+                overflow: visible;
+                text-transform: uppercase;
+                -webkit-appearance: button;
+                cursor: pointer;
+                font-family: Oswald,sans-serif;
+                font-size: 14px;
+                line-height: 36px;
+                vertical-align: middle;
+                background: #111;
+                letter-spacing: 3px;
+                border: 0;
+                padding: 4 32px;
+            }
+        }
+        
+        button {
+            font-family: Oswald,sans-serif;
+        }
+        
+        button.btn-a9x.btn-gr5 {
+            width: 100%;
+            height: 45px;
+            font-weight: normal;
+            background: var(--theme-color,#ba3642);
+            border-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+            letter-spacing: 0;
+        }
+        
+        button#pay-x75 {
+            width: 100%;
+            height: 45px;
+            font-weight: normal;
+            background: var(--theme-color,#ba3642);
+            border-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+            letter-spacing: 0;
+        }
+        
+        button.btn-a9x.btn-gr5,button.btn-a9x.btn-gr5:hover {
+            width: 100%;
+            height: 45px;
+            font-weight: normal;
+            background: var(--theme-color,#ba3642);
+            border-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+            letter-spacing: 0;
+        }
+        
+        @media all{
+            h4 {
+                font-family: Oswald,sans-serif;
+                font-weight: 700;
+                line-height: 1.3;
+                color: #000;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 15px;
+                margin: 0 0 24px;
+            }
+        }
+        
+        h4 {
+            font-family: Oswald,sans-serif;
+        }
+        
+        .container-lcm h4 {
+            color: #666;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+        
+        .rec-bgy h4 {
+            font-size: 17px;
+            margin: 0!important;
+            color: var(--theme-color,#ba3642) !important;
+        }
+        
+        .rec-bgy.act-c8g h4 {
+            font-size: 17px;
+            margin: 0!important;
+            color: #fff !important;
+        }
+        
+        .rec-bgy p {
+            font-size: 9px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin: 0!important;
+            color: #000;
+        }
+        
+        .rec-bgy.act-c8g p {
+            font-size: 9px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin: 0!important;
+            color: #fff;
+        }
+        
+        @media all{
+            select {
+                color: inherit;
+                font: inherit;
+                margin: 0;
+                text-transform: none;
+                font-family: inherit;
+                font-size: 100%;
+                line-height: 20px;
+                vertical-align: middle;
+                max-width: 100%;
+                background: 0 0;
+                width: 100%;
+                border: 1px solid #aaa;
+                outline: none;
+                height: 36px;
+                padding: 5px;
+            }
+        }
+        
+        
+        /* These were inline style tags. Uses id+class to override almost everything */
+        #style-gwWlT.style-gwWlT {
+            font-size: 22px;
+        }
+        #style-2aTz2.style-2aTz2 {
+            color: var(--theme-color,#ba3642);
+        }
+        #style-nmURW.style-nmURW {
+            font-size:14px;
+            text-align:center;
+        }
+        #style-WtmK3.style-WtmK3 {
+        }
+        #style-QYogv.style-QYogv {
+            width:100%;
+        }
+        #oth-3mv.style-soTwY {
+            margin:5px auto!important;
+        }
+        #style-k7FbE.style-k7FbE {
+            font-size: 22px;
+        }
+        #style-lB9nV.style-lB9nV {
+            color: var(--theme-color,#ba3642);
+        }
+        #style-ise3W.style-ise3W {
+            font-size:14px;
+            text-align:center;
+        }
+        #style-N3P6c.style-N3P6c {
+        }
+        #oth-3mv.style-7TRDm {
+            margin:5px auto!important;
+        }
+        #style-jGYT1.style-jGYT1 {
+            margin: 15px 0;
+        }
+        #style-SyMl3.style-SyMl3 {
+            margin-top:5px;
+        }
+        #style-shh9L.style-shh9L {
+            color: var(--theme-color,#ba3642);
+        }
+        #donate-form *{
+            font-family: Oswald, sans-serif;
+        }
+        div#donate-form {
+            background: #fff;
+            padding:0;
+            border-radius: 0;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+            margin: 15px auto;
+        }
+        a#step-3 {
+            /* background: #000; */
+            padding: 5px 12px;
+            width: 100%;
+            height: 45px;
+            font-weight: 700!important;
+            background: #000;
+            border-color: #000;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+            letter-spacing: 0;
+            text-align: center;
+        }
+        #donate-form ul.nav.nav-tabs {
+            border: 0;
+        }
+        #donate-form ul.nav.nav-tabs li a {
+            border: 0;
+            border-radius: 0;
+            background: #e1e1e1;
+            color: #000;
+            margin: 0;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        #donate-form ul.nav.nav-tabs li {
+            width: 50%;
+            /* border: 0; */
+            /* border-radius: 0!important; */
+            color: #fff;
+            text-align: center;
+        }
+        #donate-form ul.nav.nav-tabs li.active a {
+            background: var(--theme-color,#ba3642);
+            color: #fff;
+            text-align: center;
+        }
+        .amount-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .form-control, .form-control:hover, .form-control:focus {
+            border-radius: 0;
+            box-shadow: none!important;
+            border-color: #ccc!important;
+        }
+        button.btn.btn-mon-submit, button.btn.btn-mon-submit:hover, button.btn.btn-mon-submit:focus {
+            width: 100%;
+            height: 45px;
+            font-weight: 700!important;
+            background: var(--theme-color,#ba3642);
+            border-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-weight: normal;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+            letter-spacing: 0;
+        }
+        .donate-btn, .donate-btn:hover, .donate-btn:focus {
+            width:100%;
+            height: 40px;
+            font-weight: 700!important;
+            background: var(--theme-color,#ba3642);
+            border-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-weight: normal;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+        }
+        .top--section{
+            padding-top:40px;
+            padding-bottom:40px;
+        }
+        #onetime div.amount-con {
+            width: calc(33.33% - 10px);
+            border: 1px solid var(--theme-color,#ba3642);
+            color: var(--theme-color,#ba3642);
+            font-weight: 700;
+            font-size: 16px;
+            margin: 15px 5px;
+            padding: 8px;
+            text-align: center;
+            border-radius: 0;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .razorpay-container {
+            z-index: 10000000000;
+        }
+        a#pay-one, button#pay-mon {
+            width: 100%;
+            height: 45px;
+            font-weight: 700!important;
+            background: var(--theme-color,#ba3642);
+            border-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-weight: normal;
+            font-size: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+            letter-spacing: 0;
+        }
+        #monthly div.amount-con {
+            width: calc( 33.33% - 10px );
+            border: 1px solid var(--theme-color,#ba3642);
+            color: var(--theme-color,#ba3642);
+            font-weight: 700;
+            font-size: 16px;
+            margin: 15px 0;
+            padding: 8px;
+            text-align: center;
+            border-radius: 0;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        #onetime div.amount-con.active {
+            background-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+            padding: 8px;
+            border-radius: 0;
+            font-weight: 700;
+        }
+        #monthly div.amount-con.active {
+            background-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+            padding: 8px;
+            border-radius: 0;
+            font-weight: 700;
+        }
+        span.help-block {
+            margin: 5px;
+        }
+        .amount-text {
+            padding: 10px;
+            border: 1px solid var(--theme-color,#ba3642);
+            border-radius: 0;
+            background: var(--theme-color,#ba3642);
+            color: #fff;
+            /* font-size: 18px; */
+        }
+        a#step-1 {
+            background-color: #ccc;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            border-radius: 0;
+            display: inline-block;
+            cursor:pointer;
+        }
+        .row.flex---row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .row.flex---row .col-md-4 {
+            margin-right: auto;
+        }
+        p.amt-para {
+            font-size: 14px;
+            text-align: center;
+            font-weight: 300;
+            margin:0;
+        }
+        .fixed-top.visible-xs.visible-sm {
+            background: #fff;
+            padding: 10px;
+            width: 100%;
+            z-index: 99999999999999999;
+        }
+        .fixed-top.visible-xs.visible-sm.fixed {
+            position: fixed;
+            top: 0;
+            box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+        }
+        button.top-btn {
+            width: 100%;
+            background-color: #6abd46;
+            text-transform: uppercase;
+            font-size: 16px!important;
+            font-weight: 800;
+            color: #fff;
+            padding: 10px;
+            border-radius: 0;
+            border: 0!important;
+        }
+        input#other-amount {
+            height: 45px;
+            width: 100%;
+            border: 1px solid var(--theme-color,#ba3642);
+        }
+        p.donate-note.text-center {
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        .form-title{
+            margin-bottom:10px;
+        }
+        /*New CSS*/
+        .recurring_method {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .recurring_method .recurring_method_val.active {
+            background-color: var(--theme-color,#ba3642);
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            box-shadow: 0px 0px 10px rgb(0 0 0 / 60%);
+            padding: 8px;
+            border-radius: 0;
+            font-weight: 700;
+        }
+        .recurring_method_val h4 {
+            font-size: 20px;
+            margin: 0!important;
+            color: var(--theme-color,#ba3642);
+        }
+        .recurring_method_val.active h4 {
+            font-size: 20px;
+            margin: 0!important;
+            color: #fff;
+        }
+        .recurring_method_val p {
+            font-size: 10px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin: 0!important;
+            color: #000;
+        }
+        .recurring_method_val.active p {
+            font-size: 10px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin: 0!important;
+            color: #fff;
+        }
+        .recurring_method .recurring_method_val {
+            width: calc( 50% - 10px );
+            border: 1px solid var(--theme-color,#ba3642);
+            color: var(--theme-color,#ba3642);
+            font-weight: 700;
+            font-size: 16px;
+            margin: 15px 0;
+            padding: 8px;
+            text-align: center;
+            border-radius: 0;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /*New CSS End*/
+        @media all and (max-width:768px){
+            .top--section {
+                padding-top: 0;
+            }
+            div.amount-con {
+                width: calc(100% - 10px);
+            }
+        }
+        
+        div#don-vmk {
+            background: #fff;
+            padding: 50px 0;
+            border-top: 5px solid var(--theme-color,#ba3642);
+            border-bottom: 5px solid var(--theme-color,#ba3642);
+        }
+        
+        @media all{
+            .container-zvz {
+                margin-right: auto;
+                margin-left: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        
+        @media (min-width: 768px){
+            .container-zvz {
+                width: 750px;
+            }
+        }
+        
+        @media (min-width: 992px){
+            .container-zvz {
+                width: 80vw;
+                margin: auto;
+            }
+        }
+        
+        @media (min-width: 1024px){
+            .container-zvz {
+                width: 100vw;
+            }
+        }
+        
+        @media all{
+            .container-zvz {
+                margin-right: auto;
+                margin-left: auto;
+                padding: 0;
+                width: 90vw;
+            }
+        }
+        
+        @media (min-width: 1024px){
+            .container-zvz {
+                width: 1020px;
+            }
+        }
+        
+        div.container-zvz {
+            padding-top: 0;
+        }
+        
+        @media all{
+            .clearfix:before,.clearfix:after,dd:before ,dd:after ,.container-zvz:before,.container-zvz:after,.container-fluid:before,.container-fluid:after,.row-2w6:before,.row-2w6:after,.form-group-s8q:before ,.form-group-s8q:after ,.btn-toolbar:before,.btn-toolbar:after,.btn-group-vertical > .btn-group:before ,.btn-group-vertical > .btn-group:after ,.nav-eez:before,.nav-eez:after,.navbar:before,.navbar:after,.navbar-header:before,.navbar-header:after,.navbar-collapse:before,.navbar-collapse:after,.pager:before,.pager:after,.panel-body:before,.panel-body:after,.modal-header:before,.modal-header:after,.modal-footer:before,.modal-footer:after {
+                content: " ";
+                display: table;
+            }
+            
+            .container-zvz:before,.container-zvz:after {
+                display: table;
+                content: "";
+                line-height: 0;
+            }
+            
+            .clearfix:after,dd:after ,.container-zvz:after,.container-fluid:after,.row-2w6:after,.form-group-s8q:after ,.btn-toolbar:after,.btn-group-vertical > .btn-group:after ,.nav-eez:after,.navbar:after,.navbar-header:after,.navbar-collapse:after,.pager:after,.panel-body:after,.modal-header:after,.modal-footer:after {
+                clear: both;
+            }
+            
+            .container-zvz:after {
+                clear: both;
+            }
+            
+            .row-2w6 {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            
+            .col-5ep {
+                position: relative;
+                min-height: 1px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        
+        @media (min-width: 992px){
+            .col-5ep {
+                float: left;
+                width: 50%;
+            }
+        }
+        
+        .container-zvz h4 {
+            color: #666;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        
+        .row-2w6.row-d66 {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .row-2w6.row-d66 .col-k2g {
+            margin-right: auto;
+        }
+        
+        .info-7ev {
+            padding: 30px 0;
+        }
+        
+        .title-ovz {
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        #style-M3jmN.style-M3jmN {
+            margin-top:5px;
+        }
+        #style-ePaLo.style-ePaLo {
+            color: var(--theme-color,#ba3642);
+        }
+        .info-m67 {
+            line-height: 1.9!important;
+            font-size: 14px!important;
+            color: #636363;
+        }
+        
+        @media all{
+            .content-l15 > .tab-x3p {
+                display: none;
+            }
+            
+            .fa-ibc.bjmro {
+                opacity: 1;
+            }
+            
+            .content-l15 > .act-d76 {
+                display: block;
+            }
+            
+            b {
+                font-weight: 700;
+            }
+            
+            strong {
+                font-weight: 700;
+            }
+            
+            a {
+                background-color: transparent;
+                color: var(--theme-color,#ba3642);
+                text-decoration: none;
+                font-family: var(--heading-font);
+                outline: none;
+            }
+        }
+        
+        a {
+            color: var(--theme-color,#ba3642);
+            font-family: Oswald,sans-serif!important;
+            cursor: pointer;
+        }
+        
+        @media all{
+            .nav-eez > li > a {
+                position: relative;
+                display: block;
+                padding: 10px 15px;
+            }
+            
+            .tabs-edm > li > a {
+                margin-right: 2px;
+                line-height: 1.42857143;
+                border: 1px solid transparent;
+                border-radius: 4px 4px 0 0;
+            }
+        }
+        
+        ul.nav-eez li.act-d76 a {
+            background-color: none!important;
+            box-shadow: none;
+        }
+        
+        #don-nnz ul.nav-eez.tabs-edm li.act-d76 a {
+            background: var(--theme-color,#ba3642);
+            color: #fff;
+            text-align: center;
+        }
+        
+        @media all{
+            .tabs-edm > li.act-d76 > a ,.tabs-edm > li.act-d76 > a:hover {
+                color: #555;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-bottom-color: transparent;
+                cursor: default;
+            }
+            
+            .text-r84 {
+                text-align: center;
+            }
+        }
+        
+        @media (min-width: 768px){
+            .container-lcm {
+                width: 750px;
+            }
+        }
+        
+        @media (min-width: 992px){
+            .container-lcm {
+                width: 970px;
+            }
+        }
+        
+        @media (min-width: 1024px){
+            .container-lcm {
+                width: 1170px;
+            }
+        }
+        
+        .form-error{
+            color: #a94442;
+            margin: 5px;
+        }
+        
+        .button:active {
+            background: #007a63;
+        }
+        
+        .button__text {
+            font: Quicksand, san-serif;
+            color: #ffffff;
+            transition: all 0.2s;
+        }
+        
+        button:disabled,
+        button[disabled]{
+            cursor: not-allowed !important;
+            border: 1px solid black;
+            opacity: 0.7;
+        }
+        
+        .spinner{
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            border: 3px solid #fff;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spinner 0.7s linear infinite;
+        }
+        
+        @keyframes spinner{
+            from{}
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        
+        .required-input{
+            outline: 1px solid #ff2343 !important;
+        }
+        
+        .label-required-amount {
+            font-size: 12px;
+            position: absolute;
+            right: 10px;
+            margin-right: 32px;
+            margin-top: 5px;
+            color: #ff2343 !important;
+        }
+        
+        .label-required-text {
+            font-size: 12px;
+            position: absolute;
+            right: 4px;
+            margin-right: 14px;
+            margin-top: 6px;
+            color: #ff2343 !important;
+        }
+        
+    </style>
+    
+    <script>
+        window.onload = showOnetime;
+        window.onload = set2;
+        
+        let currentStep = 1;
+        const emailRegex = /([a-zA-Z0-9_\-.]+)@(([a-z]{1,3}.[a-z]{1,3}.[a-z]{1,3}.)|(([a-zA-Z0-9-]+.)+))([a-zA-Z]{2,4}|[0-9]{1,3})/;
+        const phoneRegex = /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{4}\)?[\s.-]?\d{3}[\s.-]?\d{3}$/;
+        
+        function getGoogleAddress() {
+            var searchInput = 'txtPlaces';
+            var autocomplete;
+            autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
+                types: ['geocode'],
+                /*componentRestrictions: {
+                    country: "USA"
+                }*/
+            });
+            
+            google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                var address = getShortAddressObject(autocomplete.getPlace());
+                
+                var streetAdr = address.street_number != undefined ? address.street_number : '';
+                streetAdr += address.route != undefined ? ' '+address.route : '';
+                
+                document.getElementById('street').value = streetAdr;
+                document.getElementById('country').value = address.country != undefined ? address.country : '' ;
+                document.getElementById('postal_code').value = address.postal_code != undefined ? address.postal_code : '' ;
+                document.getElementById('city').value = address.locality != undefined ? address.locality : '' ;
+                document.getElementById('state').value = address.administrative_area_level_1 != undefined ? address.administrative_area_level_1 : '' ;
+                
+            });
+        }
+        
+        
+        function getShortAddressObject(object) {
+            let address = {};
+            const address_components = object.address_components;
+            address_components.forEach(element => {
+                address[element.types[0]] = element.short_name;
+            });
+            return address;
+        }
+        
+        
+        function showOnetime()
+        {
+            document.getElementById('onetime-text').classList.add('act-c8g');
+            document.getElementById('monthly-text').classList.remove('act-c8g');
+            
+            document.getElementById('chargetype').value = "OneTime";
+            
+            document.getElementById('direct-debit-button').style.display='none';
+            let elements = document.getElementsByClassName('rec-bgy');
+            for(let i=0;i<elements.length;i++){
+                elements[i].style.width = 'calc( 50% - 10px )';
+            }
+            document.getElementById('recurring-disclaimer').style.display='none';
+            document.getElementById('frequency').style.display='none';
+            
+            if(currentStep===2)
+            {
+                prevStep();
+            }
+        }
+        
+        function showRecurring(){
+            document.getElementById('onetime-text').classList.remove('act-c8g');
+            document.getElementById('monthly-text').classList.add('act-c8g');
+            
+            document.getElementById('chargetype').value = "Recurring";
+            document.getElementById("installmentperiod").value = "Monthly";
+            
+            // Setting Start Date
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; //January is 0!
+            var yyyy = today.getFullYear();
+            if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm}
+            today = yyyy+"-"+mm+"-"+dd;
+            document.getElementById("startdate").value = today;
+            
+            document.getElementById('direct-debit-button').style.display='flex';
+            let elements = document.getElementsByClassName('rec-bgy');
+            for(let i=0;i<elements.length;i++){
+                elements[i].style.width = 'calc( 33% - 10px )';
+            }
+            document.getElementById('recurring-disclaimer').style.display='block';
+            document.getElementById('frequency').style.display='block';
+            
+            if(currentStep===2){
+                prevStep();
+            }
+        }
+        
+        function nextStep()
+        {
+            if (currentStep === 1)
+            {
+                let amount = document.getElementById('amount').value;
+                if(!amount)
+                {
+                    document.getElementById('amount').classList.add('required-input');
+                    document.getElementsByClassName('required-text')[0].style.display='block';
+                    document.getElementsByClassName('required-text')[0].innerHTML="Required";
+                    return;
+                }
+                else
+                {
+                    document.getElementById('amount').classList.remove('required-input');
+                    document.getElementsByClassName('required-text')[0].style.display='none';
+                    document.getElementsByClassName('required-text')[0].innerHTML="";
+                }
+            }
+            if(currentStep === 2)
+            {
+            }
+            
+            currentStep++;
+            updateStepDisplay();
+        }
+        
+        function validateForm()
+        {
+            let firstname = document.getElementById('firstname').value;
+            let lastname = document.getElementById('lastname').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            if(!firstname || !lastname || !email || !phone)
+            {
+                if (!firstname){
+                    document.getElementById('firstname').classList.add('required-input');
+                    document.getElementsByClassName('required-text')[1].style.display='block';
+                    document.getElementsByClassName('required-text')[1].innerHTML="Required";
+                }
+                if (!lastname){
+                    document.getElementById('lastname').classList.add('required-input');
+                    document.getElementsByClassName('required-text')[2].style.display='block';
+                    document.getElementsByClassName('required-text')[2].innerHTML="Required";
+                }
+                if (!email){
+                    document.getElementById('email').classList.add('required-input');
+                    document.getElementsByClassName('required-text')[3].style.display='block';
+                    document.getElementsByClassName('required-text')[3].innerHTML="Required";
+                }
+                if (!phone){
+                    document.getElementById('phone').classList.add('required-input');
+                    document.getElementsByClassName('required-text')[4].style.display='block';
+                    document.getElementsByClassName('required-text')[4].innerHTML="Required";
+                }
+                return false;
+            }
+            else{
+                if(Number(amount)<=0)
+                {
+                    document.getElementById('amount').classList.add('required-input');
+                    document.getElementsByClassName('required-text')[0].style.display='block';
+                    document.getElementsByClassName('required-text')[0].innerHTML="Please enter valid amount";
+                    return false;
+                }
+                if(!phoneRegex.test(phone))
+                {
+                    document.getElementById('phone').classList.add('required-input');
+                    document.getElementsByClassName('required-text')[4].style.display='block';
+                    document.getElementsByClassName('required-text')[4].innerHTML="Please enter valid phone number";
+                    return false;
+                }
+                if(!emailRegex.test(email))
+                {
+                    document.getElementById('email').classList.add('required-input');
+                    document.getElementsByClassName('required-text')[3].style.display='block';
+                    document.getElementsByClassName('required-text')[3].innerHTML="Please enter valid email";
+                    return false;
+                }
+                showSpinner();
+            }
+        }
+        
+        function removeOutline(id)
+        {
+            if(id === 'amount')
+            {
+                document.getElementById(id).classList.remove('required-input');
+                document.getElementsByClassName('required-text')[0].style.display='none';
+                document.getElementsByClassName('required-text')[0].innerHTML="";
+            }
+            if(id === 'firstname')
+            {
+                document.getElementById(id).classList.remove('required-input');
+                document.getElementsByClassName('required-text')[1].style.display='none';
+                document.getElementsByClassName('required-text')[1].innerHTML="";
+            }
+            if(id === 'lastname')
+            {
+                document.getElementById(id).classList.remove('required-input');
+                document.getElementsByClassName('required-text')[2].style.display='none';
+                document.getElementsByClassName('required-text')[2].innerHTML="";
+            }
+            if(id === 'email')
+            {
+                document.getElementById(id).classList.remove('required-input');
+                document.getElementsByClassName('required-text')[3].style.display='none';
+                document.getElementsByClassName('required-text')[3].innerHTML="";
+            }
+            if(id === 'phone')
+            {
+                document.getElementById(id).classList.remove('required-input');
+                document.getElementsByClassName('required-text')[4].style.display='none';
+                document.getElementsByClassName('required-text')[4].innerHTML="";
+            }
+        }
+        
+        function onFocusLeft(id)
+        {
+            if(id === 'amount')
+            {
+                const amount = document.getElementById(id).value;
+                if(!amount)
+                {
+                    document.getElementById(id).classList.add('required-input');
+                    document.getElementsByClassName('required-text')[0].style.display='block';
+                    document.getElementsByClassName('required-text')[0].innerHTML="Required";
+                }
+                else if(Number(amount)<=0)
+                {
+                    document.getElementById(id).classList.add('required-input');
+                    document.getElementsByClassName('required-text')[0].style.display='block';
+                    document.getElementsByClassName('required-text')[0].innerHTML="Please enter valid amount";
+                }
+            }
+            if(id === 'firstname')
+            {
+                const firstname = document.getElementById(id).value;
+                if(!firstname)
+                {
+                    document.getElementById(id).classList.add('required-input');
+                    document.getElementsByClassName('required-text')[1].style.display='block';
+                    document.getElementsByClassName('required-text')[1].innerHTML="Required";
+                }
+            }
+            if(id === 'lastname')
+            {
+                const lastname = document.getElementById(id).value;
+                if(!lastname)
+                {
+                    document.getElementById(id).classList.add('required-input');
+                    document.getElementsByClassName('required-text')[2].style.display='block';
+                    document.getElementsByClassName('required-text')[2].innerHTML="Required";
+                }
+            }
+            if(id === 'email')
+            {
+                const email = document.getElementById(id).value;
+                if(!email)
+                {
+                    document.getElementById(id).classList.add('required-input');
+                    document.getElementsByClassName('required-text')[3].style.display='block';
+                    document.getElementsByClassName('required-text')[3].innerHTML="Required";
+                }
+                else if(!emailRegex.test(email))
+                {
+                    document.getElementById(id).classList.add('required-input');
+                    document.getElementsByClassName('required-text')[3].style.display='block';
+                    document.getElementsByClassName('required-text')[3].innerHTML="Please enter valid email";
+                }
+            }
+            if(id === 'phone')
+            {
+                const phone = document.getElementById(id).value;
+                if(!phone)
+                {
+                    document.getElementById(id).classList.add('required-input');
+                    document.getElementsByClassName('required-text')[4].style.display='block';
+                    document.getElementsByClassName('required-text')[4].innerHTML="Required";
+                }
+                else if(!phoneRegex.test(phone))
+                {
+                    document.getElementById(id).classList.add('required-input');
+                    document.getElementsByClassName('required-text')[4].style.display='block';
+                    document.getElementsByClassName('required-text')[4].innerHTML="Please enter valid phone number";
+                }
+            }
+        }
+        
+        function prevStep() {
+            currentStep--;
+            updateStepDisplay();
+        }
+        
+        function updateStepDisplay() {
+            document.querySelectorAll('.step').forEach(step => {
+                step.style.display = 'none';
+            });
+            document.querySelector(`#step${currentStep}`).style.display = 'block';
+        }
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            updateStepDisplay();
+        });
+        
+        function selectCC() {
+            document.getElementById('credit-card-button').classList.add('act-c8g');
+            document.getElementById('direct-debit-button').classList.remove('act-c8g');
+            document.getElementById('paypal-button').classList.remove('act-c8g');
+            document.getElementById('paymentmethod').value = "Credit Card";
+            document.getElementById('gatewayname').value = "";
+        }
+        function selectDD() {
+            document.getElementById('credit-card-button').classList.remove('act-c8g');
+            document.getElementById('direct-debit-button').classList.add('act-c8g');
+            document.getElementById('paypal-button').classList.remove('act-c8g');
+            document.getElementById('paymentmethod').value = "Direct Debit";
+            document.getElementById('gatewayname').value = "";
+        }
+        function selectPP() {
+            document.getElementById('credit-card-button').classList.remove('act-c8g');
+            document.getElementById('direct-debit-button').classList.remove('act-c8g');
+            document.getElementById('paypal-button').classList.add('act-c8g');
+            document.getElementById('paymentmethod').value = "Credit Card";
+            document.getElementById('gatewayname').value = "paypal";
+        }
+        
+        function set1(){
+            document.getElementById("amount1").value = "10";
+            document.getElementById("amount").value = Number("10");
+            document.getElementById("donation-text").innerText = "Can help provide continuous healthcare support to one affected people";
+            
+            let elements = document.getElementsByClassName('amount-2i1');
+            for (i = 0 ; i < elements.length; i++) {
+                var elem = elements[i];
+                elem.classList.remove("act-c8g");
+            }
+            
+            document.getElementById('amount1').classList.add('act-c8g');
+        }
+        function set2(){
+            document.getElementById("amount2").value = "20";
+            document.getElementById("amount").value = Number("20");
+            document.getElementById("donation-text").innerText = "Can help provide continuous education support to one child";
+            
+            let elements = document.getElementsByClassName('amount-2i1');
+            for (i = 0 ; i < elements.length; i++) {
+                var elem = elements[i];
+                elem.classList.remove("act-c8g");
+            }
+            
+            document.getElementById('amount2').classList.add('act-c8g');
+        }
+        function set3(){
+            document.getElementById("amount3").value = "30";
+            document.getElementById("amount").value = Number("30");
+            document.getElementById("donation-text").innerText = "Can help provide continuous healthcare support to one injured people";
+            
+            let elements = document.getElementsByClassName('amount-2i1');
+            for (i = 0 ; i < elements.length; i++) {
+                var elem = elements[i];
+                elem.classList.remove("act-c8g");
+            }
+            
+            document.getElementById('amount3').classList.add('act-c8g');
+        }
+        function set4(){
+            document.getElementById("amount4").value = "40";
+            document.getElementById("amount").value = Number("40");
+            document.getElementById("donation-text").innerText = "Can help provied food & livelihood assistance.";
+            
+            let elements = document.getElementsByClassName('amount-2i1');
+            for (i = 0 ; i < elements.length; i++) {
+                var elem = elements[i];
+                elem.classList.remove("act-c8g");
+            }
+            
+            document.getElementById('amount4').classList.add('act-c8g');
+        }
+        function set5(){
+            document.getElementById("amount5").value = "50";
+            document.getElementById("amount").value = Number("50");
+            document.getElementById("donation-text").innerText = "Can help deliver clean water and hygiene kits to one affected people.";
+            
+            let elements = document.getElementsByClassName('amount-2i1');
+            for (i = 0 ; i < elements.length; i++) {
+                var elem = elements[i];
+                elem.classList.remove("act-c8g");
+            }
+            
+            document.getElementById('amount5').classList.add('act-c8g');
+        }
+        function set6(){
+            document.getElementById("amount6").value = "100";
+            document.getElementById("amount").value = Number("100");
+            document.getElementById("donation-text").innerText = "Can help distribute tents and shelted to the homeless.";
+            
+            let elements = document.getElementsByClassName('amount-2i1');
+            for (i = 0 ; i < elements.length; i++) {
+                var elem = elements[i];
+                elem.classList.remove("act-c8g");
+            }
+            
+            document.getElementById('amount6').classList.add('act-c8g');
+        }
+        
+        function showSpinner(){
+            document.getElementById('button-text').innerText="";
+            document.getElementById('button-text').classList.add('spinner');
+            document.getElementById('submit-button').disabled=true;
+            document.getElementById('ste-yct').disabled = true;
+        }
+        
+    </script>
+</head>
+<body>
+    <div id="don-vmk">
+        <div class="container-zvz">
+            <div class="row-2w6">
+                <div class="col-5ep">
+                    <div id="don-m2n">
+                        <ul class="nav-may tabs-tgb">
+                            <li class="act-c8g" id="onetime-text">
+                                <a onclick="showOnetime()">
+                                    One time
+                                </a>
+                            </li>
+                            <li id="monthly-text">
+                                <a onclick="showRecurring()">
+                                    Recurring
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="content-pjj">
+                            <div id="one-ggq" class="tab-ln5 fa-k37 okqqh act-c8g">
+                                <h2 class="title-q84 text-5sg style-gwWlT" id="style-gwWlT">
+                                    I WOULD LIKE TO
+                                    <span id="style-2aTz2" class="style-2aTz2">
+                                        DONATE
+                                    </span>
+                                </h2>
+                                <p id="style-nmURW" class="style-nmURW">
+                                    <span id="style-WtmK3" class="style-WtmK3">
+                                        All fields are mandatory
+                                    </span>
+                                </p>
+                                <form onsubmit="return validateForm();" action="https://wired-payments-npc.my.salesforce-sites.com/services/apexrest/w_pay/charge" method="POST">
+                                    <input type="hidden" name="oid" value="00D5h000008t6iy"/>
+                                    <input type="hidden" name="campaignid" value="7015h000000ppBrAAI" />
+                                    <input type="hidden" id="returnurl" name="redirecturl" value="https://sfcodechecker.github.io/ak-unicare/campaign_receipt.html?"/>
+                                    <input type="hidden" id="chargetype" name="chargetype" value="OneTime"/>
+                                    <input type="hidden" id="startdate" name="startdate" value=""/>
+                                    <input type="hidden" id="paymentmethod" name="paymentmethod" value="Credit Card"/>
+                                    <input type="hidden" id="gatewayname" name="paymentprocessor" value=""/>
+                                    <input type="hidden" id="environment" name="environment" value="NPC">
+                                    
+                                    <div class="step" id="step1">
+                                        <div class="container-wph">
+                                            <div class="amount-2i1" id="amount1" onclick="set1()">
+                                                $ 10
+                                            </div>
+                                            <div class="amount-2i1" id="amount2" onclick="set2()">
+                                                $ 20
+                                            </div>
+                                            <div class="amount-2i1" id="amount3" onclick="set3()">
+                                                $ 30
+                                            </div>
+                                            <div class="text-ooz style-QYogv" id="style-QYogv">
+                                                <p class="amt-7dy" id="donation-text">
+                                                    Help us cover a part of one lawyer’s fees to provide legal aid to excluded communities.
+                                                </p>
+                                            </div>
+                                            <div class="amount-2i1 act-c8g" id="amount4" onclick="set4()">
+                                                $ 40
+                                            </div>
+                                            <div class="amount-2i1" id="amount5" onclick="set5()">
+                                                $ 50
+                                            </div>
+                                            <div class="amount-2i1" id="amount6" onclick="set6()">
+                                                <span>
+                                                    $ 100
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group-19l">
+                                            <span style="position: absolute; margin-left: 5px; margin-top: 3px;">$</span>
+                                            <span class="required-text label-required-amount" style="display: none;"></span>
+                                            <input type="number" name="amount" id="amount" onkeydown="if (/^[eE\+\-]$/.test(event.key))event.preventDefault();" onPaste="if (!/^\d+$/.test(event.clipboardData.getData('text/plain')))event.preventDefault();" class="form-control-te5 style-soTwY" style="padding-left: 15px;" placeholder="Other Amount" onblur="onFocusLeft('amount')" onfocus="removeOutline('amount')"/>
+                                        </div>
+                                        <div class="row-zdo" id="frequency" style="display:none;">
+                                            <div class="col-4fx" style="width: 100%;">
+                                                <div class="form-group-19l">
+                                                    <select class="form-control-te5" style="padding: 5px;" id="installmentperiod" name="transactionperiod">
+                                                        <option selected disabled>
+                                                            Select Installment Period
+                                                        </option>
+                                                        <option value="Weekly">
+                                                            Weekly
+                                                        </option>
+                                                        <option value="Fortnightly">
+                                                            Fortnightly
+                                                        </option>
+                                                        <option value="Monthly">
+                                                            Monthly
+                                                        </option>
+                                                        <option value="Quarterly">
+                                                            Quarterly
+                                                        </option>
+                                                        <option value="Half Yearly">
+                                                            Half Yearly
+                                                        </option>
+                                                        <option value="Yearly">
+                                                            Yearly
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rec-oht" id="pay-method-div">
+                                            <div class="rec-bgy act-c8g" onclick="selectCC()" id="credit-card-button">
+                                                <div>
+                                                    <h4>
+                                                        CREDIT CARD
+                                                    </h4>
+                                                    <p>
+                                                        Pay using Visa, Mastercard, Discover or American Express
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="rec-bgy" onclick="selectPP()" id="paypal-button">
+                                                <div>
+                                                    <h4>
+                                                        PAYPAL
+                                                    </h4>
+                                                    <p>
+                                                        Pay using Paypal
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="rec-bgy" onclick="selectDD()" id="direct-debit-button" style="display:none;">
+                                                <div>
+                                                    <h4>
+                                                        Bank Account
+                                                    </h4>
+                                                    <p>
+                                                        All Australian Bank
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn-a9x btn-rvo" onclick="nextStep()">
+                                            Next
+                                        </button>
+                                        <p class="donate-h8v text-5sg style-jGYT1" id="recurring-disclaimer" style="display:none;">
+                                            <span>
+                                                *
+                                            </span>
+                                            By initiating a recurring donation you opt for an automatic deduction of the chosen amount from your account on a regular basis.<br/>Should you wish to cancel your association, please email us at
+                                            <a href="mail:example@com.au">
+                                                example@com.au
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class="hid-5p5 step" id="step2" style="display: none;">
+                                        <div class="form-group-19l">
+                                            <div class="form-group-19l">
+                                                <span style="display: block;"></span>
+                                                <input type="text" style="margin-bottom: -15px;" name="organisationName" class="form-control-te5" id="organisationName" placeholder="Organisation Name" onblur="onFocusLeft('organisationName')" onfocus="removeOutline('organisationName')"/>
+                                            </div>
+                                        </div>       
+                                        <div class="row-zdo">
+                                            <div class="col-4fx">
+                                                <div class="form-group-19l">
+                                                    <span class="required-text label-required-text" style="display: none;"></span>
+                                                    <input type="text" name="firstname" class="form-control-te5" id="firstname" placeholder="First Name" onblur="onFocusLeft('firstname')" onfocus="removeOutline('firstname')"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-4fx">
+                                                <div class="form-group-19l">
+                                                    <span class="required-text label-required-text" style="display: none;"></span>
+                                                    <input type="text" name="lastname" class="form-control-te5" id="lastname" placeholder="Last Name" onblur="onFocusLeft('lastname')" onfocus="removeOutline('lastname')"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row-zdo">
+                                            <div class="col-4fx">
+                                                <div class="form-group-19l">
+                                                    <span class="required-text label-required-text" style="display: none;"></span>
+                                                    <input type="text" name="email" id="email" class="form-control-te5" placeholder="Email" onblur="onFocusLeft('email')" onfocus="removeOutline('email')"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-4fx">
+                                                <div class="form-group-19l">
+                                                    <span class="required-text label-required-text" style="display: none;"></span>
+                                                    <input type="tel" name="phone" id="phone" class="form-control-te5" placeholder="10 Digit Mobile Number" onblur="onFocusLeft('phone')" onfocus="removeOutline('phone')"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group-19l">
+                                            Find your address
+                                            <input type="text" id="txtPlaces" onclick="getGoogleAddress();" class="form-control-te5" placeholder="Find your address" autocomplete="off" value="" /></br>
+                                        </div>
+                                        <div class="form-group-19l">
+                                            <input type="text" class="form-control-te5" id="street" name="mailingstreet" placeholder="Street"/>
+                                        </div>
+                                        <div class="row-zdo">
+                                            <div class="col-4fx">
+                                                <div class="form-group-19l">
+                                                    <input type="text" class="form-control-te5" id="city" name="mailingcity" placeholder="City Name"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-4fx">
+                                                <div class="form-group-19l">
+                                                    <input type="text" class="form-control-te5" id="postal_code" name="mailingpostalcode" placeholder="Postal Code"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row-zdo">
+                                            <div class="col-4fx">
+                                                <div class="form-group-19l">
+                                                    <input type="text" class="form-control-te5" name="mailingstate" placeholder="State Name" id="state"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-4fx">
+                                                <div class="form-group-19l">
+                                                    <input type="text" name="mailingcountry" id="country" class="form-control-te5" placeholder="Country Name" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field-zcb checkbox-n1l" style="margin-bottom: 10px;">
+                                            <!--<label for="anonymous">
+                                                <input type="checkbox" name="anonymous" id="is-anonymous"  />
+                                                <span class="field-lot" onclick="setAnonymousText()">Keep my donation anonymous</span>
+                                                <br/>
+                                            </label>-->
+                                        </div>
+                                        <div class="row-zdo row-w6i">
+                                            <div class="col-ax9">
+                                                <button type="button" id="ste-yct" onclick="prevStep()" style="opacity: 0.8;">
+                                                    BACK
+                                                </button>
+                                            </div>
+                                            <div class="col-xwd">
+                                                <button type="submit" id="submit-button" class="btn-a9x btn-gr5">
+                                                    <div id="button-text">Donate Now</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5ep">
+                    <div class="info-7ev">
+                        <h2 class="title-ovz">
+                            Emergency Response to the Earthquake in Türkiye and Syria
+                        </h2>
+                        <hr>
+                        <p class="style-M3jmN" id="style-M3jmN">
+                            <b id="style-ePaLo" class="style-ePaLo">
+                                Our teams are coordinating with Governments and partners to respond to the needs of those affected.
+                            </b>
+                        </p>
+                        <p class="info-m67">
+                            Emergency Response to the Earthquake in Türkiye and Syria On Monday February 6th two earthquakes hit southeast Türkiye and northwest Syria. The 7.7 magnitude earthquake that hit the region is one of the strongest to hit the area in more than 100 years. More than 100 aftershocks occurred before another 7.5 magnitude earthquake hit the region. Thousands have been reported dead injured or stranded; the numbers increase by the hour.
+                        </p>
+                        <p>
+                            <strong>
+                                For questions concerning donations, check our
+                                <a href="#">
+                                    Terms and Conditions
+                                </a>
+                                ,
+                                <a href="#">
+                                    Refund and cancellation
+                                </a>
+                                and
+                                <a href="#">
+                                    Privacy Policy
+                                </a>
+                            </strong>
+                            <br>
+                        </p>
+                        <p>
+                            For any queries contact us on&nbsp;
+                            <a href="mailto:example@com.au">
+                                example@com.au
+                            </a>
+                            /
+                            <a href="tel:+61-12-11112288">
+                                +61-12-11112288
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
