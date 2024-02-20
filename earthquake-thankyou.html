@@ -2420,11 +2420,27 @@
           
       </style>
    </head>
-   <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JZB3PF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!-- Navigation -->
+   <script type="text/javascript">
+
+     var ref = window.location.search;
+            if(!ref.includes('#receipt')){
+                ref = ref + '#receipt';
+                window.location.href= ref;
+            }
+            ref = ref.replace('#receipt','');
+            var query_string = ref.split('reference=');
+            var ref_obj = atob(decodeURIComponent(query_string[1]));
+            ref_obj = JSON.parse(ref_obj);
+            console.log(ref_obj);
+      function afterPageLoad() {
+          if(ref_obj.paymentResponse.includes('Recurring Payment was setup.') 
+            && ref_obj.paymentResponse.includes('Payment was charged.') ){
+              document.getElementById('browser-iframe').location = "";
+              document.getElementById('thankyou-body').style.display = 'block';
+          }
+      }
+   </script>
+<body onload="afterPageLoad();">
 <nav>
     <div class="nav-11f">
         <div class="nav-rzw">
@@ -2456,15 +2472,11 @@
                         <a href="#">How We Work</a>
                         <div class="nav-nyd"></div>
                     </div>
-                    <div class="dropdown-vgb">
-                    </div>
                 </li>
                 <li class="nav-item-9zs">
                     <div class="nav-link-oto">
                         <a href="#">The Impact</a>
                         <div class="nav-nyd"></div>
-                    </div>
-                    <div class="dropdown-vgb">
                     </div>
                 </li>
                 <li class="nav-item-9zs">
@@ -2472,16 +2484,12 @@
                         <a href="#">Join Us</a>
                         <div class="nav-nyd"></div>
                     </div>
-                    <div class="dropdown-vgb">
-                    </div>
                 </li>
                 <li class="nav-item-9zs wpml-ls-current-4lg menu-epc menu-vbr">
                     <div class="nav-link-oto">
                         <a href="#">
                             <span>English</span></a>
                         <div class="nav-nyd"></div>
-                    </div>
-                    <div class="dropdown-vgb">
                     </div>
                 </li>
                 <li class="nav-item-9zs button-go6">
@@ -2512,7 +2520,8 @@
     </div>
     <div class="overlay-qz8"></div>
 </nav>
-<section class="c-ygb">
+<iframe name="browser-iframe" id="browser-iframe" src="./turkiye-earthquake.html" style="height:100%; width:100%" overflow="visible" style="display:inline-block"></iframe>
+<section class="c-ygb" id="thankyou-body" style="display: none;">
     <div class="image-oq3" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(./images/turkiye-images/child-saved-in-earthquake.png);">
     </div>
     <div class="c-nkw"></div>
@@ -2529,7 +2538,7 @@
                 <div class="c-lgl">
                     <h3 class="title-6iz">Help Us Spread The Word</h3>
                     <div class="c-73t">
-                        <p>Tell others about your gift and about the lifesaving power of bicycles.</p>
+                        <p>Sharing the cause with your friends and family can spread awareness and inspire more people to join.</p>
                     </div>
                     <div class="add-16f">
                         <div class="a2a-g6d a2a-dsm list-xm2"><a class="button-m5s" href="/#facebook"><span class="a2a-gf9"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -2552,12 +2561,13 @@
         </div><b> </b>
     </div><b>
     </b>
-</section><b>
+</section>
+<b>
     <section class="c-tout-fq2 c-tout-donation--524">
         <div class="content-4to">
             <div class="title-z6r">Want To Keep Your Momentum Going?</div>
-            <div class="c-tout-fpz">Fundraising is a great way to spread the word about the power of bicycles and increase your impact!</div>
-            <a href="#">
+            <div class="c-tout-fpz">We'll use your donations to help families around the world to overcome poverty and injustice, wherever the need is greatest.</div>
+            <a href="./turkiye-earthquake.html">
                 <button class="button-jx4"> Donate </button>
             </a>
         </div>
@@ -2565,7 +2575,10 @@
     <footer>
         <div class="footer-es4">
             <div class="footer-7ns">
-                <div class="footer-kqv"> Values shown represent real needs and expenses in the field. Your gift will be used to provide life-changing transportation through our programs where the need is greatest. Your donation will help provide a bicycle for a student, healthcare worker, or entrepreneur who would otherwise likely travel long distances on foot. Since we also train field mechanics and assemble bicycles locally, your donation also helps build bicycle infrastructure in the areas where we work, benefiting generations to come. You can learn more about our funding and spending on our <a href="#">Financials</a> page. </div>
+                <div class="footer-kqv">Unicare are changing the world with women and girls. We are ending violence and fighting poverty so that all women, everywhere, can create the future they want. We operate in rural and urban communities across Asia, Africa and Latin America. We're committed to ending the cycle of violence in communities around the world, enabling women's economic empowerment, and supporting women's and girls' rights during humanitarian crises. 90% of your donation will go directly to the DEC Turkey-Syria Earthquake Appeal.
+                10% of your donation will be retained for Unicare’s Emergency Action Fund which will only be used for ensuring we are prepared and able to respond quickly and more effectively to future emergencies and crises.
+                If the total amount raised for this appeal exceeds the funds needed for the response, Unicare will transfer the remaining balance to the Emergency Action Fund. All Gift Aid claimed on donations will fund Unicare’s work across the world, wherever the need is greatest. For more information you can visit 
+                  <a href="#">Financials</a> page. </div>
             </div>
             <div class="footer-1is">
                 <div>
@@ -2591,7 +2604,7 @@
                 </div>
                 <div class="footer-tze">
                     <div class="footer-7k7">
-                        <div> World Bicycle Relief is a registered 501c3. EIN 20-5080679. Your gift will be used to provide life-changing transportation through our programs where the need is greatest. </div>
+                        <div>We'll use your donations to help families around the world to overcome poverty and injustice, wherever the need is greatest.</div>
                     </div>
                 </div>
             </div>
@@ -2620,7 +2633,7 @@
                     </div>
                     <div class="footer-7y4">
                         <div class="footer-1py">
-                            <div> World Bicycle Relief is a registered 501c3. EIN 20-5080679. Your gift will be used to provide life-changing transportation through our programs where the need is greatest. </div>
+                            <div>Your gift will be used to provide life-changing transportation through our programs where the need is greatest.</div>
                         </div>
                     </div>
                 </div>

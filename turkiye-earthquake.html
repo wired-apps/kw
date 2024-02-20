@@ -3,8 +3,8 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet"/>
-    
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC3sUW1ZxHe-iUSw98Chy55p-K90Fej0E&sensor=false&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false&libraries=places"></script>
+
     <style>
         :root {
             --theme-color: #ba3642;
@@ -1534,7 +1534,6 @@
         }
         
     </style>
-    
     <script>
         window.onload = showOnetime;
         window.onload = set2;
@@ -1544,14 +1543,7 @@
         const phoneRegex = /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{4}\)?[\s.-]?\d{3}[\s.-]?\d{3}$/;
         
         function getGoogleAddress() {
-            var searchInput = 'txtPlaces';
-            var autocomplete;
-            autocomplete = new google.maps.places.Autocomplete((document.getElementById(searchInput)), {
-                types: ['geocode'],
-                /*componentRestrictions: {
-                    country: "USA"
-                }*/
-            });
+            var autocomplete = new google.maps.places.Autocomplete((document.getElementById('txtPlaces')));
             
             google.maps.event.addListener(autocomplete, 'place_changed', function () {
                 var address = getShortAddressObject(autocomplete.getPlace());
@@ -1941,7 +1933,6 @@
             document.getElementById('submit-button').disabled=true;
             document.getElementById('ste-yct').disabled = true;
         }
-        
     </script>
 </head>
 <body>
@@ -1964,17 +1955,6 @@
                         </ul>
                         <div class="content-pjj">
                             <div id="one-ggq" class="tab-ln5 fa-k37 okqqh act-c8g">
-                                <h2 class="title-q84 text-5sg style-gwWlT" id="style-gwWlT">
-                                    I WOULD LIKE TO
-                                    <span id="style-2aTz2" class="style-2aTz2">
-                                        DONATE
-                                    </span>
-                                </h2>
-                                <p id="style-nmURW" class="style-nmURW">
-                                    <span id="style-WtmK3" class="style-WtmK3">
-                                        All fields are mandatory
-                                    </span>
-                                </p>
                                 <form onsubmit="return validateForm();" action="https://wired-payments-npc.my.salesforce-sites.com/services/apexrest/w_pay/charge" method="POST">
                                     <input type="hidden" name="oid" value="00D5h000008t6iy"/>
                                     <input type="hidden" name="campaignid" value="7015h000000ppBrAAI" />
@@ -1986,6 +1966,13 @@
                                     <input type="hidden" id="environment" name="environment" value="NPC">
                                     
                                     <div class="step" id="step1">
+                                        <h2 class="title-q84 text-5sg style-gwWlT" id="style-gwWlT">
+                                            I WOULD LIKE TO
+                                            <span id="style-2aTz2" class="style-2aTz2">
+                                                DONATE
+                                            </span>
+                                        </h2>
+                                        
                                         <div class="container-wph">
                                             <div class="amount-2i1" id="amount1" onclick="set1()">
                                                 $ 10
@@ -2093,12 +2080,11 @@
                                         </p>
                                     </div>
                                     <div class="hid-5p5 step" id="step2" style="display: none;">
-                                        <div class="form-group-19l">
-                                            <div class="form-group-19l">
-                                                <span style="display: block;"></span>
-                                                <input type="text" style="margin-bottom: -15px;" name="organisationName" class="form-control-te5" id="organisationName" placeholder="Organisation Name" onblur="onFocusLeft('organisationName')" onfocus="removeOutline('organisationName')"/>
-                                            </div>
-                                        </div>       
+                                        <p id="style-nmURW" class="style-nmURW">
+                                            <span id="style-WtmK3" class="style-WtmK3">
+                                                Your donation will help those affected by the earthquake in Türkiye and Syria.
+                                            </span>
+                                        </p>    
                                         <div class="row-zdo">
                                             <div class="col-4fx">
                                                 <div class="form-group-19l">
@@ -2128,6 +2114,13 @@
                                             </div>
                                         </div>
                                         <div class="form-group-19l">
+                                            If you are donating on behalf of an organisation.
+                                            <div class="form-group-19l">
+                                                <span style="display: block;"></span>
+                                                <input type="text" style="margin-bottom: -15px;" name="organisationName" class="form-control-te5" id="organisationName" placeholder="Organisation Name" onblur="onFocusLeft('organisationName')" onfocus="removeOutline('organisationName')"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group-19l">
                                             Find your address
                                             <input type="text" id="txtPlaces" onclick="getGoogleAddress();" class="form-control-te5" placeholder="Find your address" autocomplete="off" value="" /></br>
                                         </div>
@@ -2137,7 +2130,7 @@
                                         <div class="row-zdo">
                                             <div class="col-4fx">
                                                 <div class="form-group-19l">
-                                                    <input type="text" class="form-control-te5" id="city" name="mailingcity" placeholder="City Name"/>
+                                                    <input type="text" class="form-control-te5" id="city" name="mailingcity" placeholder="Suburb"/>
                                                 </div>
                                             </div>
                                             <div class="col-4fx">
@@ -2147,23 +2140,47 @@
                                             </div>
                                         </div>
                                         <div class="row-zdo">
-                                            <div class="col-4fx">
+                                            <div class="col-4fx" style="width: 100%;">
                                                 <div class="form-group-19l">
-                                                    <input type="text" class="form-control-te5" name="mailingstate" placeholder="State Name" id="state"/>
+                                                    <select class="form-control-te5" style="padding: 5px;" id="mailingstate" name="mailingstate">
+                                                        <option selected disabled>
+                                                            Select State
+                                                        </option>
+                                                        <option value="ACT">
+                                                            ACT
+                                                        </option>
+                                                        <option value="NSW">
+                                                            NSW
+                                                        </option>
+                                                        <option value="NT">
+                                                            NT
+                                                        </option>
+                                                        <option value="QLD">
+                                                            QLD
+                                                        </option>
+                                                        <option value="SA">
+                                                            SA
+                                                        </option>
+                                                        <option value="TAS">
+                                                            TAS
+                                                        </option>
+                                                        <option value="VIC">
+                                                            VIC
+                                                        </option>
+                                                        <option value="WA">
+                                                            WA
+                                                        </option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="col-4fx">
-                                                <div class="form-group-19l">
-                                                    <input type="text" name="mailingcountry" id="country" class="form-control-te5" placeholder="Country Name" />
-                                                </div>
-                                            </div>
+                                            <input type="hidden" name="mailingcountry" id="country" value="Australia" class="form-control-te5" placeholder="Country Name" />
                                         </div>
                                         <div class="field-zcb checkbox-n1l" style="margin-bottom: 10px;">
-                                            <!--<label for="anonymous">
+                                            <label for="anonymous">
                                                 <input type="checkbox" name="anonymous" id="is-anonymous"  />
                                                 <span class="field-lot" onclick="setAnonymousText()">Keep my donation anonymous</span>
                                                 <br/>
-                                            </label>-->
+                                            </label>
                                         </div>
                                         <div class="row-zdo row-w6i">
                                             <div class="col-ax9">
