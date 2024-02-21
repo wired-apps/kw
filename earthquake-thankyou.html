@@ -3,7 +3,6 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-      <link rel="stylesheet" href="./snipped.css">
       <style>
         @font-face { 
             font-family:UniversLTStd-UltraCn;
@@ -2420,27 +2419,34 @@
           
       </style>
    </head>
-   <script type="text/javascript">
+  <script type="text/javascript">
+    var reference = getParamValue('reference');
+    console.log(reference);
+    // var ref = window.location.search;
+    // if(!ref.includes('#receipt')){
+    //     ref = ref + '#receipt';
+    //     window.location.href= ref;
+    // }
+    // console.log('ref'+ref);
+    // ref = ref.replace('#receipt','');
+    // console.log(ref);
+    // if(ref.includes('reference')){
+    //   var query_string = ref.split('reference=');
+    //   console.log('query_string'+query_string);
+    //   var ref_obj = atob(decodeURIComponent(query_string[1]));
+    //   ref_obj = JSON.parse(ref_obj);
+    //   console.log(ref_obj);      
+    // }
 
-     var ref = window.location.search;
-            if(!ref.includes('#receipt')){
-                ref = ref + '#receipt';
-                window.location.href= ref;
-            }
-            ref = ref.replace('#receipt','');
-            var query_string = ref.split('reference=');
-            var ref_obj = atob(decodeURIComponent(query_string[1]));
-            ref_obj = JSON.parse(ref_obj);
-            console.log(ref_obj);
-      function afterPageLoad() {
-          if(ref_obj.paymentResponse.includes('Recurring Payment was setup.') 
-            && ref_obj.paymentResponse.includes('Payment was charged.') ){
-              document.getElementById('browser-iframe').location = "";
-              document.getElementById('thankyou-body').style.display = 'block';
-          }
-      }
+    // function afterPageLoad() {
+    //     if(ref_obj!=null && ref_obj.paymentResponse!=null && ref_obj.paymentResponse.includes('Recurring Payment was setup.')
+    //       && ref_obj.paymentResponse.includes('Payment was charged.') ){
+    //         document.getElementById('browser-iframe').location = "";
+    //         document.getElementById('thankyou-body').style.display = 'block';
+    //     }
+    // }
    </script>
-<body onload="afterPageLoad();">
+<body><!-- onload="afterPageLoad();"-->
 <nav>
     <div class="nav-11f">
         <div class="nav-rzw">
