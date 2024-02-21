@@ -2418,6 +2418,17 @@
           }  
           
       </style>
+      <script>
+        function iframeHeightAdjuster()
+        {
+          var iFrameID = document.getElementById('browser-iframe');
+          if(iFrameID)
+          {
+            iFrameID.height = "";
+            iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+          }
+        }
+      </script>
    </head>
 <body>
 <nav>
@@ -2499,7 +2510,7 @@
     </div>
     <div class="overlay-qz8"></div>
 </nav>
-<iframe name="browser-iframe" id="browser-iframe" src="./turkiye-syria-earthquake-form.html" style="height:100%; width:100%" overflow="visible" style="display:inline-block;border: none;" scrolling="no"></iframe>
+<iframe name="browser-iframe" id="browser-iframe" onload="iframeHeightAdjuster()" src="./turkiye-syria-earthquake-form.html" style="height:100%; width:100%" overflow="visible" style="display:inline-block;border: none;" scrolling="no"></iframe>
 <b>
     <section class="c-tout-fq2 c-tout-donation--524">
         <div class="content-4to">
