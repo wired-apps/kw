@@ -2421,6 +2421,14 @@
           
       </style>
       <script>
+        function checkUrl(){
+          var ref = document.getElementById('browser-iframe').src;
+          console.log('ref',ref);
+          if(ref.includes('paypal')){
+            window.open(ref, '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+            // document.getElementById('browser-iframe').
+          }
+        }
       </script>
    </head>
 <body>
@@ -2503,7 +2511,7 @@
     </div>
     <div class="overlay-qz8"></div>
 </nav>
-<iframe name="browser-iframe" id="browser-iframe" src="./turkiye-syria-earthquake-form.html" style="min-height:98vh;" width="100%" overflow="visible" style="display:inline-block;border: none;" scrolling="no"></iframe>
+<iframe name="browser-iframe" id="browser-iframe" onload="checkUrl();" src="./turkiye-syria-earthquake-form.html" style="min-height:98vh;" width="100%" overflow="visible" style="display:inline-block;border: none;" scrolling="no"></iframe>
 <b>
     <section class="c-tout-fq2 c-tout-donation--524">
         <div class="content-4to">

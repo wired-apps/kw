@@ -1701,6 +1701,10 @@
                     document.getElementsByClassName('required-text')[3].innerHTML="Please enter valid email";
                     return false;
                 }
+                if(document.getElementById('gatewayname').value == "paypal")
+                {
+                    document.getElementById('donation-form').target = '_top';
+                }
                 showSpinner();
             }
         }
@@ -1956,7 +1960,7 @@
                         </ul>
                         <div class="content-pjj">
                             <div id="one-ggq" class="tab-ln5 fa-k37 okqqh act-c8g">
-                                <form onsubmit="return validateForm();" action="https://wired-payments-npc--demo5.sandbox.my.salesforce-sites.com/services/apexrest/w_pay/charge" method="POST">
+                                <form onsubmit="return validateForm();" id="donation-form" action="https://wired-payments-npc--demo5.sandbox.my.salesforce-sites.com/services/apexrest/w_pay/charge" method="POST">
                                     <input type="hidden" name="oid" value="00DF30000009wsI"/>
                                     <input type="hidden" name="campaignid" value="701F3000000ceokIAA" />
                                     <input type="hidden" id="returnurl" name="redirecturl" value="https://wired-apps.github.io/wiredpayments/turkiye-syria-earthquake-receipt.html?"/>
