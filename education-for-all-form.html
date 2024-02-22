@@ -1054,7 +1054,7 @@ function onFocusLeft(id)
                             <div class="row-is3 pt-ahz row pt-2">
                                 <div class="col-6oi col-5hi">
                                     <div class="form-group-wvp">
-                                        <label for="email">E-mail 
+                                        <label for="email">Email 
                                             <span class="text-lcf">*</span>
                                             <span class="required-text label-required-text" style="display:none;">Required</span>
                                         </label>
@@ -1064,11 +1064,11 @@ function onFocusLeft(id)
                                 </div>
                                 <div class="col-6oi col-5hi">
                                     <div class="form-group-wvp">
-                                        <label for="Amount">Amount (AUD) 
+                                        <label for="Amount">Amount
                                             <span class="text-lcf">*</span>
                                             <span class="required-text label-required-text" style="display:none;">Required</span>
                                         </label>
-                                        <input name="Amount" type="text" id="amount" onkeydown="if (/^[eE\+\-]$/.test(event.key))event.preventDefault();" onkeyup="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" onPaste="if (!/^\d+$/.test(event.clipboardData.getData('text/plain')))event.preventDefault();" class="form-control-dr3" placeholder="Amount (AUD)" style="padding-left: 15px;" onblur="onFocusLeft('amount')" onfocus="removeOutline('amount')"/>
+                                        <input name="Amount" type="text" id="amount" onkeydown="if (/^[eE\+\-]$/.test(event.key))event.preventDefault();" onkeyup="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')" onPaste="if (!/^\d+$/.test(event.clipboardData.getData('text/plain')))event.preventDefault();" class="form-control-dr3" placeholder="Amount" style="padding-left: 15px;" onblur="onFocusLeft('amount')" onfocus="removeOutline('amount')"/>
                                         <div class="invalid-gyr">We accept donations only up to 2 decimal places and needs to be an amount between 1 - 10,000 AUD.</div>
                                     </div>
                                 </div>
@@ -1097,7 +1097,7 @@ function onFocusLeft(id)
                                 <div class="col-ctb col-5hi">
                                     <div>
                                         <input type="checkbox" id="disclaimer-checkbox" onclick="onDisclaimerChecked()" />
-                                        <label for="check-legal-disclaimer">I have read the <a href="https://www.example.com" target="__blank">Legal Disclaimer.</a></label>
+                                        <label for="check-legal-disclaimer">I have read the <a href="#">Legal Disclaimer.</a></label>
                                         <div class="invalid-gyr">Please read &amp; understand the legal disclaimer and tick the checkbox.</div>
                                     </div>
                                 </div>
