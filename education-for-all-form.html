@@ -700,8 +700,6 @@ function hexToRGB(hex, alpha) {
 function showOnetime()
 {
     document.getElementById('onetime').checked = true;
-    document.getElementById('recurring').checked = false;    
-
     document.getElementById("startdate").value = '';
 
     document.getElementById('installment-period').style.display='none';
@@ -713,10 +711,8 @@ function showOnetime()
 
 function showRecurring()
 {
-    document.getElementById('onetime').checked = false;
-    document.getElementById('recurring').checked = true;    
-
-    document.getElementById("monthly").checked = true;
+    document.getElementById('installment-period').style.display='none';    
+    document.getElementById('installment-period').style.display='none';    
 
     // Setting Start Date
     var today = new Date();
@@ -991,6 +987,31 @@ function onFocusLeft(id)
                             <div class="row-is3">
                                 <span></span>
                             </div>
+                            <div class="row-is3">
+                                <div class="col-6oi col-5hi">
+                                    <label for="chargetype">How frequently would you like to donate? <span class="text-lcf">*</span></label>
+                                </div>
+                            </div>
+                            <div class="row-is3 pt-dws payment-176">
+                                <div class="pt-ahz">
+                                    <div class="form-ra1 form-4ol">
+                                        <input value="OneTime" name="chargetype" type="radio" checked id="onetime" class="input-rn9" onclick="showOnetime()" />
+                                        <label for="vis-t8z" class="radio-button-label">Onetime</label>
+                                    </div>
+                                    <div class="form-ra1 form-4ol">
+                                        <input value="fortnightly" name="installment-period" type="radio" id="fortnightly" class="input-rn9" onclick="showRecurring()" />
+                                        <label for="mas-sxn" class="radio-button-label">Fortnightly</label>
+                                    </div>
+                                    <div class="form-ra1 form-4ol">
+                                        <input value="monthly" name="installment-period" type="radio" id="monthly" class="input-rn9" onclick="showRecurring()" />
+                                        <label for="mas-sxn" class="radio-button-label">Monthly</label>
+                                    </div>
+                                    <div class="form-ra1 form-4ol">
+                                        <input value="quarterly" name="installment-period" type="radio" id="quarterly" class="input-rn9" onclick="showRecurring()" />
+                                        <label for="mas-sxn" class="radio-button-label">Quarterly</label>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row-is3 pt-ahz row pt-2">
                                 <div class="col-6oi col-5hi">
                                     <div class="form-group-wvp">
@@ -1016,7 +1037,7 @@ function onFocusLeft(id)
                             <div class="row-is3 pt-ahz row pt-2">
                                 <div class="col-6oi col-5hi">
                                     <div class="form-group-wvp">
-                                        <label for="organisationName">Organisation Name</label>
+                                        <label for="organisationName">Organisation Name <label style="font-size: 11px;margin:0px;">(If donating on behalf of your company)</label></label>
                                         <input name="organisationName" type="text" id="organisationName" class="form-control-dr3" placeholder="Organisation Name"/>
                                     </div>
                                 </div>
@@ -1054,51 +1075,7 @@ function onFocusLeft(id)
                             </div>
                             <div class="row-is3">
                                 <div class="col-6oi col-5hi">
-                                    <label for="chargetype">Charge Type <span class="text-lcf">*</span></label>
-                                </div>
-                            </div>
-                            <div class="row-is3 pt-dws payment-176">
-                                <div class="pt-ahz">
-                                    <div class="form-ra1 form-4ol">
-                                        <input value="OneTime" name="chargetype" type="radio" checked id="onetime" class="input-rn9" onclick="showOnetime()" />
-                                        <label for="vis-t8z" class="radio-button-label">OneTime</label>
-                                    </div>
-                                    <div class="form-ra1 form-4ol">
-                                        <input value="Recurring" name="chargetype" type="radio" id="recurring" class="input-rn9" onclick="showRecurring()" />
-                                        <label for="mas-sxn" class="radio-button-label">Recurring</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="installment-period" style="display: none;">
-                            <div class="row-is3">
-                                <div class="col-6oi col-5hi">
-                                    <label for="chargetype">Installment Period <span class="text-lcf">*</span></label>
-                                </div>
-                            </div>
-                            <div class="row-is3 pt-dws payment-176">
-                                <div class="pt-ahz">
-                                    <div class="form-ra1 form-4ol">
-                                        <input value="Weekly" name="installmentperiod" type="radio" id="weekly" class="input-rn9"/>
-                                        <label for="weekly">Weekly</label>
-                                    </div>
-                                    <div class="form-ra1 form-4ol">
-                                        <input value="Fortnightly" name="installmentperiod" type="radio" id="fortnightly" class="input-rn9"/>
-                                        <label for="fortnightly" class="radio-button-label">Fortnightly</label>
-                                    </div>
-                                    <div class="form-ra1 form-4ol">
-                                        <input value="Monthly" name="installmentperiod" checked type="radio" id="monthly" class="input-rn9"/>
-                                        <label for="monthly" class="radio-button-label">Monthly</label>
-                                    </div>
-                                    <div class="form-ra1 form-4ol">
-                                        <input value="Yearly" name="installmentperiod" type="radio" id="yearly" class="input-rn9"/>
-                                        <label for="yearly" class="radio-button-label">Yearly</label>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="row-is3">
-                                <div class="col-6oi col-5hi">
-                                    <label for="paymentmethod">Payment Method <span class="text-lcf">*</span></label>
+                                    <label for="paymentmethod">How would you like to Pay? <span class="text-lcf">*</span></label>
                                 </div>
                             </div>
                             <div class="row-is3 pt-dws payment-176 payment-method-style">
