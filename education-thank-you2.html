@@ -137,10 +137,10 @@
 					if(ref_obj.chargeType == "OneTime")
 						document.getElementById("success_message").innerHTML = "You have successfully made a donation of $"+ref_obj.amount;
 					else {
-						document.getElementById("success_message").innerHTML = "You have successfully setup  ";
-						document.getElementById("installPeriod").innerHTML = "Installment Period : "+ref_obj.installPeriod;
-						document.getElementById("installDate").innerHTML = "Installment Date : "+ref_obj.nextInstallmentDate;
-						document.getElementById("recamount").innerHTML = "Amount : $"+ref_obj.amount;
+						// document.getElementById("success_message").innerHTML = "You have successfully setup  ";
+						// document.getElementById("installPeriod").innerHTML = "Installment Period : "+ref_obj.installPeriod;
+						// document.getElementById("installDate").innerHTML = "Installment Date : "+ref_obj.nextInstallmentDate;
+						document.getElementById("amount").innerHTML = "Amount : $"+ref_obj.amount;
 					}
 						document.getElementById('successDiv').style.display = "block";
                 }
@@ -268,7 +268,7 @@
                                 <td class="pad" style="padding-left:40px;padding-right:40px;padding-top:15px;">
                                   <div style="color:#555555;font-family:Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:18px;line-height:150%;text-align:left;mso-line-height-alt:24px;">
                                     <p style="margin: 0; word-break: break-word;">
-                                      <span style="background-color: #ffffff; color: #4E4E4E;">Thank you for your donation of $10 to our cause.</span>
+                                      <span style="background-color: #ffffff; color: #4E4E4E;">Thank you for your donation of $<span id="amount">10</span> to our cause.</span>
                                     </p>
                                   </div>
                                 </td>
