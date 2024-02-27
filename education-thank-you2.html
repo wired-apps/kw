@@ -151,6 +151,7 @@
         {
           console.log('failed block');
           document.getElementById("failure_message").innerHTML = ref_obj.paymentResponse;
+          document.getElementById("failure_message").style.display = "block";
 					document.getElementById('failedDiv').style.display = "block";
 					if (ref_obj.retryURL != null || ref_obj.retryURL != undefined)
           {
@@ -162,6 +163,7 @@
             
       function retryPayment()
       {
+        document.getElementById('failedDiv').style.display = "none";
         document.getElementById('retryBtn').style.display = "none";
         console.log(ref_obj.retryURL)
         window.location.href = ref_obj.retryURL;
