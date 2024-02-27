@@ -723,6 +723,9 @@ function setTarget(){
 }
   function showOnetime() {
     document.getElementById('onetime').checked = true;
+    document.getElementById('fortnightly').checked = false;
+    document.getElementById('monthly').checked = false;
+    document.getElementById('quarterly').checked = false;
     document.getElementById("startdate").value = '';
 
     document.getElementById('installment-period').style.display = 'none';
