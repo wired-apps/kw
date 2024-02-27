@@ -2663,7 +2663,7 @@ var yyyy = today.getFullYear();
 if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm}
 today = yyyy+"-"+mm+"-"+dd;
 document.getElementById("startdate").value = today;
-document.getElementById("installmentperiod").value = "Monthly";
+document.getElementById("transactionperiod").value = "Monthly";
 
 }
 
@@ -3108,7 +3108,7 @@ document.addEventListener('DOMContentLoaded', function (){
 <input type="radio" id="b2" style="appearance: none;margin: 0px;padding: 0px;" name="chargetype" value="Recurring" class="radio"/>
 <label class="form-h92 form-6x8" id="l2" for="b2" onclick="showMonthly()">Monthly</label>
 <input type="hidden" id="startdate" name="startdate" value="" class="name"/>
-<input type="hidden" id="installmentperiod" name="installmentperiod" value="Monthly" class="name"/>
+<input type="hidden" id="transactionperiod" name="transactionperiod" value="Monthly" class="name"/>
 </div>
 <br/>
 
