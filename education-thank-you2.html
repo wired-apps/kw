@@ -142,10 +142,16 @@
         {
           console.log('success block');
 					if(ref_obj.chargeType == "OneTime")
+          {
 						document.getElementById("success_message").innerHTML = "You have successfully made a donation of $"+ref_obj.amount;
-					else
+            document.getElementById("success_supporting_message").display = "block";
+						document.getElementById("success_supporting_footer").display = "block";
+          }
+          else
           {
 						document.getElementById("success_message").innerHTML = "You have successfully setup  ";
+						document.getElementById("success_supporting_message").display = "block";
+						document.getElementById("success_supporting_footer").display = "block";
 						// document.getElementById("installPeriod").innerHTML = "Installment Period : "+ref_obj.installPeriod;
 						// document.getElementById("installDate").innerHTML = "Installment Date : "+ref_obj.nextInstallmentDate;
 						document.getElementById("amount").innerHTML = "Amount : $"+ref_obj.amount;
@@ -265,7 +271,7 @@
                                     </div>
                                   </div>
                                   <div id="retryBtn" style="display: none">
-                                    <button type="button" name="retryButton" class="btn btn-secondary" onclick="retryPayment();">Retry</button>
+                                    <button type="button" style="font-size:16px;padding:8px 15px;background-color: #FD5F00;color:white;" name="retryButton" class="btn btn-secondary" onclick="retryPayment();">Retry</button>
                                   </div>
                                 </td>
                               </tr>
@@ -290,7 +296,7 @@
                                 </td>
                               </tr>
                             </table>
-                            <table border="0" cellpadding="0" cellspacing="0" class="paragraph_block block-4" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;" width="100%">
+                            <table id="success_supporting_message" border="0" cellpadding="0" cellspacing="0" class="paragraph_block block-4" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;display:none;" width="100%">
                               <tr>
                                 <td class="pad" style="padding-left:40px;padding-right:40px;">
                                   <div style="color:#555555;font-family:Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:18px;font-weight:400;line-height:150%;text-align:left;mso-line-height-alt:24px;">
@@ -313,7 +319,7 @@
                               </tr>
                             </table>
                             </br>
-                            <table border="0" cellpadding="0" cellspacing="0" class="paragraph_block block-6" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;" width="100%">
+                            <table id="success_supporting_footer" border="0" cellpadding="0" cellspacing="0" class="paragraph_block block-6" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;display: none;" width="100%">
                               <tr>
                                 <td class="pad" style="padding-bottom:10px;padding-left:40px;padding-right:40px;">
                                   <div style="color:#555555;font-family:Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;font-size:18px;line-height:150%;text-align:left;mso-line-height-alt:24px;">
