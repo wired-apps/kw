@@ -2607,6 +2607,40 @@ button[disabled]{
   opacity: 1; /* Firefox */
 }
 
+#cover-spin {
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(255,255,255,0.7);
+    z-index:9999;
+    display:none;
+}
+
+@-webkit-keyframes spin {
+	from {-webkit-transform:rotate(0deg);}
+	to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+#cover-spin::after {
+    content:'';
+    display:block;
+    position:absolute;
+    left:48%;top:40%;
+    width:40px;height:40px;
+    border-style:solid;
+    border-color:black;
+    border-top-color:transparent;
+    border-width: 4px;
+    border-radius:50%;
+    -webkit-animation: spin .8s linear infinite;
+    animation: spin .8s linear infinite;
+}
+
 </style>
 <script>
 
@@ -2653,7 +2687,7 @@ document.getElementById("payment-type").style.display = "block";
 document.getElementById("bc1").checked = true;
 document.getElementById("bc2").checked = false;
 
-document.getElementsByClassName('donating-in')[0].innerText='every month';
+document.getElementsByClassName('donating-in')[0].innerText=' every month';
 document.getElementsByClassName('donating-in')[1].innerText=' every month';
 
 var today = new Date();
@@ -3067,6 +3101,7 @@ function showSpinner(){
   document.getElementById('next-icon').style.display = 'none';
   document.getElementById('donate-button').disabled = true;
   document.getElementById('next-button').disabled = true;
+  document.getElementById('cover-spin').style.display = 'block';
 }
 
 document.addEventListener('DOMContentLoaded', function (){
@@ -3076,6 +3111,7 @@ document.addEventListener('DOMContentLoaded', function (){
 </script>
 </head>
 <body>
+<div id="cover-spin" style="display: none;"></div>
 <div class="container-c9b css-c36">
 <h2 class="css-gdc">BECOME A CHANGEMAKER TODAY!</h2>
 <p class="css-n1b css-jc2">Your support today will help to save lives defeat poverty and achieve social justice.</p>
