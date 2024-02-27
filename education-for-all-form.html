@@ -690,7 +690,11 @@
 </style>
 <script>
   window.onload = showOnetime;
-
+var myForm = document.getElementById('donation-form');
+myForm.onsubmit = function() {
+    var w = window.open('about:blank','Popup_Window','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400,height=300,left = 312,top = 234');
+    this.target = 'Popup_Window';
+};
   const emailRegex = /([a-zA-Z0-9_\-.]+)@(([a-z]{1,3}.[a-z]{1,3}.[a-z]{1,3}.)|(([a-zA-Z0-9-]+.)+))([a-zA-Z]{2,4}|[0-9]{1,3})/;
   const phoneRegex = /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{4}\)?[\s.-]?\d{3}[\s.-]?\d{3}$/;
   var numberRegex = /^(?:\d*\.\d{1,2}|\d+)$/;
