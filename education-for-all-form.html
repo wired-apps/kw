@@ -733,6 +733,7 @@ function setTarget(){
   }
 
   function showRecurring() {
+    document.getElementById('onetime').checked = false;
     document.getElementById('installment-period').style.display = 'none';
     document.getElementById('installment-period').style.display = 'none';
 
@@ -995,7 +996,7 @@ function setTarget(){
                 <div class="row-is3 pt-dws payment-176">
                   <div class="pt-ahz">
                     <div class="form-ra1 form-4ol">
-                      <input value="OneTime" name="chargetype" type="radio" checked id="onetime" class="input-rn9"
+                      <input value="OneTime" name="chargetype" type="radio" id="onetime" class="input-rn9"
                         onclick="showOnetime()" />
                       <label for="vis-t8z" class="radio-button-label">Onetime</label>
                     </div>
