@@ -127,7 +127,7 @@
           console.log(amt);
         }
 				console.log(ref_obj.paymentResponse);
-				if(!ref_obj.paymentResponse.includes('Recurring Payment was setup.') && !ref_obj.paymentResponse.includes('Payment was charged.'))
+				if(!ref_obj.paymentResponse.includes('Recurring Payment was setup.') && !ref_obj.paymentResponse.includes('Payment successful!'))
         {
           console.log('failed block');
 					if (ref_obj.retryURL != null || ref_obj.retryURL != undefined)
