@@ -132,26 +132,26 @@
           console.log('failed block');
 					if (ref_obj.retryURL != null || ref_obj.retryURL != undefined)
           {
-            document.getElementById("failure_message").innerText = ref_obj.paymentResponse;
+            document.getElementById("failure_message").innerHTML = ref_obj.paymentResponse;
 						document.getElementById('failedDiv').style.display = "block";
 						document.getElementById('retryBtn').style.display = "block";
 					}
-          console.log(document.getElementById('failure_message').innerText);
+          console.log(document.getElementById('failure_message').innerHTML);
 				}
         else
         {
           console.log('success block');
 					if(ref_obj.chargeType == "OneTime")
-						document.getElementById("success_message").innerText = "You have successfully made a donation of $"+ref_obj.amount;
+						document.getElementById("success_message").innerHTML = "You have successfully made a donation of $"+ref_obj.amount;
 					else
           {
-						document.getElementById("success_message").innerText = "You have successfully setup  ";
-						// document.getElementById("installPeriod").innerText = "Installment Period : "+ref_obj.installPeriod;
-						// document.getElementById("installDate").innerText = "Installment Date : "+ref_obj.nextInstallmentDate;
-						document.getElementById("amount").innerText = "Amount : $"+ref_obj.amount;
+						document.getElementById("success_message").innerHTML = "You have successfully setup  ";
+						// document.getElementById("installPeriod").innerHTML = "Installment Period : "+ref_obj.installPeriod;
+						// document.getElementById("installDate").innerHTML = "Installment Date : "+ref_obj.nextInstallmentDate;
+						document.getElementById("amount").innerHTML = "Amount : $"+ref_obj.amount;
 					}
 					document.getElementById('successDiv').style.display = "block";
-          console.log(document.getElementById('success_message').innerText);
+          console.log(document.getElementById('success_message').innerHTML);
         }
       }
             
@@ -259,11 +259,9 @@
                                         <h1 class="header2" id="failure_message"></h1>
                                       </div>
                                     </div>
-                                    <div id="successDiv" style="display: none;">
-                                      <span style="color: #19304B;">
+                                      <span id="successDiv" style="color: #19304B;">
                                         <strong>Thank you for making a difference!</strong>
                                       </span>
-                                    </div>
                                     <div id="retryBtn" style="display: none">
                                       <button type="button" name="retryButton" class="btn btn-secondary" onclick="retryPayment();">Retry</button>
                                     </div>
