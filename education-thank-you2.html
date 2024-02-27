@@ -144,19 +144,17 @@
 					if(ref_obj.chargeType == "OneTime")
           {
 						document.getElementById("success_message").innerHTML = "You have successfully made a donation of $"+ref_obj.amount;
-            document.getElementById("success_supporting_message").display = "block";
-						document.getElementById("success_supporting_footer").display = "block";
           }
           else
           {
 						document.getElementById("success_message").innerHTML = "You have successfully setup  ";
-						document.getElementById("success_supporting_message").display = "block";
-						document.getElementById("success_supporting_footer").display = "block";
 						// document.getElementById("installPeriod").innerHTML = "Installment Period : "+ref_obj.installPeriod;
 						// document.getElementById("installDate").innerHTML = "Installment Date : "+ref_obj.nextInstallmentDate;
 						document.getElementById("amount").innerHTML = "Amount : $"+ref_obj.amount;
 					}
 					document.getElementById('successDiv').style.display = "block";
+          document.getElementById("success_supporting_message").style.display = "block";
+          document.getElementById("success_supporting_footer").style.display = "block";
           console.log(document.getElementById('success_message').innerHTML);
         }
       }
@@ -270,7 +268,7 @@
                                       <h1 class="header2" id="failure_message"></h1>
                                     </div>
                                   </div>
-                                  <div id="retryBtn" style="display: none;display: flex; justify-content: center;">
+                                  <div id="retryBtn" style="display: none;justify-content: center;">
                                     <button type="button" style="text-align:center;font-size:18px; padding:10px 18px;background-color: #FD5F00;color:white;border: 0px;border-radius: 5px;" name="retryButton" class="btn btn-secondary" onclick="retryPayment();">Retry</button>
                                   </div>
                                 </td>
