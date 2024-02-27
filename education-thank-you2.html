@@ -127,7 +127,7 @@
           console.log(amt);
         }
 				console.log(ref_obj.paymentResponse);
-				if(ref_obj.paymentResponse.includes('Payment was setup!') || ref_obj.paymentResponse.includes('Payment successful!'))
+				if(ref_obj.paymentResponse.includes('Payment was setup') || ref_obj.paymentResponse.includes('Payment successful!'))
         {
           console.log('success block');
 					if(ref_obj.chargeType == "OneTime")
