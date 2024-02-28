@@ -123,7 +123,7 @@ h1{
             
             <div id="retryDiv" style="display: none;">
                 
-            <button id="retryBtn" class="go-home">
+            <button id="retryBtn" class="go-home" onclick="retryTransaction();">
             Click here to retry the donation
             </button>
         </div>
@@ -168,6 +168,7 @@ h1{
       </div>
       <script type="text/javascript" >
         var receiptUrl = window.location.href;
+        var retryUrl = '';
         console.log('receiptUrl==> '+receiptUrl);
         if(receiptUrl.includes('reference')){
             var query_string = receiptUrl.split('reference=');
@@ -209,8 +210,14 @@ h1{
                     document.getElementById('parentDiv').classList.remove('wrapper-1');
                     document.getElementById('parentDiv').classList.add('wrapper-error');
                     document.getElementById('socials').style="display:none;"
+                    retryUrl = ref_obj.retryUrl;
                 }
                 
+            }
+
+            function retryTransaction(){
+              console.log('RETRY ==> '+retryUrl);
+              window.location.href = retryUrl;
             }
         }
         </script>
