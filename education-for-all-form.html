@@ -808,13 +808,14 @@ function setTarget(){
     let email = document.getElementById('email').value;
     let amount = document.getElementById('amount').value;
     let paymentprocessor = document.getElementById('paymentprocessor').value;
-    var transactionPeriodList = document.getElementB('transactionperiod');
+    var transactionPeriodList = document.getElementsByName('transactionperiod');
     let transactionperiod;
     for(var i = 0; i < transactionPeriodList.length; i++){
       if(transactionPeriodList[i].checked){
         transactionperiod = transactionPeriodList[i].value;
       }
     }
+    
     
 
     document.getElementById('error-text-div').classList.add('showAndHide');
