@@ -165,6 +165,8 @@ h1{
           </table>
           </div>
       </div>
+
+      <h6 id="redirectionmessage" style="font-weight: bold;text-align: center;"></h6>
       </div>
       <script type="text/javascript" >
         var receiptUrl = window.location.href;
@@ -179,6 +181,7 @@ h1{
                 if(ref_obj.paymentStatus == 'Payment Approved'){
                     document.getElementById('headertext').style = 'color:#2CB554;';
                     document.getElementById('headertext').innerHTML = 'Thank you !';
+                    document.getElementById('redirectionmessage').innerHTML = 'Page will be redirected in 10 seconds.';
                     if(ref_obj.chargeType == 'OneTime'){
                         document.getElementById('subheadertext').innerHTML = 'Thank you for your generous donation of <b>$'+ref_obj.amount+'</b>. Here is your transaction id <b>'+ref_obj.paymentId+'</b>.';
                         document.getElementById('receiptBody').innerHTML = 'Your generous donation is deeply appreciated and will create a meaningful impact.';
@@ -208,7 +211,7 @@ h1{
                         window.location.href='https://wired-apps.github.io/wiredpayments/fundraiser/';
                       }
                       
-                    },3000);
+                    },10000);
                     confetti();
                    
                    
