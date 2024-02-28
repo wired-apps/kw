@@ -749,10 +749,7 @@ function setTarget(){
     document.getElementById('directdebitContainer').classList.add('showAndHide');
     
 
-    var ele = document.getElementsByName("installmentperiod");
-    for (var i = 0; i < ele.length; i++)
-      ele[i].checked = false;
-  }
+    
 
   function showRecurring() {
     document.getElementById('onetime').checked = false;
@@ -806,7 +803,14 @@ function setTarget(){
     let email = document.getElementById('email').value;
     let amount = document.getElementById('amount').value;
     let paymentprocessor = document.getElementById('paymentprocessor').value;
-    let transactionperiod = document.getElementById('transactionperiod').value;
+    var transactionPeriodList = document.getElementsByName('transactionperiod');
+    let transactionperiod;
+    for(var i = 0; i < transactionPeriodList.length; i++){
+      if(transactionPeriodList[i].checked == true){
+        transactionperiod = transactionPeriodList[i].value;
+      }
+    }
+    
 
     document.getElementById('error-text-div').classList.add('showAndHide');
 
