@@ -1151,18 +1151,18 @@ function setTarget(){
                 </div>
                 <div class="row-is3 pt-dws payment-176 payment-method-style">
                   <div class="form-ra1 form-4ol">
-                    <input value="Credit Card" name="creditcard" checked type="radio" id="vis-t8z" class="input-rn9"
-                      onclick="paymentByAssignedGateway();assignCreditCard();" />
+                    <input value="Credit Card" id="paymentmethod" name="paymentmethod" checked type="radio" id="vis-t8z" class="input-rn9"
+                      onclick="paymentByAssignedGateway();" />
                     <img style="width: 60px;" src="./images/credit-card.png" />
                   </div>
                   <div class="form-ra1 form-4ol">
-                    <input value="paypal" name="paypal" type="radio" id="pay-h7q" class="input-rn9"
+                    <input value="paypal" id="paymentmethod" name="paymentmethod" type="radio" id="pay-h7q" class="input-rn9"
                       onclick="paymentByPaypal();" />
                     <img style="width: 70px;" src="./images/PayPal.svg" />
                   </div>
                   <div id="directdebitContainer" class="form-ra1 form-4ol">
-                    <input value="Direct Debit" name="directdebit" type="radio" id="ban-h4j" class="input-rn9"
-                      onclick="paymentByAssignedGateway();assignDirectDebit();" />
+                    <input value="Direct Debit" id="paymentmethod" name="paymentmethod" type="radio" id="ban-h4j" class="input-rn9"
+                      onclick="paymentByAssignedGateway();" />
                     <img style="width: 50px;" src="./images/bank-transfer.svg" />
                   </div>
                   <div class="custom-invalid-dhn"></div>
