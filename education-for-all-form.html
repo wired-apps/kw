@@ -688,7 +688,7 @@
     color: #ff2343 !important;
   }
   .showAndHide{
-    display:block;
+    display:none;
   }
 </style>
 <script>
@@ -732,7 +732,7 @@ function setTarget(){
     document.getElementById("startdate").value = '';
 
     document.getElementById('installment-period').style.display = 'none';
-    document.getElementById('directdebitdiv').classList.remove('showAndHide');
+    document.getElementById('directdebitdiv').classList.add('showAndHide');
 
     var ele = document.getElementsByName("installmentperiod");
     for (var i = 0; i < ele.length; i++)
@@ -743,7 +743,7 @@ function setTarget(){
     document.getElementById('onetime').checked = false;
     document.getElementById('installment-period').style.display = 'none';
     document.getElementById('installment-period').style.display = 'none';
-    document.getElementById('directdebitdiv').classList.add('showAndHide');
+    document.getElementById('directdebitdiv').classList.remove('showAndHide');
 
     // Setting Start Date
     var today = new Date();
@@ -1114,7 +1114,7 @@ function setTarget(){
                       onclick="document.getElementById('gatewayname').value='paypal'" />
                     <img style="width: 70px;" src="./images/PayPal.svg" />
                   </div>
-                  <div id="directdebitdiv" class="form-ra1 form-4ol">
+                  <div id="directdebitdiv" class="form-ra1 form-4ol showAndHide>
                     <input value="Direct Debit" name="paymentmethod" type="radio" id="ban-h4j" class="input-rn9"
                       onclick="document.getElementById('gatewayname').value=''" />
                     <img style="width: 50px;" src="./images/bank-transfer.svg" />
