@@ -740,6 +740,7 @@ function setTarget(){
   function showOnetime() {
     document.getElementById('chargetype').value = 'onetime';
     document.getElementById('onetime').checked = true;
+   console.log(document.getElementById('transactionperiod')); 
     document.getElementById('transactionperiod').checked = false;
     document.getElementById("startdate").value = '';
     document.getElementById('directdebitContainer').classList.add('showAndHide');
