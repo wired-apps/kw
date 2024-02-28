@@ -803,6 +803,8 @@ function setTarget(){
     let phone = document.getElementById('phone').value;
     let email = document.getElementById('email').value;
     let amount = document.getElementById('amount').value;
+    let paymentprocessor = document.getElementById('paymentprocessor').value;
+    let transactionperiod = document.getElementById('transactionperiod').value;
 
     if (!firstname || !lastname || !email || !phone || !amount) {
       if (!firstname) {
@@ -871,7 +873,7 @@ function setTarget(){
         document.getElementsByClassName('required-text')[4].innerHTML = "invalid amount";
         return false;
       }
-      if(document.getElementById('paymentprocessor').value == 'paypal' && document.getElementById('transactionperiod').value == 'Fortnightly'){
+      if(paymentprocessor == 'paypal' && transactionperiod == 'Fortnightly'){
         //document.getElementById('error-text-div').classList.add('showAndHide');
         document.getElementById('error-text').innerHTML = 'We support Monthly and Quarterly with PayPal.';
         document.getElementById('error-text').classList.add('color-red');
