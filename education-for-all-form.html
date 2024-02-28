@@ -871,6 +871,13 @@ function setTarget(){
         document.getElementsByClassName('required-text')[4].innerHTML = "invalid amount";
         return false;
       }
+      if(document.getElementById('paymentprocessor').value == 'paypal' && document.getElementById('transactionperiod').value == 'Fortnightly'){
+        //document.getElementById('error-text-div').classList.add('showAndHide');
+        document.getElementById('error-text').innerHTML = 'We support Monthly and Quarterly with PayPal.';
+        document.getElementById('error-text').classList.add('color-red');
+        return false;
+      
+      }
       showSpinner();
       //document.getElementById("donation-form").reset();
     }
@@ -1016,9 +1023,10 @@ function setTarget(){
                 <input type="hidden" id="returnurl" name="redirecturl"
                   value="https://wired-apps.github.io/wiredpayments/education-for-all-thank-you.html?" />
                 <input type="hidden" id="startdate" name="startdate" value="" />
-                <input type="hidden" id="paymentprocessor" name="paymentprocessor" value="payway" />
+                <input type="hidden" id="paymentprocessor" name="paymentprocessor" value="stripe" />
                 <input type="hidden" id="transactionperiod" name="transactionperiod" value="" />
                 <input type="hidden" id="chargetype" name="chargetype" value="onetime" />
+                <input type="hidden" id="environment" name="environment" value="NPC" />
 
                 <div class="row-is3">
                   <span></span>
@@ -1151,6 +1159,9 @@ function setTarget(){
                 </div>
                 <div class="row-is3 pt-mco">
                   <div class="col-ctb col-5hi">
+                    <div id="error-text-div">
+                      <p id="error-text"></p>
+                    </div>
                     <div>
                       <input type="checkbox" id="disclaimer-checkbox" onclick="onDisclaimerChecked()" />
                       <label for="check-legal-disclaimer">I have read the <a href="#">Legal Disclaimer.</a></label>
