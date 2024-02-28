@@ -721,13 +721,13 @@
       document.querySelector('.donate-page-body').style.background = backgroundStyle;
   };*/
 
-function setTarget(){
+/*function setTarget(){
   var myForm = document.getElementById('donation-form');
   myForm.onsubmit = function() {
     var w = window.open('about:blank','Popup_Window','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400,height=300,left = 312,top = 234');
     this.target = 'Popup_Window';
 };
-}
+}*/
   function showOnetime() {
     document.getElementById('chargetype').value = 'onetime';
     document.getElementById('onetime').checked = true;
@@ -790,14 +790,6 @@ function setTarget(){
     document.getElementById('gatewayname').value = 'payway';
   }
 
-  function assignCreditCard(){
-    document.getElementById('paymentmethod').value = 'Credit Card';
-  }
-
-  function assignDirectDebit(){
-    document.getElementById('paymentmethod').value = 'Direct Debit';
-  }
-
   function showSpinner() {
     document.getElementById('button-text').innerText = "";
     document.getElementById('button-text').classList.add('spinner');
@@ -812,6 +804,8 @@ function setTarget(){
     let amount = document.getElementById('amount').value;
     let paymentprocessor = document.getElementById('paymentprocessor').value;
     let transactionperiod = document.getElementById('transactionperiod').value;
+
+    document.getElementById('error-text-div').classList.add('showAndHide');
 
     if (!firstname || !lastname || !email || !phone || !amount) {
       if (!firstname) {
@@ -881,9 +875,10 @@ function setTarget(){
         return false;
       }
       if(paymentprocessor == 'paypal' && transactionperiod == 'Fortnightly'){
-        //document.getElementById('error-text-div').classList.add('showAndHide');
+        document.getElementById('error-text-div').classList.remove('showAndHide');
         document.getElementById('error-text').innerHTML = 'We support Monthly and Quarterly with PayPal.';
         document.getElementById('error-text').classList.add('color-red');
+        event.preventDefault();
         return false;
       
       }
@@ -1024,7 +1019,7 @@ function setTarget(){
             <h3 class="donate-message">Even the smallest donation can make a huge difference. Thank you for your
               support!</h3>
             <div class="form-b1l">
-              <form onsubmit="return setTarget();validateForm();showSpinner();" id="donation-form"
+              <form onsubmit="return validateForm();" id="donation-form"
                 action="https://wired-payments-npc--demo5.sandbox.my.salesforce-sites.com/services/apexrest/w_pay/charge"
                 method="POST" >
                 <input type="hidden" name="oid" value="00DF30000009wsI" /> 
@@ -1089,7 +1084,7 @@ function setTarget(){
                         <span class="text-lcf">*</span>
                         <span class="required-text label-required-text" style="display:none;">Required</span>
                       </label>
-                      <input name="lastname" type="text" id="lastname" class="form-control-dr3" placeholder="Last Name"
+                      <input name="lastname" type="text" id="lastname"  class="form-control-dr3" placeholder="Last Name"
                         onblur="onFocusLeft('lastname')" onfocus="removeOutline('lastname')" />
                       <div class="invalid-gyr">Please enter your Last name.</div>
                     </div>
@@ -1110,7 +1105,7 @@ function setTarget(){
                         <span class="text-lcf">*</span>
                         <span class="required-text label-required-text" style="display:none;">Required</span>
                       </label>
-                      <input name="phone" type="tel" id="phone" title="Phone in 10 digits" class="form-control-dr3"
+                      <input name="phone" type="tel" id="phone"  title="Phone in 10 digits" class="form-control-dr3"
                         placeholder="Phone Number" onblur="onFocusLeft('phone')" onfocus="removeOutline('phone')" />
                     </div>
                   </div>
@@ -1122,7 +1117,7 @@ function setTarget(){
                         <span class="text-lcf">*</span>
                         <span class="required-text label-required-text" style="display:none;">Required</span>
                       </label>
-                      <input name="email" type="email" id="email" class="form-control-dr3" placeholder="Email"
+                      <input name="email" type="email" id="email"  class="form-control-dr3" placeholder="Email"
                         onblur="onFocusLeft('email')" onfocus="removeOutline('email')" />
                       <div class="invalid-gyr">Please enter a valid email address.</div>
                     </div>
@@ -1133,7 +1128,7 @@ function setTarget(){
                         <span class="text-lcf">*</span>
                         <span class="required-text label-required-text" style="display:none;">Required</span>
                       </label>
-                      <input name="Amount" type="text" id="amount"
+                      <input name="Amount" type="text" id="amount" 
                         onkeydown="if (/^[eE\+\-]$/.test(event.key))event.preventDefault();"
                         onkeyup="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')"
                         onPaste="if (!/^\d+$/.test(event.clipboardData.getData('text/plain')))event.preventDefault();"
