@@ -176,7 +176,7 @@ h1{
             ref_obj = JSON.parse(ref_obj);
             console.log(ref_obj);
             if(ref_obj != undefined){
-                if(ref_obj.paymentStatus != 'Payment Failed'){
+                if(ref_obj.paymentStatus == 'Payment Approved'){
                     document.getElementById('headertext').style = 'color:#2CB554;';
                     document.getElementById('headertext').innerHTML = 'Thank you !';
                     if(ref_obj.chargeType == 'OneTime'){

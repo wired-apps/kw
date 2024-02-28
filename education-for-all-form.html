@@ -1,4 +1,8 @@
-<style>
+<html>
+  <head>
+
+  </head>
+  <style>
   :root {
     --theme-color: #2CB554;
   }
@@ -688,7 +692,7 @@
     color: #ff2343 !important;
   }
   .showAndHide{
-    display:none;
+    display:none !important;
   }
 </style>
 <script>
@@ -725,14 +729,14 @@ function setTarget(){
 };
 }
   function showOnetime() {
+    document.getElementById('chargetype').value = 'onetime';
     document.getElementById('onetime').checked = true;
     document.getElementById('fortnightly').checked = false;
     document.getElementById('monthly').checked = false;
     document.getElementById('quarterly').checked = false;
     document.getElementById("startdate").value = '';
-
-    document.getElementById('installment-period').style.display = 'none';
-    document.getElementById('directdebitdiv').classList.add('showAndHide');
+    document.getElementById('directdebitContainer').classList.add('showAndHide');
+    
 
     var ele = document.getElementsByName("installmentperiod");
     for (var i = 0; i < ele.length; i++)
@@ -741,9 +745,10 @@ function setTarget(){
 
   function showRecurring() {
     document.getElementById('onetime').checked = false;
-    document.getElementById('installment-period').style.display = 'none';
-    document.getElementById('installment-period').style.display = 'none';
-    document.getElementById('directdebitdiv').classList.remove('showAndHide');
+    document.getElementById('chargetype').value = 'recurring';
+    document.getElementById('directdebitContainer').classList.remove('showAndHide');
+    
+    
 
     // Setting Start Date
     var today = new Date();
@@ -754,7 +759,17 @@ function setTarget(){
     today = yyyy + "-" + mm + "-" + dd;
     document.getElementById("startdate").value = today;
 
-    document.getElementById('installment-period').style.display = 'block';
+    
+  }
+
+  function setFortnightly(){
+    document.getElementById('transactionperiod').value='fortnightly';
+  }
+  function setMonthly(){
+    document.getElementById('transactionperiod').value='monthly';
+  }
+  function setQuarterly(){
+    document.getElementById('transactionperiod').value='quarterly';
   }
 
   function onDisclaimerChecked() {
@@ -764,6 +779,16 @@ function setTarget(){
     else {
       document.getElementById('donate-button').disabled = true;
     }
+  }
+
+  function paymentByPaypal(){
+    document.getElementById('paymentprocessor').value = 'paypal';
+    document.getElementById('paymentmethod').value = 'paypal';
+  }
+
+  function paymentByAssignedGateway(){
+    document.getElementById('gatewayname').value = 'payway';
+    document.getElementById('paymentmethod').value = 'credit card';
   }
 
   function showSpinner() {
@@ -973,6 +998,7 @@ function setTarget(){
   }
 
 </script>
+<body>
 <div class="donate-page-body" style="width:100%;">
   <div class="container">
     <div class="row justify-content-sm-center donation-form-container">
@@ -990,7 +1016,9 @@ function setTarget(){
                 <input type="hidden" id="returnurl" name="redirecturl"
                   value="https://wired-apps.github.io/wiredpayments/education-for-all-thank-you.html?" />
                 <input type="hidden" id="startdate" name="startdate" value="" />
-                <input type="hidden" id="gatewayname" name="gatewayname" value="payway" />
+                <input type="hidden" id="paymentprocessor" name="paymentprocessor" value="payway" />
+                <input type="hidden" id="transactionperiod" name="transactionperiod" value="" />
+                <input type="hidden" id="chargetype" name="chargetype" value="onetime" />
 
                 <div class="row-is3">
                   <span></span>
@@ -1004,23 +1032,23 @@ function setTarget(){
                 <div class="row-is3 pt-dws payment-176">
                   <div class="pt-ahz">
                     <div class="form-ra1 form-4ol">
-                      <input value="OneTime" name="chargetype" type="radio" id="onetime" class="input-rn9"
+                      <input value="OneTime"  type="radio" id="onetime" class="input-rn9"
                         onclick="showOnetime()" />
                       <label for="vis-t8z" class="radio-button-label">Onetime</label>
                     </div>
                     <div class="form-ra1 form-4ol">
-                      <input value="fortnightly" name="installment-period" type="radio" id="fortnightly"
-                        class="input-rn9" onclick="showRecurring()" />
+                      <input value="fortnightly"  type="radio" id="fortnightly"
+                        class="input-rn9" onclick="showRecurring(); setFortnightly();" />
                       <label for="mas-sxn" class="radio-button-label">Fortnightly</label>
                     </div>
                     <div class="form-ra1 form-4ol">
-                      <input value="monthly" name="installment-period" type="radio" id="monthly" class="input-rn9"
-                        onclick="showRecurring()" />
+                      <input value="monthly"  type="radio" id="monthly" class="input-rn9"
+                        onclick="showRecurring(); setMonthly();" />
                       <label for="mas-sxn" class="radio-button-label">Monthly</label>
                     </div>
                     <div class="form-ra1 form-4ol">
-                      <input value="quarterly" name="installment-period" type="radio" id="quarterly" class="input-rn9"
-                        onclick="showRecurring()" />
+                      <input value="quarterly"  type="radio" id="quarterly" class="input-rn9"
+                        onclick="showRecurring(); setQuarterly();" />
                       <label for="mas-sxn" class="radio-button-label">Quarterly</label>
                     </div>
                   </div>
@@ -1106,15 +1134,15 @@ function setTarget(){
                 <div class="row-is3 pt-dws payment-176 payment-method-style">
                   <div class="form-ra1 form-4ol">
                     <input value="Credit Card" name="paymentmethod" checked type="radio" id="vis-t8z" class="input-rn9"
-                      onclick="document.getElementById('gatewayname').value=''" />
+                      onclick="paymentByAssignedGateway();" />
                     <img style="width: 60px;" src="./images/credit-card.png" />
                   </div>
                   <div class="form-ra1 form-4ol">
-                    <input value="Credit Card" name="paymentmethod" type="radio" id="pay-h7q" class="input-rn9"
-                      onclick="document.getElementById('gatewayname').value='paypal'" />
+                    <input value="paypal" name="paymentmethod" type="radio" id="pay-h7q" class="input-rn9"
+                      onclick="paymentByPaypal();" />
                     <img style="width: 70px;" src="./images/PayPal.svg" />
                   </div>
-                  <div id="directdebitdiv" class="form-ra1 form-4ol showAndHide>
+                  <div id="directdebitContainer" class="form-ra1 form-4ol">
                     <input value="Direct Debit" name="paymentmethod" type="radio" id="ban-h4j" class="input-rn9"
                       onclick="document.getElementById('gatewayname').value=''" />
                     <img style="width: 50px;" src="./images/bank-transfer.svg" />
@@ -1146,3 +1174,5 @@ function setTarget(){
     </div>
   </div>
 </div>
+</body>
+</html>
