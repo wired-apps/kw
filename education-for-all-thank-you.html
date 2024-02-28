@@ -196,8 +196,17 @@ h1{
                         document.getElementById('subheadertext').innerHTML = 'Thank you for your <b>'+ref_obj.installPeriod.toLowerCase()+'</b> regular giving of <b>$'+ref_obj.amount+'</b> from <b>'+formattedToday+'</b>.';
                         document.getElementById('receiptBody').innerHTML = 'Your generous donation is deeply appreciated and will create a meaningful impact.';
                     }
+
                     
-                    
+                    console.log(' Parent window '+window.parent.location.href);
+                    console.log(' Child window '+window.location.href);
+                    /*setTimeout(function(){
+                      let homeUrl = window.location.href;
+                      if(){
+
+                      }
+                      window.location.href='https://wired-apps.github.io/wiredpayments/fundraiser/';
+                    },30000);*/
                     confetti();
                    
                    
