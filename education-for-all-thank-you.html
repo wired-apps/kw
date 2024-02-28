@@ -200,13 +200,15 @@ h1{
                     
                     console.log(' Parent window '+window.parent.location.href);
                     console.log(' Child window '+window.location.href);
-                    /*setTimeout(function(){
-                      let homeUrl = window.location.href;
-                      if(){
-
+                    setTimeout(function(){
+                      let parentUrl = window.parent.location.href;
+                      if(parentUrl.includes('https://wired-apps.github.io/wiredpayments/fundraiser/')){
+                        window.parent.location.reload();
+                      }else{
+                        window.location.href='https://wired-apps.github.io/wiredpayments/fundraiser/';
                       }
-                      window.location.href='https://wired-apps.github.io/wiredpayments/fundraiser/';
-                    },30000);*/
+                      
+                    },1000);
                     confetti();
                    
                    
