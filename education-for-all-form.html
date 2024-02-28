@@ -721,13 +721,21 @@
       document.querySelector('.donate-page-body').style.background = backgroundStyle;
   };*/
 
-/*function setTarget(){
+function setTarget(){
   var myForm = document.getElementById('donation-form');
   myForm.onsubmit = function() {
     var w = window.open('about:blank','Popup_Window','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400,height=300,left = 312,top = 234');
     this.target = 'Popup_Window';
 };
-}*/
+}
+
+/*window.addEventListener('submit',function(event){
+  event.preventDefault();
+  var myForm = document.getElementById('donation-form');
+  var w = window.open('','Popup_Window','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400,height=300,left = 312,top = 234');
+    this.target = 'Popup_Window';
+  
+});*/
   function showOnetime() {
     document.getElementById('chargetype').value = 'onetime';
     document.getElementById('onetime').checked = true;
@@ -858,20 +866,21 @@
         document.getElementsByClassName('required-text')[3].innerHTML = "Please enter valid email";
         return false;
       }
-      if (Number(amount) <= 0) {
-        document.getElementById('amount').classList.add('required-input');
-        document.getElementsByClassName('required-text')[4].style.display = 'block';
-        document.getElementsByClassName('required-text')[4].classList.add('label-required-text');
-        document.getElementsByClassName('required-text')[4].classList.add('color-red');
-        document.getElementsByClassName('required-text')[4].innerHTML = "Please enter valid amount";
-        return false;
-      }
+      
       if (!numberRegex.test(Number(amount))) {
         document.getElementById('amount').classList.add('required-input');
         document.getElementsByClassName('required-text')[4].style.display = 'block';
         document.getElementsByClassName('required-text')[4].classList.add('label-required-text');
         document.getElementsByClassName('required-text')[4].classList.add('color-red');
-        document.getElementsByClassName('required-text')[4].innerHTML = "invalid amount";
+        document.getElementsByClassName('required-text')[4].innerHTML = "Please enter amount with two decimal places.";
+        return false;
+      }
+      if (Number(amount) < 1 || Number(amount) > 10000) {
+        document.getElementById('amount').classList.add('required-input');
+        document.getElementsByClassName('required-text')[4].style.display = 'block';
+        document.getElementsByClassName('required-text')[4].classList.add('label-required-text');
+        document.getElementsByClassName('required-text')[4].classList.add('color-red');
+        document.getElementsByClassName('required-text')[4].innerHTML = "Please enter amount between $1 and $10,000.";
         return false;
       }
       if(paymentprocessor == 'paypal' && transactionperiod == 'Fortnightly'){
