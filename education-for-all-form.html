@@ -14,6 +14,7 @@
   }
 
   .donate-page-body {
+    font-family: 'Mansalva', cursive !important;
     padding: 20px 0px;
     background: linear-gradient(rgba(44, 181, 84, 0.65), rgba(44, 181, 84, 0.65)), url(./images/children-banner.jpg) no-repeat center center;
     background-image: linear-gradient(rgba(44, 181, 84, 0.65), rgba(44, 181, 84, 0.65)), url(./images/children-banner.jpg);
@@ -1025,7 +1026,7 @@ function setTarget(){
       <div style="width:100%;">
         <div class="row-is3 content-pj7">
           <div class="col-6oi col-dia col-lrq col-pa5 form-ooa">
-            <h3 class="donate-message">Even the smallest donation can make a huge difference. Thank you for your
+            <h3 class="donate-message" style="">Even the smallest donation can make a huge difference. Thank you for your
               support!</h3>
             <div class="form-b1l">
               <form onsubmit="return validateForm();" id="donation-form"
@@ -1059,18 +1060,18 @@ function setTarget(){
                       <label for="vis-t8z" class="radio-button-label">Onetime</label>
                     </div>
                     <div class="form-ra1 form-4ol">
-                      <input value="fortnightly"  type="radio" id="fortnightly"
-                        class="input-rn9" onclick="showRecurring(); setFortnightly();" />
+                      <input value="fortnightly"  type="radio" id="transactionperiod" name="transactionperiod"
+                        class="input-rn9" onclick="showRecurring(); " />
                       <label for="mas-sxn" class="radio-button-label">Fortnightly</label>
                     </div>
                     <div class="form-ra1 form-4ol">
-                      <input value="monthly"  type="radio" id="monthly" class="input-rn9"
-                        onclick="showRecurring(); setMonthly();" />
+                      <input value="monthly"  type="radio" id="transactionperiod" name="transactionperiod" class="input-rn9"
+                        onclick="showRecurring(); " />
                       <label for="mas-sxn" class="radio-button-label">Monthly</label>
                     </div>
                     <div class="form-ra1 form-4ol">
-                      <input value="quarterly"  type="radio" id="quarterly" class="input-rn9"
-                        onclick="showRecurring(); setQuarterly();" />
+                      <input value="quarterly"  type="radio" id="transactionperiod" name="transactionperiod" class="input-rn9"
+                        onclick="showRecurring(); " />
                       <label for="mas-sxn" class="radio-button-label">Quarterly</label>
                     </div>
                   </div>
@@ -1102,7 +1103,7 @@ function setTarget(){
                 <div class="row-is3 pt-ahz row pt-2">
                   <div class="col-6oi col-5hi">
                     <div class="form-group-wvp">
-                      <label for="organisationName">Organisation Name <label style="font-size: 11px;margin:0px;">(If
+                      <label for="organisationName">Organisation Name <label style="font-size: 10px;margin:0px;">(If
                           donating on behalf of your company)</label></label>
                       <input name="organisationName" type="text" id="organisationName" class="form-control-dr3"
                         placeholder="Organisation Name" />
@@ -1150,7 +1151,7 @@ function setTarget(){
                 </div>
                 <div class="row-is3">
                   <div class="col-6oi col-5hi">
-                    <label for="paymentmethod">How would you like to Pay? <span class="text-lcf">*</span></label>
+                    <label for="paymentmethod">How would you like to pay? <span class="text-lcf">*</span></label>
                   </div>
                 </div>
                 <div class="row-is3 pt-dws payment-176 payment-method-style">
