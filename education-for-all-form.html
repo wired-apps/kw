@@ -788,7 +788,14 @@ function setTarget(){
 
   function paymentByAssignedGateway(){
     document.getElementById('gatewayname').value = 'payway';
-    document.getElementById('paymentmethod').value = 'credit card';
+  }
+
+  function assignCreditCard(){
+    document.getElementById('paymentmethod').value = 'Credit Card';
+  }
+
+  function assignDirectDebit(){
+    document.getElementById('paymentmethod').value = 'Direct Debit';
   }
 
   function showSpinner() {
@@ -1029,6 +1036,7 @@ function setTarget(){
                 <input type="hidden" id="transactionperiod" name="transactionperiod" value="" />
                 <input type="hidden" id="chargetype" name="chargetype" value="onetime" />
                 <input type="hidden" id="environment" name="environment" value="NPC" />
+                <input type="hidden" id="paymentmethod" name="paymentmethod" value="" />
 
                 <div class="row-is3">
                   <span></span>
@@ -1143,18 +1151,18 @@ function setTarget(){
                 </div>
                 <div class="row-is3 pt-dws payment-176 payment-method-style">
                   <div class="form-ra1 form-4ol">
-                    <input value="Credit Card" name="paymentmethod" checked type="radio" id="vis-t8z" class="input-rn9"
-                      onclick="paymentByAssignedGateway();" />
+                    <input value="Credit Card" name="creditcard" checked type="radio" id="vis-t8z" class="input-rn9"
+                      onclick="paymentByAssignedGateway();assignCreditCard();" />
                     <img style="width: 60px;" src="./images/credit-card.png" />
                   </div>
                   <div class="form-ra1 form-4ol">
-                    <input value="paypal" name="paymentmethod" type="radio" id="pay-h7q" class="input-rn9"
+                    <input value="paypal" name="paypal" type="radio" id="pay-h7q" class="input-rn9"
                       onclick="paymentByPaypal();" />
                     <img style="width: 70px;" src="./images/PayPal.svg" />
                   </div>
                   <div id="directdebitContainer" class="form-ra1 form-4ol">
-                    <input value="Direct Debit" name="paymentmethod" type="radio" id="ban-h4j" class="input-rn9"
-                      onclick="document.getElementById('gatewayname').value=''" />
+                    <input value="Direct Debit" name="directdebit" type="radio" id="ban-h4j" class="input-rn9"
+                      onclick="paymentByAssignedGateway();assignDirectDebit();" />
                     <img style="width: 50px;" src="./images/bank-transfer.svg" />
                   </div>
                   <div class="custom-invalid-dhn"></div>
