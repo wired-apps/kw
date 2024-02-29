@@ -1706,9 +1706,12 @@
         {
             if(id === 'amount')
             {
+                try{
                 document.getElementById(id).classList.remove('required-input');
                 document.getElementsByClassName('required-text')[0].style.display='none';
-                document.getElementsByClassName('required-text')[0].innerHTML="";
+                document.getElementsByClassName('required-text')[0].innerHTML="";    
+                }catch(e){}
+                
             }
             if(id === 'firstname')
             {
