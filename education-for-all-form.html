@@ -722,13 +722,7 @@
       document.querySelector('.donate-page-body').style.background = backgroundStyle;
   };*/
 
-function setTarget(){
-  var myForm = document.getElementById('donation-form');
-  myForm.onsubmit = function() {
-    var w = window.open('about:blank','Popup_Window','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=400,height=300,left = 312,top = 234');
-    this.target = 'Popup_Window';
-};
-}
+
 
 /*window.addEventListener('submit',function(event){
   event.preventDefault();
@@ -1049,7 +1043,7 @@ function setTarget(){
               support!</h3>
             <div class="form-b1l">
               <form onsubmit="return validateForm();" id="donation-form"
-                action="https://wired-payments-npc--demo5.sandbox.my.salesforce-sites.com/services/apexrest/w_pay/charge"
+                action="https://wired-payments-npc.my.salesforce-sites.com/services/apexrest/w_pay/charge"
                 method="POST" >
                 <input type="hidden" name="oid" value="00DF30000009wsI" /> 
                 <input type="hidden" name="campaignid" value="701F3000000ceokIAA" />
