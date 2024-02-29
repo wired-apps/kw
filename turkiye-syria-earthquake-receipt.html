@@ -2405,70 +2405,93 @@
           }  
           
       </style>
-      <script>
-        var ref = window.location.search;
-        if(!ref.includes('#receipt'))
-        {
-          ref = ref + '#receipt';
-          window.location.href= ref;
-        }
-        ref = ref.replace('#receipt','');
-        var query_string = ref.split('reference=');
-        var ref_obj = atob(decodeURIComponent(query_string[1]));
-        ref_obj = JSON.parse(ref_obj);
-        console.log(ref_obj);
-
-        function afterPageLoads(){
-          if(ref_obj.paymentResponse.includes('Payment was setup!') || ref_obj.paymentResponse.includes('Payment successful!'))
+      <script type="module">
+      import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+       function handleReceipt(){
+            var ref = window.location.search;
+          if(!ref.includes('#receipt'))
           {
-            //If Success
-            if(ref_obj.chargeType == "OneTime"){
-              document.getElementById("message").innerHTML = "Thank You!\u{1F389}";
-              document.getElementById("heading").innerHTML = "Thank you for your donation. Your support is greatly appreciated."
-              document.getElementById("social-media").style.display = "block";
-              
-            }
-            else{
-              document.getElementById("message").innerHTML = "Thank You !\u{1F389}";
-              document.getElementById("heading").innerHTML = "Thank you for your " + (ref_obj.installPeriod.toLowerCase()) + " donation of $"+ ref_obj.amount +". Your continued support is greatly appreciated."
-              document.getElementById("success_receipt").style.display = "block";
-              document.getElementById("social-media").style.display = "block";
-            }
-            
-            document.getElementById("message").style.display = "block";
-            console.log(document.getElementById('message').innerHTML);
+            ref = ref + '#receipt';
+            window.location.href= ref;
           }
-          else{
-            //If Failed
-            if(ref_obj.retryURL != null || ref_obj.retryURL != undefined){
-              document.getElementById("message").innerHTML = "Oops!\u{1F61E}";
-              document.getElementById("heading").innerHTML = "It seems your donation attempt was unsuccessful, we apologize for any inconvenience. Please double-check your donation details and try again.<br><br> Thank you for your support."
-              document.getElementById("success_receipt").style.display = "none";
-              document.getElementById("success_influence").style.display = "none";
-              document.getElementById("success_influence1").style.display = "none";
-              document.getElementById("e-card").style.display = "none";
-              document.getElementById("retryBtn").style.display = "flex";
-            }
-            else{
-              document.getElementById("message").innerHTML = "Oops!";
-              document.getElementById("retryBtn").style.display = "flex";
-              ref_obj.retryURL = 'https://wired-apps.github.io/wiredpayments/turkiye-syria-earthquake.html';
-            }
+          ref = ref.replace('#receipt','');
+          var query_string = ref.split('reference=');
+          var ref_obj = atob(decodeURIComponent(query_string[1]));
+          ref_obj = JSON.parse(ref_obj);
+          console.log(ref_obj);
+          if (ref_obj.amount != null || ref_obj.amount != undefined)
+        {
+          const amt = new Intl.NumberFormat('en-AU', { style: 'currency', currency: 'AUD' }).format(ref_obj.amount);
+          document.getElementById("amount").innerHTML = amt;
+          console.log(amt);
+        }
+				console.log(ref_obj.paymentResponse);
+				if(ref_obj.paymentResponse.includes('Payment was setup!') || ref_obj.paymentResponse.includes('Payment successful!'))
+        {
+          console.log('success block');
+					if(ref_obj.chargeType == "OneTime")
+          {
+						document.getElementById("success_message").innerHTML = "You have successfully made a donation of $"+ref_obj.amount+'.';
           }
+          else
+          {
+						document.getElementById("success_message").innerHTML = "Your payment has been successfully setup.";
+						// document.getElementById("installPeriod").innerHTML = "Installment Period : "+ref_obj.installPeriod;
+						// document.getElementById("installDate").innerHTML = "Installment Date : "+ref_obj.nextInstallmentDate;
+						document.getElementById("amount").innerHTML = "Amount : $"+ref_obj.amount;
+					}
+					document.getElementById('successDiv').style.display = "block";
+          document.getElementById("success_supporting_message").style.display = "block";
+          document.getElementById("success_supporting_footer").style.display = "block";
+          document.getElementById("success_message").style.display = "block";
+          console.log(document.getElementById('success_message').innerHTML);
+          confetti();
+   			}
+        else
+        {
+          console.log('failed block');
+          document.getElementById("failure_message").innerHTML = ref_obj.paymentResponse;
+					document.getElementById('failedDiv').style.display = "block";
+					if (ref_obj.retryURL != null || ref_obj.retryURL != undefined)
+          {
+						document.getElementById('retryBtn').style.display = "flex";
+					}
+          else
+          {
+						document.getElementById('retryBtn').style.display = "flex";
+            ref_obj.retryURL = 'https://wired-apps.github.io/wiredpayments/make-the-tomorrow-beautiful-form.html';
+          }
+          console.log(ref_obj.retryURL);
+          console.log(document.getElementById('failure_message').innerHTML);
         }
-        function retryDonation(){
-          document.getElementById('retryBtn').style.display = "none";
-          console.log(ref_obj.retryURL)
-          window.location.href = ref_obj.retryURL;
-        }
-          
+       }
+       window.onload = handleReceipt()
 
-      
-      
-      </script>
+    </script>
+    <script>
+     
+            
+      function retryPayment()
+      {
+        var ref = window.location.search;
+          if(!ref.includes('#receipt'))
+          {
+            ref = ref + '#receipt';
+            window.location.href= ref;
+          }
+          ref = ref.replace('#receipt','');
+          var query_string = ref.split('reference=');
+          var ref_obj = atob(decodeURIComponent(query_string[1]));
+          ref_obj = JSON.parse(ref_obj);
+        document.getElementById('failedDiv').style.display = "none";
+        document.getElementById('retryBtn').style.display = "none";
+        console.log(ref_obj.retryURL)
+        window.location.href = ref_obj.retryURL;
+      }
+    </script>
    </head>  
    
-<body onload="afterPageLoads()">
+<body >
 <section class="c-ygb" id="thankyou-body">
     <div class="image-oq3" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(./images/turkiye-images/child-saved-in-earthquake.png);">
     </div>
