@@ -2458,6 +2458,16 @@
 	   </script>
       <script>
         function retryDonation(){
+		var ref = window.location.search;
+        if(!ref.includes('#receipt'))
+        {
+          ref = ref + '#receipt';
+          window.location.href= ref;
+        }
+        ref = ref.replace('#receipt','');
+        var query_string = ref.split('reference=');
+        var ref_obj = atob(decodeURIComponent(query_string[1]));
+        ref_obj = JSON.parse(ref_obj);
           document.getElementById('retryBtn').style.display = "none";
           console.log(ref_obj.retryURL)
           window.location.href = ref_obj.retryURL;
