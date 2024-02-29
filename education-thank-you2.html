@@ -105,22 +105,21 @@
         letter-spacing: .2rem;
     }
     </style>
-    <script>
-      var ref = window.location.search;
-      if(!ref.includes('#receipt'))
-      {
-        ref = ref + '#receipt';
-        window.location.href= ref;
-      }
-      ref = ref.replace('#receipt','');
-      var query_string = ref.split('reference=');
-      var ref_obj = atob(decodeURIComponent(query_string[1]));
-      ref_obj = JSON.parse(ref_obj);
-      console.log(ref_obj);
-      
-      function afterPageLoad()
-      {
-        if (ref_obj.amount != null || ref_obj.amount != undefined)
+    <script type="module">
+      import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+       function handleReceipt(){
+            var ref = window.location.search;
+          if(!ref.includes('#receipt'))
+          {
+            ref = ref + '#receipt';
+            window.location.href= ref;
+          }
+          ref = ref.replace('#receipt','');
+          var query_string = ref.split('reference=');
+          var ref_obj = atob(decodeURIComponent(query_string[1]));
+          ref_obj = JSON.parse(ref_obj);
+          console.log(ref_obj);
+          if (ref_obj.amount != null || ref_obj.amount != undefined)
         {
           const amt = new Intl.NumberFormat('en-AU', { style: 'currency', currency: 'AUD' }).format(ref_obj.amount);
           document.getElementById("amount").innerHTML = amt;
@@ -146,6 +145,7 @@
           document.getElementById("success_supporting_footer").style.display = "block";
           document.getElementById("success_message").style.display = "block";
           console.log(document.getElementById('success_message').innerHTML);
+          confetti();
    			}
         else
         {
@@ -164,10 +164,25 @@
           console.log(ref_obj.retryURL);
           console.log(document.getElementById('failure_message').innerHTML);
         }
-      }
+       }
+       window.onload = handleReceipt()
+
+    </script>
+    <script>
+     
             
       function retryPayment()
       {
+        var ref = window.location.search;
+          if(!ref.includes('#receipt'))
+          {
+            ref = ref + '#receipt';
+            window.location.href= ref;
+          }
+          ref = ref.replace('#receipt','');
+          var query_string = ref.split('reference=');
+          var ref_obj = atob(decodeURIComponent(query_string[1]));
+          ref_obj = JSON.parse(ref_obj);
         document.getElementById('failedDiv').style.display = "none";
         document.getElementById('retryBtn').style.display = "none";
         console.log(ref_obj.retryURL)
@@ -175,7 +190,7 @@
       }
     </script>
   </head>
-  <body onload="afterPageLoad()"; style="background-color: white; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
+  <body  style="background-color: white; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
     <table border="0" cellpadding="0" cellspacing="0" class="nl-container" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #eafff0;" width="100%">
       <tbody>
         <tr>
