@@ -1680,13 +1680,6 @@
                 return false;
             }
             else{
-                if(Number(amount)<1)
-                {
-                    document.getElementById('amount').classList.add('required-input');
-                    document.getElementsByClassName('required-text')[0].style.display='block';
-                    document.getElementsByClassName('required-text')[0].innerHTML="Please enter valid amount";
-                    return false;
-                }
                 if(!phoneRegex.test(phone))
                 {
                     document.getElementById('phone').classList.add('required-input');
