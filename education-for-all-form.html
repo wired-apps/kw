@@ -815,6 +815,13 @@ function setTarget(){
         transactionperiod = transactionPeriodList[i].value;
       }
     }
+    var paymentMethodList = document.getElementsByName('paymentmethod');
+    let paymentmethod;
+    for(var i = 0; i < paymentMethodList.length; i++){
+      if(paymentMethodList[i].checked){
+        paymentmethod = paymentMethodList[i].value;
+      }
+    }
     
     
 
@@ -895,6 +902,14 @@ function setTarget(){
         event.preventDefault();
         return false;
       
+      }
+      if(paymentprocessor == 'stripe' && paymentmethod == 'Direct Debit'  && amount > 1500){
+        document.getElementById('amount').classList.add('required-input');
+        document.getElementsByClassName('required-text')[4].style.display = 'block';
+        document.getElementsByClassName('required-text')[4].classList.add('label-required-text');
+        document.getElementsByClassName('required-text')[4].classList.add('color-red');
+        document.getElementsByClassName('required-text')[4].innerHTML = "Please enter amount between $1 and $1500.";
+        return false;
       }
       showSpinner();
       //document.getElementById("donation-form").reset();
