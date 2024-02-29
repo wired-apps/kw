@@ -1,7 +1,7 @@
 
 <html>
     <head>
-        <script type="module" src="confetti.js"></script>
+      
         </head>
         
         <style>
@@ -113,6 +113,7 @@ h1{
 }
         </style>
 <body style="height:90vh;">
+
     <div class=content>
         <div id="parentDiv" class="wrapper-1">
           <div class="wrapper-2">
@@ -120,7 +121,7 @@ h1{
             <p id="subheadertext"></p>
             <br/>
             <p id="receiptBody"></p>
-            
+            <button id="btn">CLick me</button>
             <div id="retryDiv" style="display: none;">
                 
             <button id="retryBtn" style="cursor:pointer;" class="go-home" onclick="retryTransaction();">
@@ -168,15 +169,17 @@ h1{
 
       <h6 id="redirectionmessage" style="font-weight: bold;text-align: center;"></h6>
       </div>
-      <script type="text/javascript" >
+
+      <script type='module'>
+        import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+        function handleReceipt(){
         var receiptUrl = window.location.href;
         var retryUrl = '';
-        console.log('receiptUrl==> '+receiptUrl);
         if(receiptUrl.includes('reference')){
             var query_string = receiptUrl.split('reference=');
             var ref_obj = atob(decodeURIComponent(query_string[1]));
             ref_obj = JSON.parse(ref_obj);
-            console.log(ref_obj);
+            
             if(ref_obj != undefined){
                 if(ref_obj.paymentStatus == 'Payment Approved'){
                     document.getElementById('headertext').style = 'color:#2CB554;';
@@ -200,10 +203,9 @@ h1{
                         document.getElementById('receiptBody').innerHTML = 'Your generous donation is deeply appreciated and will create a meaningful impact.';
                     }
 
-                    
-                    console.log(' Parent window '+window.parent.location.href);
-                    console.log(' Child window '+window.location.href);
+                    confetti();
                     setTimeout(function(){
+                      
                       let parentUrl = window.parent.location.href;
                       if(parentUrl.includes('https://wired-apps.github.io/wiredpayments/fundraiser/')){
                         window.parent.location.reload();
@@ -212,8 +214,6 @@ h1{
                       }
                       
                     },10000);
-                    confetti();
-                   
                    
                 }else{
                     document.getElementById('headertext').style = 'color:red;';
@@ -225,19 +225,16 @@ h1{
                     document.getElementById('parentDiv').classList.add('wrapper-error');
                     document.getElementById('socials').style="display:none;"
                     retryUrl = ref_obj.retryURL;
-                    console.log('RETRY ==> '+retryUrl);
                 }
-                
-            }
-
-            function retryTransaction(){
-              console.log('RETRY ==> '+retryUrl);
+          }
+        }
+      }
+        window.onload= handleReceipt()
+        function retryTransaction(){
               window.location.href = retryUrl;
             }
-        }
-        </script>
-      
-      
+      </script>
+
       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
     </body>
 
