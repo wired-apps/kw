@@ -230,11 +230,25 @@ h1{
         }
       }
         window.onload= handleReceipt()
-        function retryTransaction(){
-              window.location.href = retryUrl;
-        }
-        
       </script>
+    <script>
+       
+        function retryTransaction(){
+             var retryUrl = '';
+        if(receiptUrl.includes('reference')){
+            var query_string = receiptUrl.split('reference=');
+            var ref_obj = atob(decodeURIComponent(query_string[1]));
+            ref_obj = JSON.parse(ref_obj);
+            if(ref_obj != undefined){
+                if(ref_obj.paymentStatus == 'Payment Failed'){
+                    window.location.href = ref_obj.retryURL;
+                }
+            }
+            
+        }
+              
+        }
+    </script>
       
 
       <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
