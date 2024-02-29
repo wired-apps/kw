@@ -1,7 +1,7 @@
 import confetti from 'https://cdn.skypack.dev/canvas-confetti';
 
 
-        function handleReceipt(){
+      function handleReceipt(){
         var receiptUrl = window.location.href;
         var retryUrl = '';
         if(receiptUrl.includes('reference')){
