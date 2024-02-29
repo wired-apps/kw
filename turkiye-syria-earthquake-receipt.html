@@ -2405,9 +2405,70 @@
           }  
           
       </style>
-   </head>
-   </script>
-<body>
+      <script>
+        var ref = window.location.search;
+        if(!ref.includes('#receipt'))
+        {
+          ref = ref + '#receipt';
+          window.location.href= ref;
+        }
+        ref = ref.replace('#receipt','');
+        var query_string = ref.split('reference=');
+        var ref_obj = atob(decodeURIComponent(query_string[1]));
+        ref_obj = JSON.parse(ref_obj);
+        console.log(ref_obj);
+
+        function afterPageLoads(){
+          if(ref_obj.paymentResponse.includes('Payment was setup!') || ref_obj.paymentResponse.includes('Payment successful!'))
+          {
+            //If Success
+            if(ref_obj.chargeType == "OneTime"){
+              document.getElementById("message").innerHTML = "Thank You!\u{1F389}";
+              document.getElementById("heading").innerHTML = "Thank you for your donation. Your support is greatly appreciated."
+              document.getElementById("social-media").style.display = "block";
+              
+            }
+            else{
+              document.getElementById("message").innerHTML = "Thank You !\u{1F389}";
+              document.getElementById("heading").innerHTML = "Thank you for your " + (ref_obj.installPeriod.toLowerCase()) + " donation of $"+ ref_obj.amount +". Your continued support is greatly appreciated."
+              document.getElementById("success_receipt").style.display = "block";
+              document.getElementById("social-media").style.display = "block";
+            }
+            
+            document.getElementById("message").style.display = "block";
+            console.log(document.getElementById('message').innerHTML);
+          }
+          else{
+            //If Failed
+            if(ref_obj.retryURL != null || ref_obj.retryURL != undefined){
+              document.getElementById("message").innerHTML = "Oops!\u{1F61E}";
+              document.getElementById("heading").innerHTML = "It seems your donation attempt was unsuccessful, we apologize for any inconvenience. Please double-check your donation details and try again.<br><br> Thank you for your support."
+              document.getElementById("success_receipt").style.display = "none";
+              document.getElementById("success_influence").style.display = "none";
+              document.getElementById("success_influence1").style.display = "none";
+              document.getElementById("e-card").style.display = "none";
+              document.getElementById("retryBtn").style.display = "flex";
+            }
+            else{
+              document.getElementById("message").innerHTML = "Oops!";
+              document.getElementById("retryBtn").style.display = "flex";
+              ref_obj.retryURL = 'http://127.0.0.1:5500/turkiye-syria-earthquake.html';
+            }
+          }
+        }
+        function retryDonation(){
+          document.getElementById('retryBtn').style.display = "none";
+          console.log(ref_obj.retryURL)
+          window.location.href = ref_obj.retryURL;
+        }
+          
+
+      
+      
+      </script>
+   </head>  
+   
+<body onload="afterPageLoads()">
 <section class="c-ygb" id="thankyou-body">
     <div class="image-oq3" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(./images/turkiye-images/child-saved-in-earthquake.png);">
     </div>
@@ -2418,16 +2479,21 @@
     </div>
     <div class="form-s4b success-e7b">
         <div class="c-ogr">
-            <h2 class="title-kxj">Thank You!</h2>
-            <div class="c-qv2">
-                <p>A receipt will be sent to your email in the coming days.<br></p>
+            <h2 class="title-kxj" id="message" style="display: block; padding-bottom:12px; letter-spacing: 2px;" >Thank you!&#x1F389;</h2>
+            <p id="heading" style="font-weight:500; font-size: 16px; display: block; padding-left: 12px; padding-bottom:18px "></p>
+            <div id="retryBtn" style="display: none ;justify-content: center;">
+              <button type="button" style="cursor:pointer;text-align:center;font-size:18px; padding:10px 18px;background-color: #ba3642;color:white;border: 0px;border-radius: 5px;" name="retryButton" class="btn btn-secondary" onclick="retryDonation();">Retry</button>
+            </div>
+            <div class="c-qv2" id="success_receipt" style="display: block;">
+                <p style="font-size: 16px; padding-left: 12px">A receipt will be sent to your email in the coming days.<br></p>
             </div><b>
-                <div class="c-lgl">
-                    <h3 class="title-6iz">Help Us Spread The Word</h3>
-                    <div class="c-73t">
-                        <p>Sharing the cause with your friends and family can spread awareness and inspire more people to join.</p>
+                <div class="c-lgl" id="success_influence">
+                    <h3 id="success_influence0" style="font-family: UniversLTStd-UltraCn; padding-left: 12px">Help Us Spread The Word</h3>
+                    <div class="c-73t" id="success_influence1">
+                        <p style="padding-left: 12px;">Sharing the cause with your friends and family can spread awareness and inspire more people to join.</p>
                     </div>
-                    <div class="add-16f">
+                    
+                    <div id="social-media" class="add-16f" style="display: none;">
                         <div class="a2a-g6d a2a-dsm list-xm2"><a class="button-m5s" href="/#facebook"><span class="a2a-gf9"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                         <path fill="#fff" d="M28 16c0-6.627-5.373-12-12-12S4 9.373 4 16c0 5.628 3.875 10.35 9.101 11.647v-7.98h-2.474V16H13.1v-1.58c0-4.085 1.849-5.978 5.859-5.978.76 0 2.072.15 2.608.298v3.325c-.283-.03-.775-.045-1.386-.045-1.967 0-2.728.745-2.728 2.683V16h3.92l-.673 3.667h-3.247v8.245C23.395 27.195 28 22.135 28 16Z"></path>
                                     </svg></span><span class="label-h66">Facebook</span></a><a class="button-oxn" href="/#twitter"><span class="a2a-gf9"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -2443,7 +2509,7 @@
                 </div>
             </b>
             <b><br>
-                <a href="#" style="color: #ba3642;text-decoration:underline;">SEND AN ECARD OR PRINT CARD.</a>
+                <a id="e-card" href="#" style="color: #ba3642;text-decoration:underline;">SEND AN ECARD OR PRINT CARD.</a>
             </b>
         </div><b> </b>
     </div><b>
