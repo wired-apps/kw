@@ -1757,7 +1757,7 @@
                 {
                     document.getElementById(id).classList.add('required-input');
                     document.getElementsByClassName('required-text')[0].style.display='block';
-                    document.getElementsByClassName('required-text')[0].innerHTML="Please enter valid amount between 1 and 10,000.";
+                    document.getElementsByClassName('required-text')[0].innerHTML="Please enter valid amount between $1 and $10,000.";
                     document.getElementById("next-btn").disabled = true;
                 }
                 else
@@ -1902,7 +1902,7 @@
         function set4(){
             document.getElementById("amount4").value = "40";
             document.getElementById("amount").value = Number("40");
-            document.getElementById("donation-text").innerText = "Can help provied food & livelihood assistance.";
+            document.getElementById("donation-text").innerText = "Can help provide food and livelihood assistance.";
             
             let elements = document.getElementsByClassName('amount-2i1');
             for (i = 0 ; i < elements.length; i++) {
@@ -1930,7 +1930,7 @@
         function set6(){
             document.getElementById("amount6").value = "100";
             document.getElementById("amount").value = Number("100");
-            document.getElementById("donation-text").innerText = "Can help distribute tents and shelted to the homeless.";
+            document.getElementById("donation-text").innerText = "Can help distribute tents and shelters to the homeless.";
             
             let elements = document.getElementsByClassName('amount-2i1');
             for (i = 0 ; i < elements.length; i++) {
@@ -1959,7 +1959,7 @@
                         <ul class="nav-may tabs-tgb">
                             <li class="act-c8g" id="onetime-text">
                                 <a onclick="showOnetime()">
-                                    One time
+                                    One Off
                                 </a>
                             </li>
                             <li id="monthly-text">
@@ -1972,7 +1972,7 @@
                             <div id="one-ggq" class="tab-ln5 fa-k37 okqqh act-c8g">
                                 <form onsubmit="return validateForm();" id="donation-form" action="https://wired-payments-npc.my.salesforce-sites.com/services/apexrest/w_pay/charge" method="POST">
                                     <input type="hidden" name="oid" value="00D5h000008t6iy"/>
-                                    <input type="hidden" name="campaignid" value="701F3000000ceokIAA" />
+                                    <input type="hidden" name="campaignid" value="" />
                                     <input type="hidden" id="returnurl" name="redirecturl" value="https://wired-apps.github.io/wiredpayments/earthquake-appeal/turkiye-syria-earthquake-receipt.html?"/>
                                     <input type="hidden" id="chargetype" name="chargetype" value="OneTime"/>
                                     <input type="hidden" id="startdate" name="startdate" value=""/>
@@ -2056,7 +2056,7 @@
                                                         CREDIT CARD
                                                     </h4>
                                                     <p>
-                                                        Pay using Visa, Mastercard, Discover or American Express
+                                                        Pay using Visa, Mastercard
                                                     </p>
                                                 </div>
                                             </div>

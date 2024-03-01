@@ -2440,7 +2440,7 @@
           }
           else{
             //If Failed
-            if(ref_obj.retryURL != null || ref_obj.retryURL != undefined){
+            if(ref_obj.retryURL != null && ref_obj.retryURL != undefined){
               document.getElementById("message").innerHTML = "Oops!\u{1F61E}";
               document.getElementById("heading").innerHTML = "It seems your donation attempt was unsuccessful, we apologize for any inconvenience. Please double-check your donation details and try again.<br><br> Thank you for your support."
               document.getElementById("success_receipt").style.display = "none";
@@ -2452,7 +2452,7 @@
             else{
               document.getElementById("message").innerHTML = "Oops!";
               document.getElementById("retryBtn").style.display = "flex";
-              ref_obj.retryURL = 'https://wired-apps.github.io/wiredpayments/earthquake-appeal/index.html';
+              ref_obj.retryURL = 'https://wired-apps.github.io/wiredpayments/earthquake-appeal/';
             }
           }
 	   </script>
