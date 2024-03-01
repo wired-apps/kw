@@ -1699,7 +1699,6 @@
                     document.getElementById('donation-form').target = '_top';
                 }
                 showSpinner();
-                return true;
             }
         }
         
@@ -1948,16 +1947,6 @@
             document.getElementById('button-text').classList.add('spinner');
             document.getElementById('submit-button').disabled=true;
             document.getElementById('ste-yct').disabled = true;
-        }
-        function submitForm(){
-            var form = document.getElementById("donation-form");
-            form.submit();
-        }
-
-        function ValidateandSubmit(){
-            if(validateForm()){
-                submitForm();
-            }
         }
     </script>
 </head>
@@ -2213,7 +2202,7 @@
                                                 </button>
                                             </div>
                                             <div class="col-xwd">
-                                                <button type="button" onclick="ValidateandSubmit()" id="submit-button" class="btn-a9x btn-gr5">
+                                                <button type="submit" id="submit-button" class="btn-a9x btn-gr5">
                                                     <div id="button-text">Donate Now</div>
                                                 </button>
                                             </div>
