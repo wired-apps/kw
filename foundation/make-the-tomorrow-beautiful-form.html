@@ -1,3332 +1,3363 @@
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<title>Make the tomorrow beautiful</title>
-<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-<style type="text/css">
-body
-{
-
-/* CSS Variables that may have been missed get put on body */
---row-vertical-spacing: 40px;
---row-gutter: 0px;
---padding: 25px;
---padding: 25px;
---padding: 25px;
---padding: 25px;
---padding: 25px;
---padding: 25px;
---gap: 8px;
---pad-y: 18px;
---pad-x: 10px;
---border-radius: 5px;
---gap: 8px;
---pad-y: 18px;
---pad-x: 10px;
---border-radius: 5px;
-}
-
-*,:after,:before {
-  box-sizing: inherit;
-}
-
-input:focus {
-    outline:none;
-}
-
-div {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-body {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-max-width: 100vw;
-overflow-x: hidden;
-}
-
-body {
-color: #323232;
-line-height: 1.5;
-font-family: "Lexend Deca";
-}
-
-html {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-box-sizing: border-box;
-}
-
-:root {
---PhoneInput-color--focus: #03b2cb;
---PhoneInputCountrySelect-marginRight: 0.35em;
---PhoneInputCountrySelectArrow-marginLeft: var(--PhoneInputCountrySelect-marginRight);
---PhoneInputCountrySelectArrow-color--focus: var(--PhoneInput-color--focus);
---PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus);
-}
-
-.css-c36 {
-background-color: #fae2d3;
-padding: 50px;
-margin-top: 0px;
-}
-
-.container-c9b {
-width: 100%;
-margin: auto;
-}
-.css-gdc{
-  color: rgb(50, 95, 150);  
-}
-
-p {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 1rem;
-font: inherit;
-vertical-align: baseline;
-font-family: "Lexend Deca";
-letter-spacing: 0em;
-line-height: 1.5;
-}
-
-.css-n1b {
-margin-top: 0px;
-margin-bottom: 10px;
-}
-
-.css-jc2 {
-color: rgb(0, 0, 0);
-border-style: solid;
-}
-
-.css-m3b {
-border-style: solid;
-}
-
-.css-tre {
-margin-top: 30px;
-}
-
-.css-y1l {
-color: rgb(0, 0, 0);
-}
-
-span {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-.form-oqi {
---padding: 25px;
-color: #254770;
-max-width: none;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-background-color: #f6f5fa;
-border: 1px solid lightgrey;
-position: relative;
-border-radius: 10px;
-background: transparent;
-box-shadow: none;
-overflow: hidden;
-}
-
-.progress-xhn {
-position: relative;
-color: inherit;
-font-weight: 700;
-font-size: .8rem;
-font-family: "Lexend Deca";
-}
-
-.progress-ogw {
-font-size: 1.25rem;
-}
-
-.header-sge {
-display: flex;
-padding: 0;
-background: none;
-flex-direction: column;
-flex-wrap: wrap;
-}
-
-.form-cf9 {
-padding: 0 1.5rem;
-position: relative;
-border-radius: inherit;
-border-top-right-radius: 0;
-border-top-left-radius: 0;
-background: white;
-}
-
-.progress-hrs {
-position: relative;
-min-height: 1rem;
-}
-
-.progress-hrs {
-line-height: 1;
-color: inherit;
-}
-
-.progress-2hx {
-margin-bottom: .5em;
-}
-
-.progress-ogw .progress-hrs {
-min-height: 1em;
-}
-
-.form-bpp {
-display: block;
-width: 100%;
-margin-left: 1px;
-overflow: hidden;
-position: relative;
-background: white;
-justify-content: space-between;
-border-radius: 5px 5px 0 0;
-padding-top: 2rem;
-margin: 0;
-}
-
-.message-r9z {
-padding: 1em;
-margin: var(--spacing) 0;
-border-radius: .333em;
-font-size: Max(.9rem,14px);
-font-weight: 700;
-line-height: 1.4;
-box-shadow: inset 0 0 0 2px rgba(0,0,0,.10196078431372549);
-}
-
-.message-2tf {
-color: #4c290a;
-background: #ffaf3e;
-}
-
-.form-cf9 > * {
-position: relative;
-}
-
-.message-2tf {
-margin-bottom: 1.5rem;
-}
-
-.message-r9z:first-child {
-margin-top: 0;
-}
-
-.form-or5 .message-2tf {
-margin-bottom: 1rem;
-}
-
-.form-lix {
-display: inline-block;
-position: relative;
-margin-bottom: 1rem;
-flex-wrap: wrap;
-justify-content: center;
-border-radius: 7.5px;
-}
-
-.form-edo {
-display: flex;
---gap: 8px;
---pad-y: 18px;
---pad-x: 10px;
---border-radius: 5px;
-flex-wrap: wrap;
-justify-content: center;
-font-size: 1rem;
-font-family: "Lexend Deca";
-}
-
-.form-e6x {
-margin: 1em 0 0;
-font-size: Max(0.7em, 14px);
-padding-bottom: 1em;
-}
-
-.progress-to6 {
-opacity: 0;
-animation: appearIn .3s cubic-bezier(.2,0,.1,1) .25s forwards;
-text-align: left;
-position: absolute;
-left: .5em;
-z-index: 0;
-width: 50%;
-}
-
-.progress-hrs .progress-to6 {
-left: 0;
-}
-
-.progress-fgo {
-opacity: 0.75;
-animation: appearIn .3s cubic-bezier(.2,0,.1,1) .25s forwards;
-text-align: right;
-position: absolute;
-right: 0;
-width: 50%;
-}
-
-.form-oao {
-cursor: default;
-display: inline-block;
-font-weight: 700;
-border: 1px solid #888;
-width: var(--padding);
-height: var(--padding);
-padding: 0;
-text-align: center;
-line-height: 22px;
-font-size: .825rem;
-margin: 0 .25rem;
-border-radius: 100%;
-background: #fff;
-}
-
-.form-9a6 {
-background-color: #d7d3e9;
-}
-
-.form-oao {
-font-size: 1.25rem;
-position: relative;
-z-index: 1;
-font-family: "Lexend Deca";
-font-weight: bold;
-color: white;
-opacity: 0.5;
-}
-
-.form-9a6 {
-color: #6392cb;
-opacity: 1;
-}
-
-.form-oao {
-width: auto;
-height: auto;
-background: transparent;
-border: none;
-color: black;
-padding: 1rem;
-margin: 0;
-}
-
-.form-9a6 {
-color: #3f78bd;
-}
-
-.form-9a6:before,.form-9a6:after {
-opacity: 0.75;
-background: currentColor;
-}
-
-.form-oao:before,.form-oao:after {
-content: '';
-position: absolute;
-top: 1rem;
-bottom: 0;
-width: 0;
-transition: 0.3s cubic-bezier(0.2, 0, 0.1, 1);
-}
-
-.form-oao:before {
-right: 0;
-}
-
-.form-oao:last-child {
-margin-right: 0;
-}
-
-.form-oao:last-of-type:before {
-content: none;
-}
-
-.message-r9z p {
-font-size: inherit;
-line-height: inherit;
-font-weight: 400;
-margin-bottom: .25em;
-}
-
-.message-r9z p:last-child {
-margin-bottom: 0;
-}
-
-button {
-cursor: pointer;
-}
-
-.form-h92 {
-border-width: 1px;
-border-style: solid;
-font-weight: 700;
-font-family: inherit;
-border-radius: 0;
-cursor: pointer;
-border-color: #254770;
-padding: 0.55em .75em;
-margin: 0;
-font-weight: bold;
-line-height: 1;
-letter-spacing: 0.05em;
-background: transparent;
-color: #254770;
-border-color: #192f4a;
-}
-
-.form-6x8 {
-color: #fff;
-}
-
-.form-6x8 {
-background-color: #254770;
-color: #d6e2f1;
-}
-
-.form-6x8 {
-background: white;
-color: #8aadd8;
-}
-
-.form-h92{
-  border-radius: 5px;
-}
-
-
-/*
-.form-h92:first-of-type {
-border-radius: 5px 0 0 5px;
-}
-
-.form-h92:last-child {
-border-radius: 0 var(--border-radius) var(--border-radius) 0;
-border-right-width: 1px;
-}
-
-.form-h92:last-of-type {
-border-radius: 0 5px 5px 0;
-}
-
-*/
-
-.form-7yz {
-background-color: transparent;
-color: inherit;
-}
-
-
-
-.form-7yz:hover {
-color: #325f96;
-}
-
-.wrapper-zeh {
-display: flex;
-position: relative;
-flex-basis: auto;
-justify-content: center;
-}
-
-.field-kvl {
-width: 200px;
-margin: var(--gap);
-display: inline-block;
-font-size: inherit;
-}
-
-.field-bsg {
-position: relative;
-background: #fff;
-font-size: .9em;
-line-height: 1;
-text-align: left;
-transition: border-color .3s cubic-bezier(.2,0,.1,1);
-padding: .54em;
-border: .9px solid #444;
-border-radius: 2.7px;
-}
-
-.field-ggk {
-padding: 0;
-font-size: 1.17em;
-}
-
-.field-bsg {
-border-color: rgba(37, 71, 112, 0.5);
-color: #254770;
-background: white;
-}
-
-.field-kvl {
-width: 100%;
-max-width: unset;
-}
-
-.field-bsg {
-border-width: 1px;
-border-color: currentColor;
-}
-
-.field-kvl.field-bsg {
-font-weight: 700;
-min-width: Min(100%,13ch);
-width: 20%;
-}
-
-.form-oqi .field-bsg {
-margin-bottom: 1rem;
-}
-
-.field-kvl.field-bsg {
-border-color: #325f96;
-background: white;
-}
-
-.form-oqi .field-bsg {
-margin-bottom: 0.25rem;
-}
-
-.field-kvl.field-bsg.field-bsg {
-margin-bottom: var(--gap);
-}
-
-.form-yo8 {
-display: inline-block;
-vertical-align: baseline;
-position: relative;
-padding: .25em 1.75em .25em .25em;
-margin-left: -.15em;
-font-size: inherit;
-font-weight: 700;
-line-height: 1rem;
-height: 1.2rem;
-text-align: left;
-min-width: 7ch;
-}
-
-i {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-font-style: italic;
-}
-
-.icon-w3c {
-display: inline-block;
-font-family: 'Material Icons';
-font-weight: normal;
-font-style: normal;
-font-size: 24px;
-line-height: 1;
-letter-spacing: normal;
-text-transform: none;
-white-space: nowrap;
-word-wrap: normal;
-direction: ltr;
--webkit-font-feature-settings: 'liga';
-font-feature-settings: "liga";
--webkit-font-smoothing: antialiased;
-}
-
-i.icon-w3c {
-font-style: normal;
-}
-
-.message-r9z i.icon-w3c {
-font-size: 1.25em;
-vertical-align: middle;
-margin: -.2em .25em 0;
-opacity: .75;
-}
-
-strong {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-font-weight: 700;
-line-height: 1;
-}
-
-a {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-cursor: pointer;
-color: #325f96;
-font-weight: normal;
-font-style: normal;
-text-decoration: underline;
-}
-
-.message-r9z a {
-color: inherit;
-}
-
-a:hover {
-color: #3f78bd;
-font-weight: normal;
-font-style: normal;
-text-decoration: underline;
-}
-
-.message-r9z a,.message-r9z a:hover {
-color: inherit;
-}
-
-.form-ho3 {
-cursor: pointer;
-margin: var(--gap);
-padding: var(--pad-y) var(--pad-x);
-min-width: 20%;
-flex-basis: auto;
-background-color: #fff;
-border-width: 1px;
-border-style: solid;
-border-radius: var(--border-radius);
-font-weight: 700;
-font-family: inherit;
-font-size: inherit;
-transition: .3s cubic-bezier(.2,0,.1,1);
-}
-
-.form-ho3 {
-border-color: transparent;
-background: white;
-color: #19304b;
-border-radius: 5px;
-transition: 0.3s cubic-bezier(0.2, 0, 0.1, 1);
-position: relative;
-font-size: 1.25em;
-border: 1px solid lightgrey;
-}
-
-.wrapper-zeh .form-ho3 {
-flex-basis: auto;
-width: 100%;
-}
-
-.button-tbw:hover {
-background: #3f77bc;
-border-color: #3f77bc;
-color: white;
-}
-
-.form-ho3:hover {
-background: #3f78bd;
-border-color: #3f77bc;
-color: white;
-background-position: right !important;
-}
-
-label {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-.field-bsg > label {
-z-index: 2;
-pointer-events: none;
-vertical-align: top;
-display: inline-block;
-}
-
-.field-ggk > label {
-position: absolute;
-top: .54em;
-left: .54em;
-}
-
-.field-wgf {
-display: flex;
-align-items: center;
-}
-
-.field-kvl .field-wgf {
-height: 100%;
-}
-
-.form-yo8 span {
-position: relative;
-}
-
-.form-yo8 span:before {
-content: "";
-position: absolute;
-top: calc(50% - .66em);
-left: calc(100% + .75em);
-font-size: clamp(8px,11px,.666em);
-width: 1em;
-height: 1em;
-border-right: 2px solid;
-border-bottom: 2px solid;
-transform: rotate(45deg);
-opacity: .5;
-}
-
-select {
-color: #323232;
-line-height: 1.5;
-font-family: "Lexend Deca";
-font-size: 1em;
-letter-spacing: 0em;
-}
-
-.select-6wt {
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-opacity: 0;
-padding: 0;
-width: 100%;
-background: transparent;
-display: inline-block;
-font-weight: 700;
--webkit-appearance: none;
--moz-appearance: none;
-color: inherit;
-cursor: pointer;
-}
-
-.field-8lb {
-display: block;
-color: #19304b;
-font-weight: 700;
-transition: color .2s ease;
-line-height: 1;
-font-size: .855rem;
-margin-bottom: .36em;
-align-self: end;
-}
-
-.field-kvl .field-8lb {
-display: none;
-}
-
-.field-wgf > * {
-font-size: inherit;
-}
-
-.field-qhl {
-font-weight: 600;
-margin-right: -.33em;
-opacity: .5;
-padding: 1.88em 0 .54em .621em;
-position: absolute;
-}
-
-.field-kvl .field-qhl {
-padding: 18px 0 18px 10px;
-}
-
-.field-edh .field-qhl {
-position: relative;
-}
-
-input {
-color: #323232;
-line-height: 1.5;
-font-family: "Lexend Deca";
-font-size: 1em;
-letter-spacing: 0em;
-}
-
-.field-bsg input {
-background: transparent;
-border: 0;
-margin: 0;
-position: relative;
-width: 100%;
-max-width: 100%;
-color: inherit;
-font-family: inherit;
-font-size: inherit;
-line-height: inherit;
--webkit-appearance: none;
--moz-appearance: none;
-}
-
-.field-qhl + input {
-display: inline-block;
-margin-left: .09em;
-width: 90%;
-width: calc(100% - 1.35em);
-padding-left: 1.5em!important;
-}
-
-.field-ggk input {
-padding: 1.88em .54em .54em;
-}
-
-.field-kvl input {
-min-height: 55px;
-}
-
-.field-bsg input {
-color: #19304b;
-}
-
-.field-kvl.field-bsg .input-vjj {
-padding: 18px 5px 18px 10px;
-width: 0;
-flex-grow: 1;
-font-size: inherit;
-line-height: 1;
-font-weight: inherit;
-color: inherit;
-height: 100%;
-margin-left: -.05em;
-}
-
-.field-edh .field-wgf .input-vjj {
-margin-left: 0;
-flex-grow: 1;
-padding-left: .54em!important;
-}
-
-
-@keyframes appearIn {
-100% {
-opacity: 1;
-transform: none;
-opacity: 1;
-transform: none;
-}
-
-}
-/* These were inline style tags. Uses id+class to override almost everything */
-
-
-/*New CSS*/
-body {
-/* CSS Variables that may have been missed get put on body */
---row-vertical-spacing: 40px;
---row-gutter: 0px;
---padding: 25px;
---padding: 25px;
---padding: 25px;
---padding: 25px;
---padding: 25px;
---padding: 25px;
-}
-
-body {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-max-width: 100vw;
-overflow-x: hidden;
-}
-
-body {
-color: #323232;
-line-height: 1.5;
-font-family: "Lexend Deca";
-}
-
-html {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-box-sizing: border-box;
-}
-
-:root {
---PhoneInput-color--focus: #03b2cb;
---PhoneInputCountrySelect-marginRight: 0.35em;
---PhoneInputCountrySelectArrow-marginLeft: var(--PhoneInputCountrySelect-marginRight);
---PhoneInputCountrySelectArrow-color--focus: var(--PhoneInput-color--focus);
---PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus);
-}
-
-*,:after,:before {
-box-sizing: inherit;
-}
-
-p {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 1rem;
-font: inherit;
-vertical-align: baseline;
-font-family: "Lexend Deca";
-letter-spacing: 0em;
-line-height: 1.5;
-}
-
-span {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-.form-bg5 {
-padding: 0 1.5rem;
-position: relative;
-border-radius: inherit;
-border-top-right-radius: 0;
-border-top-left-radius: 0;
-background: white;
-}
-
-.label-9wv {
-display: flex;
-gap: 8px;
-align-items: center;
-justify-content: center;
-border-radius: 8px!important;
-padding: 10px;
-font-size: .875rem;
-font-weight: 600;
-}
-
-.form-bg5 > * {
-position: relative;
-}
-
-.label-9wv {
-background-color: #254770;
-color: #d6e2f1;
-}
-
-h3 {
-display: block;
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 1.625rem;
-font: inherit;
-vertical-align: baseline;
-width: 100%;
-margin-top: 1rem;
-margin-bottom: 1rem;
-font-family: "Lexend Deca";
-font-weight: bold;
-letter-spacing: 0em;
-line-height: 1.2;
-color: #19304b;
-}
-
-.form-bg5 .title-bot {
-margin-top: 0;
-color: inherit;
-font-size: 18px;
-}
-
-.label-9wv + .title-bot {
-/*margin-top: 8px;*/
-margin-bottom: 4px;
-}
-
-form {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-.label-ix2 {
-position: relative;
-z-index: 2;
-width: 1rem;
-height: 1rem;
-}
-
-.form-bg5 .wrapper-5bi {
-padding: 0.25rem;
-}
-
-.form-bg5 .form-i4o {
-border-radius: inherit;
-}
-
-.icon-pzi {
-display: inline-block;
-vertical-align: middle;
-}
-
-.icon-v44 {
-width: 1.125rem;
-height: 1.125rem;
-font-size: 1.125rem;
-}
-
-.icon-bej {
-fill: currentColor;
-color: inherit;
-}
-
-.label-ix2 span {
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-}
-
-.label-ix2 span.icon-pzi {
-width: 1rem;
-height: 1rem;
-font-size: 1rem;
-}
-
-.label-ix2 span.ani-zvx {
-opacity: 0;
-}
-
-.label-ix2.ani-w9j .cen-333 {
-opacity: 1;
-transition: opacity 1s;
-}
-
-.label-ix2 span.left-75z {
-transform: rotate(-10deg);
-}
-
-.label-ix2.ani-w9j .left-75z {
-transform: rotate(-10deg) translate(-10px,-10px);
-transition: transform 1s .3s;
-animation: fade-in-out 1s .3s forwards;
-}
-
-.label-ix2 span.right-x57 {
-transform: rotate(10deg);
-}
-
-.label-ix2.ani-w9j .right-x57 {
-transform: rotate(10deg) translate(10px,-10px);
-transition: transform 1s .5s;
-animation: fade-in-out 1s .5s forwards;
-}
-
-.label-ix2.ani-w9j .center-8nc {
-transform: translateY(-20px);
-transition: transform 1.5s;
-animation: fade-in-out 1.5s forwards;
-}
-
-.field-zcb {
-position: relative;
-background: #fff;
-font-size: .9em;
-line-height: 1;
-text-align: left;
-transition: border-color .3s cubic-bezier(.2,0,.1,1);
-padding: .54em;
-border: .9px solid #444;
-border-radius: 2.7px;
-}
-
-.field-c6x {
-padding: 0;
-font-size: 1.05em;
-}
-
-.field-zcb {
-border-color: currentColor;
-color: #254770;
-background: white;
-border-width: 1px;
-}
-
-.field-c6x {
-padding: 0;
-}
-
-.checkbox-n1l {
-background: none;
-padding: 0;
-border-width: 0 !important;
-color: inherit;
-}
-
-nav {
-display: block;
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-.form-x4j {
-display: flex;
-width: 100%;
-width: calc(100% + var(--padding)*2);
-margin-top: 10px;
-margin-left: calc(var(--padding)*-1);
-position: relative;
-border-radius: inherit;
-overflow: hidden;
-}
-
-i {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-font-style: italic;
-}
-
-.icon-xcf {
-display: inline-block;
-font-family: 'Material Icons';
-font-weight: normal;
-font-style: normal;
-font-size: 24px;
-line-height: 1;
-letter-spacing: normal;
-text-transform: none;
-white-space: nowrap;
-word-wrap: normal;
-direction: ltr;
--webkit-font-feature-settings: 'liga';
-font-feature-settings: "liga";
--webkit-font-smoothing: antialiased;
-}
-
-i.icon-xcf {
-font-style: normal;
-}
-
-.icon-pzi i.icon-xcf {
-font-size: inherit;
-font-style: normal;
-vertical-align: top;
-}
-
-.field-hem {
-display: inline-block;
-position: absolute;
-top: .2em;
-right: .6em;
-opacity: .5;
-color: inherit;
-}
-
-label {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-.field-zcb > label {
-z-index: 2;
-pointer-events: none;
-vertical-align: top;
-display: inline-block;
-}
-
-.field-c6x > label {
-position: absolute;
-top: .54em;
-left: .54em;
-}
-
-input {
-color: #323232;
-line-height: 1.5;
-font-family: "Lexend Deca";
-font-size: 1em;
-letter-spacing: 0em;
-}
-
-.field-zcb input {
-background: transparent;
-border: 0;
-margin: 0;
-position: relative;
-width: 100%;
-max-width: 100%;
-color: inherit;
-font-family: inherit;
-font-size: inherit;
-line-height: inherit;
--webkit-appearance: none;
--moz-appearance: none;
-}
-
-.field-c6x input {
-padding: 1.38em .50em .50em;
-}
-
-.field-zcb input {
-color: #19304b;
-}
-
-.field-c6x > label {
-position: absolute;
-top: .54em;
-left: .54em;
-}
-
-.checkbox-n1l > label {
-cursor: pointer;
-display: inline-flex;
-align-items: flex-start;
-pointer-events: all;
-border-color: inherit;
-margin-top: -.2em;
-}
-
-button {
-cursor: pointer;
-}
-
-.button-j7f {
-border-radius: 2px;
-border: 2px solid transparent;
-line-height: 1;
-transition: .3s cubic-bezier(.22,.24,.18,1);
-margin-right: .5em;
-font-family: inherit;
-text-align: center;
-display: inline-block;
-vertical-align: middle;
-user-select: none;
-text-decoration: none;
-font-style: normal;
-}
-
-.button-4dx {
-color: #ed6239;
-padding: 0.875em 3em;
-font-size: 0.875em;
-font-weight: bold;
-text-transform: uppercase;
-background-color: #325f96;
-text-decoration: none;
-border-radius: 5px;
-}
-
-.button-j7f {
-border-style: solid;
-border-width: 2px;
-transition: 0.3s cubic-bezier(0.2, 0, 0.1, 1);
-}
-
-.button-j7f {
-border-radius: 5px;
-}
-
-.button-4dx {
-text-transform: uppercase;
-}
-
-.form-x4j .button-j7f,.form-x4j .button-4dx {
-flex-grow: 1;
-width: 100%;
-}
-
-.form-x4j .form-53y {
-width: 20%;
-margin: 0;
-border-top-right-radius: 0;
-border-bottom-right-radius: 0;
-color: #333;
-background: rgba(0,0,0,.1);
-padding-left: .5em!important;
-padding-right: .5em!important;
-}
-
-.form-x4j .button-4dx {
-font-size: 1.25rem;
-border-radius: inherit;
-}
-
-.form-x4j .button-j7f {
-border-radius: 0;
-border-bottom-left-radius: 7.5px;
-border-bottom-right-radius: 7.5px;
-}
-
-.form-x4j .button-j7f.form-53y {
-border-bottom-right-radius: 0;
-}
-
-.form-x4j .button-4dx:first-of-type:not(:last-of-type) {
-border-top-right-radius: 0;
-border-bottom-right-radius: 0;
-}
-
-.button-j7f:before,.button-j7f:after {
-transition: 0.3s cubic-bezier(0.2, 0, 0.1, 1), border-color 0s;
-}
-
-.form-53y:before {
-opacity: 0.1;
-}
-
-.button-j7f:active,.button-j7f:hover {
-font-style: normal;
-text-decoration: none;
-}
-
-.button-4dx:hover {
-color: white;
-font-weight: bold;
-background: #3f77bc;
-border-color: #3f77bc;
-}
-
-.form-x4j .form-53y:hover {
-background: rgba(0,0,0,.15);
-border-color: transparent;
-color: #333;
-}
-
-.button-j7f:last-child {
-margin-right: 0;
-}
-
-.form-x4j .form-apk {
-width: 80%;
-margin: 0;
-border-top-left-radius: 0;
-border-bottom-left-radius: 0;
-}
-
-.form-x4j .button-j7f.form-apk {
-border-bottom-left-radius: 0;
-}
-
-.form-x4j .button-4dx:last-of-type:not(:first-of-type) {
-border-top-left-radius: 0;
-border-bottom-left-radius: 0;
-}
-
-.field-lem {
-font-style: normal;
-font-size: .75em;
-}
-
-.field-lot {
-display: block;
-color: #19304b;
-font-weight: 700;
-transition: color .2s ease;
-line-height: 1;
-font-size: .855rem;
-margin-bottom: .36em;
-align-self: end;
-}
-
-.checkbox-n1l input {
-display: inline-block;
-position: relative;
-top: 0;
-margin-top: 0;
-flex-shrink: 0;
-flex: 0 0 auto;
-vertical-align: baseline;
-width: 1em;
-height: 1em;
-appearance: none;
-outline: none;
-background: url("data:image/svg+xml;utf8,<svg stroke='none' xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='6'><path d='M25 8.3L13.4 23.1l-7-7.6'></path></svg>") no-repeat 50%/100%;
-background-color: #fff;
-border: 1px solid;
-border-color: rgba(50, 95, 150, 0.75);
-border-radius: 4px;
-margin-right: .5rem;
-background-image: url("data:image/svg+xml;utf8,<svg stroke='none' xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='6'><path d='M25 8.3L13.4 23.1l-7-7.6'></path></svg>");
-background-position-x: 50%;
-background-position-y: center;
-background-size: 100%;
-background-repeat-x: no-repeat;
-background-repeat-y: no-repeat;
-background-attachment: initial;
-background-origin: initial;
-background-clip: initial;
-padding: 9px;
-}
-
-.checkbox-n1l input:checked {
-background: url("data:image/svg+xml;utf8,<svg stroke='%23262861' xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='6'><path d='M25 8.3L13.4 23.1l-7-7.6'></path></svg>") no-repeat 50%/100%;
-background-color: #fff;
-background-image: url("data:image/svg+xml;utf8,<svg stroke='%23262861' xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='6'><path d='M25 8.3L13.4 23.1l-7-7.6'></path></svg>");
-background-position-x: 50%;
-background-position-y: center;
-background-size: 100%;
-background-repeat-x: no-repeat;
-background-repeat-y: no-repeat;
-background-attachment: initial;
-background-origin: initial;
-background-clip: initial;
-border-color: #325f96;
-}
-
-.checkbox-n1l .field-lot {
-line-height: 1.4;
-margin-bottom: 0;
-color: inherit;
-}
-
-.icon-cdy {
-color: #333;
-fill: #333;
-}
-
-.button-j7f .icon-pzi {
-display: inline-block;
-margin-bottom: 0;
-line-height: 0;
-vertical-align: middle;
-margin: 0 .25em;
-}
-
-.form-x4j .form-53y .icon-pzi {
-color: inherit;
-fill: currentColor;
-transition: .4s cubic-bezier(.2,0,.1,1);
-}
-
-.button-j7f .icon-pzi:last-child:first-child {
-line-height: 1;
-}
-
-.form-x4j .form-53y:hover .icon-pzi {
-transform: translate3d(-15%,0,0);
-}
-
-.form-x4j .form-apk .icon-pzi {
-color: currentColor;
-fill: currentColor;
-transition: .3s cubic-bezier(.2,0,.1,1);
-}
-
-.form-x4j .form-apk:hover .icon-pzi {
-transform: translate3d(15%,0,0);
-}
-
-
-@keyframes appearIn {
-100% {
-opacity: 1;
-transform: none;
-opacity: 1;
-transform: none;
-}
-
-}
-@keyframes fade-in-out {
-0%, 100% {
-opacity: 0;
-opacity: 0;
-}
-50% {
-opacity: 1;
-opacity: 1;
-}
-
-}
-/* These were inline style tags. Uses id+class to override almost everything */
-
-
-/* New CSS 2 */
-
-span {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-.form-k2v {
---padding: 25px;
-color: #254770;
-max-width: none;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-background-color: #f6f5fa;
-border: 1px solid lightgrey;
-position: relative;
-border-radius: 10px;
-background: transparent;
-box-shadow: none;
-overflow: hidden;
-}
-
-.header-8s3 {
-display: flex;
-padding: 0;
-background: none;
-flex-direction: column;
-flex-wrap: wrap;
-}
-
-.form-itb {
-padding: 0 1.5rem;
-position: relative;
-border-radius: inherit;
-border-top-right-radius: 0;
-border-top-left-radius: 0;
-background: white;
-}
-
-.form-o1m {
-display: block;
-width: 100%;
-margin-left: 1px;
-overflow: hidden;
-position: relative;
-background: white;
-justify-content: space-between;
-border-radius: 5px 5px 0 0;
-padding-top: 2rem;
-margin: 0;
-}
-
-h3 {
-display: block;
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 1.625rem;
-font: inherit;
-vertical-align: baseline;
-width: 100%;
-margin-top: 1rem;
-margin-bottom: 1rem;
-font-family: "Lexend Deca";
-font-weight: bold;
-letter-spacing: 0em;
-line-height: 1.2;
-color: #19304b;
-}
-
-.form-itb > * {
-position: relative;
-}
-
-.form-k2v h3 {
-color: inherit;
-}
-
-.form-itb .title-er1 {
-font-size: 22px;
-margin-top: 0;
-}
-
-.form-o9z > div {
-border-radius: inherit;
-}
-
-.form-xrs {
-cursor: default;
-display: inline-block;
-font-weight: 700;
-border: 1px solid #888;
-width: var(--padding);
-height: var(--padding);
-padding: 0;
-text-align: center;
-line-height: 22px;
-font-size: .825rem;
-margin: 0 .25rem;
-border-radius: 100%;
-background: #fff;
-}
-
-.form-ezb {
-color: black;
-}
-
-.form-xrs {
-font-size: 1.25rem;
-position: relative;
-z-index: 1;
-font-family: "Lexend Deca";
-font-weight: bold;
-color: white;
-}
-
-.form-ezb {
-opacity: 1;
-}
-
-.form-xrs {
-width: auto;
-height: auto;
-background: transparent;
-border: none;
-color: black;
-padding: 1rem;
-margin: 0;
-}
-
-.form-xrs:before,.form-xrs:after {
-content: '';
-position: absolute;
-top: 1rem;
-bottom: 0;
-width: 0;
-transition: 0.3s cubic-bezier(0.2, 0, 0.1, 1);
-}
-
-.form-xrs:before {
-right: 0;
-}
-
-.form-8wa {
-color: #3f78bd;
-}
-
-.form-xrs:last-child {
-margin-right: 0;
-}
-
-.form-xrs:last-of-type:before {
-content: none;
-}
-
-form {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-.form-gqi {
-font-size: Max(.8rem,13px);
-line-height: 1.5rem;
-margin-bottom: .3rem;
-display: inline-block;
-}
-
-.form-gqi.onxmc {
-position: relative;
-margin-top: 1em;
-margin-bottom: 16px;
-width: 100%;
-border: 1.5px solid #ebebeb;
-border-radius: 5px;
-background: hsla(0,0%,96.1%,.5);
-padding: 14px;
-color: #222;
-transition: all .75s ease-in-out;
-}
-
-.form-k2v .form-gqi.onxmc.form-o19 {
-border-color: #325f96;
-}
-
-.message-svm {
-margin-top: .5em;
-font-size: Max(.8rem,13px);
-}
-
-.field-65r {
-position: relative;
-background: white;
-font-size: .9em;
-line-height: 1;
-text-align: left;
-transition: border-color .3s cubic-bezier(.2,0,.1,1);
-padding: .54em;
-border: .9px solid #444;
-border-radius: 2.7px;
-border-color: currentColor;
-color: #254770;
-border-width: 1px;
-}
-
-.form-gqi .field-65r {
-font-size: inherit;
-}
-
-.form-k2v .field-65r {
-margin-bottom: 0.25rem;
-}
-
-.form-gqi.onxmc .field-65r {
-border: none;
-background: transparent;
-padding: 0;
-color: inherit;
-font-size: 14px;
-}
-
-.form-gqi.onxmc .donation-form__raisely-fee__donationHeart {
-opacity: 0;
-transition: all .75s ease-in-out;
-position: absolute;
-top: -10px;
-right: 5px;
-height: 30px;
-font-size: 16px;
-stroke: #fff;
-fill: currentColor;
-}
-
-.form-gqi.onxmc .donation-form__raisely-fee__donationHeart--active {
-opacity: 1;
-}
-
-.form-k2v .form-gqi.onxmc .donation-form__raisely-fee__donationHeart {
-fill: #325f96;
-stroke: white;
-}
-
-table {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-border-collapse: collapse;
-border-spacing: 0;
-}
-
-.form-gqi.onxmc .table-at1 {
-opacity: .9;
-min-height: 34px;
-margin-bottom: 0;
-font-weight: 400;
-font-size: 12px;
-line-height: 130%;
-text-align: left;
-width: 100%;
-}
-
-b {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-font-weight: 700;
-}
-
-button {
-cursor: pointer;
-}
-
-.field-xk8 {
-overflow: hidden;
-display: inline-block;
-vertical-align: middle;
-margin-left: .3rem;
-text-transform: uppercase;
-font-weight: 700;
--webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-width: 70px;
-height: 32px;
-border-radius: 35px;
-}
-
-.field-1g3 {
-width: 35px;
-height: 20px;
-border-radius: 17.5px;
-margin-left: calc(35px + .3rem);
-}
-
-.field-mmo button {
-border: 0;
-background: none;
-padding: 0;
-}
-
-.form-gqi.onxmc .field-1g3 {
-margin-left: 0;
-}
-
-label {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-.field-65r > label {
-z-index: 2;
-pointer-events: none;
-vertical-align: top;
-display: inline-block;
-}
-
-.field-mmo label {
-vertical-align: middle;
-width: calc(100% - 70px - .3rem);
-}
-
-.form-gqi.onxmc .field-mmo label {
-z-index: 0;
-width: calc(100% - 35px);
-}
-
-.form-gqi.onxmc .field-mmo label:before {
-content: none;
-}
-
-tr {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-.switch-cmk {
-position: relative;
-font-size: .625rem;
-cursor: pointer;
-display: block;
-overflow: hidden;
-box-sizing: content-box;
-border-radius: 19px;
-height: 100%;
-background: #cfcfe6;
-transition: .25s cubic-bezier(.2,0,.1,1);
-vertical-align: middle;
-}
-
-.switch-wyo {
-background: #325f96;
-}
-
-.form-k2v .form-gqi.onxmc .switch-wyo {
-background: #325f96;
-}
-
-.field-ok6 {
-display: block;
-color: #19304b;
-font-weight: 700;
-transition: color .2s ease;
-line-height: 1;
-font-size: .855rem;
-margin-bottom: .36em;
-align-self: end;
-}
-
-.field-mmo .field-ok6 {
-margin-bottom: 0;
-}
-
-.form-gqi.onxmc .field-ok6 {
-padding-left: 6px;
-font-size: 14px;
-}
-
-td {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-
-.form-gqi.onxmc .column-xxr {
-text-align: right;
-}
-
-.switch-ah4 {
-display: inline-block;
-box-sizing: border-box;
-position: absolute;
-transition: all .2s cubic-bezier(.2,0,.1,1);
-width: 100%;
-z-index: 2;
-padding: 1px 10px;
-height: 100%;
-opacity: 0;
-line-height: 30px;
-color: #fff;
-text-align: left;
-left: 0;
-}
-
-.switch-6ly .switch-ah4 {
-line-height: 18px;
-padding: 1px 7px;
-}
-
-.switch-wyo .switch-ah4 {
-opacity: 1;
-}
-
-.switch-c6j {
-position: absolute;
-top: 3px;
-right: 3px;
-left: 3px;
-z-index: 3;
-overflow: hidden;
-height: 26px;
-border-radius: 16px;
-}
-
-.switch-6ly .switch-c6j {
-height: 14px;
-border-radius: 10px;
-}
-
-.form-gqi.onxmc .switch-c6j {
-z-index: 0;
-}
-
-.switch-c6j:after,.switch-c6j:before {
-content: "";
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-background: #fff;
-border-radius: 50%;
-width: 28px;
-}
-
-.switch-c6j:before {
-transition: .2s cubic-bezier(.2,0,.1,1);
-}
-
-.switch-6ly .switch-c6j:after,.switch-6ly .switch-c6j:before {
-width: 16px;
-}
-
-.switch-wyo .switch-c6j:after,.switch-wyo .switch-c6j:before {
-transform: translate3d(calc(64px - 100%),0,0);
-}
-
-.switch-wyo.switch-6ly .switch-c6j:after,.switch-wyo.switch-6ly .switch-c6j:before {
-transform: translate3d(calc(29px - 100%),0,0);
-}
-
-.switch-c6j:after {
-transition: .3s cubic-bezier(.2,0,.1,1);
-}
-
-.switch-njp {
-display: inline-block;
-box-sizing: border-box;
-position: absolute;
-transition: all .2s cubic-bezier(.2,0,.1,1);
-width: 100%;
-z-index: 2;
-padding: 1px 10px;
-height: 100%;
-opacity: 0;
-line-height: 30px;
-right: 0;
-text-align: right;
-color: #262861;
-}
-
-.switch-6ly .switch-njp {
-line-height: 18px;
-padding: 1px 7px;
-}
-
-.form-gqi.onxmc .tooltip-38y {
-display: inline;
-position: relative;
-cursor: pointer;
-}
-
-.icon-yqf {
-display: inline-block;
-vertical-align: middle;
-}
-
-.icon-x6y {
-width: 1.125rem;
-height: 1.125rem;
-font-size: 1.125rem;
-}
-
-.icon-bb8 {
-color: #333;
-fill: #333;
-}
-
-.tooltip-26s {
-pointer-events: none;
-z-index: 2;
-position: absolute;
-bottom: 100%;
-left: 50%;
-transform: translateX(-50%);
-width: 200px;
-border-radius: .3rem;
-padding: .5rem;
-margin-bottom: .333em;
-background: #000;
-color: #fff;
-font-size: .7rem;
-line-height: normal;
-opacity: 0;
-transition: opacity .2s ease;
-}
-
-.form-gqi.onxmc .tooltip-26s {
-left: 140%;
-}
-
-.tooltip-26s:after {
-content: "";
-pointer-events: none;
-position: absolute;
-bottom: -5px;
-left: calc(50% - 2.5px);
-border-left: 5px solid transparent;
-border-right: 5px solid transparent;
-border-top: 5px solid #000;
-}
-
-.form-gqi.onxmc .tooltip-26s:after {
-content: "";
-pointer-events: none;
-position: absolute;
-bottom: -5px;
-left: calc(40% - 2.5px);
-border-top: 5px solid #000;
-border-right: 5px solid transparent;
-border-left: 5px solid transparent;
-}
-
-i {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-font-style: italic;
-}
-
-.icon-oxj {
-display: inline-block;
-font-family: 'Material Icons';
-font-weight: normal;
-font-style: normal;
-font-size: 24px;
-line-height: 1;
-letter-spacing: normal;
-text-transform: none;
-white-space: nowrap;
-word-wrap: normal;
-direction: ltr;
--webkit-font-feature-settings: 'liga';
-font-feature-settings: "liga";
--webkit-font-smoothing: antialiased;
-}
-
-i.icon-oxj {
-font-style: normal;
-}
-
-.icon-yqf i.icon-oxj {
-font-size: inherit;
-font-style: normal;
-vertical-align: top;
-}
-
-.form-gqi.onxmc .icon-yqf i.icon-oxj {
-font-size: 16px;
-opacity: .5;
-} /* And @keyframes with prefixes */
-
-@keyframes appearIn {
-100% {
-opacity: 1;
-transform: none;
-opacity: 1;
-transform: none;
-}
-
-}
-/* These were inline style tags. Uses id+class to override almost everything */
-
-/*  For Fields */ 
-
-body { 
-    margin:  0; 
-    padding:  0; 
-    border:  0; 
-    font-size:  100%; 
-    font:  inherit; 
-    vertical-align:  baseline;
-    -webkit-font-smoothing: antialiased; 
-    -moz-osx-font-smoothing: grayscale; 
-    max-width: 100vw; 
-    overflow-x: hidden;
-} 
-
-body { 
-    color: #323232; 
-    line-height: 1.5; 
-    font-family: "Lexend Deca";
-} 
-
-html { 
-    margin:  0; 
-    padding:  0; 
-    border:  0; 
-    font-size:  100%; 
-    font:  inherit; 
-    vertical-align:  baseline;
-    box-sizing: border-box;
-} 
-
-:root { 
-    --PhoneInput-color--focus: #03b2cb; 
-    --PhoneInputCountrySelect-marginRight: 0.35em; 
-    --PhoneInputCountrySelectArrow-marginLeft: var(--PhoneInputCountrySelect-marginRight); 
-    --PhoneInputCountrySelectArrow-color--focus: var(--PhoneInput-color--focus); 
-    --PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus); 
-} 
-
-h3 { 
-    display:   block; 
-    margin:    0; 
-    padding:    0; 
-    border:    0; 
-    font-size:  1.625rem;
-    font:    inherit; 
-    vertical-align:    baseline;
-    width:   100%;
-    margin-top:  1rem; 
-    margin-bottom:  1rem; 
-    font-family:  "Lexend Deca"; 
-    font-weight:  bold; 
-    letter-spacing:  0em; 
-    line-height:  1.2; 
-    color:  #19304b;
-} 
-
-form { 
-    margin: 0; 
-    padding: 0; 
-    border: 0; 
-    font-size: 100%; 
-    font: inherit; 
-    vertical-align: baseline;
-} 
-
-.donation-form__raisely-fee { 
-    font-size: Max(.8rem,13px); 
-    line-height: 1.5rem; 
-    margin-bottom: .3rem; 
-    display: inline-block;
-} 
-
-.donation-form__raisely-fee.v3 { 
-    position: relative; 
-    margin-top: 1em; 
-    margin-bottom: 16px; 
-    width: 100%; 
-    border: 1.5px solid #ebebeb; 
-    border-radius: 5px; 
-    background: hsla(0,0%,96.1%,.5); 
-    padding: 14px; 
-    color: #222; 
-    transition: all .75s ease-in-out;
-} 
-
-.form-field { 
-    position:   relative; 
-    background:   white;
-    font-size:   .9em; 
-    line-height:   1; 
-    text-align:   left; 
-    transition:   border-color .3s cubic-bezier(.2,0,.1,1); 
-    padding:   .54em; 
-    border:   .9px solid #444; 
-    border-radius:   2.7px;
-    border-color:  currentColor;
-    color:  #254770; 
-    border-width: 1px; 
-} 
-
-.donation-form__raisely-fee .form-field  { 
-    font-size: inherit;
-} 
-
-.donation-form__raisely-fee.v3 .form-field  { 
-    border: none; 
-    background: transparent; 
-    padding: 0; 
-    color: inherit; 
-    font-size: 14px;
-} 
-
-.donation-form__raisely-fee.v3 .donation-form__raisely-fee__donationHeart  { 
-    opacity: 0; 
-    transition: all .75s ease-in-out; 
-    position: absolute; 
-    top: -10px; 
-    right: 5px; 
-    height: 30px; 
-    font-size: 16px; 
-    stroke: #fff; 
-    fill: currentColor;
-} 
-
-.donation-form__raisely-fee.v3 .donation-form__raisely-fee__text  { 
-    opacity: .9; 
-    min-height: 34px; 
-    margin-bottom: 0;
-    margin-top: 5px; 
-    font-weight: 400; 
-    font-size: 13px; 
-    line-height: 130%; 
-    text-align: left;
-} 
-
-b { 
-    margin:  0; 
-    padding:  0; 
-    border:  0; 
-    font-size:  100%; 
-    font:  inherit; 
-    vertical-align:  baseline;
-    font-weight: 700;
-} 
-
-button { 
-    cursor: pointer;
-} 
-
-.form-field--boolean__inline { 
-    overflow: hidden; 
-    display: inline-block; 
-    vertical-align: middle; 
-    margin-left: .3rem; 
-    text-transform: uppercase; 
-    font-weight: 700; 
-    -webkit-touch-callout: none; 
-    -webkit-user-select: none; 
-    -khtml-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none; 
-    width: 70px; 
-    height: 32px; 
-    border-radius: 35px;
-} 
-
-.form-field--boolean__inline--tiny { 
-    width: 35px; 
-    height: 20px; 
-    border-radius: 17.5px; 
-    margin-left: calc(35px + .3rem);
-} 
-
-.form-field--boolean button  { 
-    border: 0; 
-    background: none; 
-    padding: 0;
-} 
-
-.donation-form__raisely-fee.v3 .form-field--boolean__inline--tiny  { 
-    margin-left: 0;
-} 
-
-label { 
-    margin: 0; 
-    padding: 0; 
-    border: 0; 
-    font-size: 100%; 
-    font: inherit; 
-    vertical-align: baseline;
-} 
-
-.form-field > label  { 
-    z-index: 2; 
-    pointer-events: none; 
-    vertical-align: top; 
-    display: inline-block;
-} 
-
-.form-field--boolean label  { 
-    vertical-align: middle; 
-    width: calc(100% - 70px - .3rem);
-} 
-
-.donation-form__raisely-fee.v3 .form-field--boolean label  { 
-    z-index: 0; 
-    width: calc(100% - 35px);
-} 
-
-.donation-form__raisely-fee.v3 .form-field--boolean label:before  { 
-    content: none;
-} 
-
-.form-field--boolean__switch { 
-    position: relative; 
-    font-size: .625rem; 
-    cursor: pointer; 
-    display: block; 
-    overflow: hidden; 
-    box-sizing: content-box; 
-    border-radius: 19px; 
-    height: 100%; 
-    background: #cfcfe6; 
-    transition: .25s cubic-bezier(.2,0,.1,1); 
-    vertical-align: middle;
-} 
-
-.form-field__label-text { 
-    display:    block; 
-    color:  #19304b;
-    font-weight:    700; 
-    transition:    color .2s ease; 
-    line-height:    1;
-    font-size:   .855rem; 
-    margin-bottom:   .36em;
-    align-self:  end;
-} 
-
-.form-field--boolean .form-field__label-text  { 
-    margin-bottom: 0;
-} 
-
-.donation-form__raisely-fee.v3 .form-field__label-text  { 
-    padding-left: 6px; 
-    font-size: 14px;
-} 
-
-.form-field--boolean__switch__left { 
-    display:  inline-block; 
-    box-sizing:  border-box; 
-    position:  absolute; 
-    transition:  all .2s cubic-bezier(.2,0,.1,1); 
-    width:  100%; 
-    z-index:  2; 
-    padding:  1px 10px; 
-    height:  100%; 
-    opacity:  0; 
-    line-height:  30px;
-    color: #fff; 
-    text-align: left; 
-    left: 0;
-} 
-
-.form-field--boolean__switch--tiny .form-field--boolean__switch__left  { 
-    line-height: 18px; 
-    padding: 1px 7px;
-} 
-
-.form-field--boolean__switch__knob { 
-    position: absolute; 
-    top: 3px; 
-    right: 3px; 
-    left: 3px; 
-    z-index: 3; 
-    overflow: hidden; 
-    height: 26px; 
-    border-radius: 16px;
-} 
-
-.form-field--boolean__switch--tiny .form-field--boolean__switch__knob  { 
-    height: 14px; 
-    border-radius: 10px;
-} 
-
-.donation-form__raisely-fee.v3 .form-field--boolean__switch__knob  { 
-    z-index: 0;
-} 
-
-.form-field--boolean__switch__knob:after,.form-field--boolean__switch__knob:before { 
-    content: ""; 
-    position: absolute; 
-    top: 0; 
-    bottom: 0; 
-    left: 0; 
-    background: #fff; 
-    border-radius: 50%; 
-    width: 28px;
-} 
-
-.form-field--boolean__switch__knob:before { 
-    transition: .2s cubic-bezier(.2,0,.1,1);
-} 
-
-.form-field--boolean__switch--tiny .form-field--boolean__switch__knob:after,.form-field--boolean__switch--tiny .form-field--boolean__switch__knob:before  { 
-    width: 16px;
-} 
-
-.form-field--boolean__switch__knob:after { 
-    transition: .3s cubic-bezier(.2,0,.1,1);
-} 
-
-.form-field--boolean__switch__right { 
-    display:  inline-block; 
-    box-sizing:  border-box; 
-    position:  absolute; 
-    transition:  all .2s cubic-bezier(.2,0,.1,1); 
-    width:  100%; 
-    z-index:  2; 
-    padding:  1px 10px; 
-    height:  100%; 
-    opacity:  0; 
-    line-height:  30px;
-    right: 0; 
-    text-align: right; 
-    color: #262861;
-} 
-
-.form-field--boolean__switch--tiny .form-field--boolean__switch__right  { 
-    line-height: 18px; 
-    padding: 1px 7px;
-} 
-
-.form-field--boolean__switch--off .form-field--boolean__switch__right  { 
-    opacity: 1;
-} 
-
-
-@keyframes appearIn { 
-  100% {  
-      opacity: 1; 
-      transform: none; 
-      opacity: 1; 
-      transform: none; 
-  }  
-
-} 
-/* These were inline style tags. Uses id+class to override almost everything */  
-.tooltip-38y:hover .tooltip-26s {
-  visibility: visible;
-  opacity: 1;
-}
-
-.button--loading .button__text {
-  visibility: hidden;
-  opacity: 0;
-}
-.button--loading .icon-pzi{
-  visibility: hidden;
-  opacity: 0;
-}
-
-.button--loading::after{  
-  content: "";  
-  position: absolute;
-  width: 28px;  
-  height: 28px; 
-  top: 0; 
-  left: 0;  
-  right: 0; 
-  bottom: 0;  
-  margin: auto; 
-  border: 4px solid transparent;  
-  border-top-color: #ffffff;  
-  border-radius: 50%; 
-  animation: button-loading-spinner 1s ease infinite; 
-} 
-@keyframes button-loading-spinner { 
-  from {  
-    transform: rotate(0turn); 
-  } 
-  to {  
-    transform: rotate(1turn); 
-  } 
-}
-
-.required-input{  
-  outline: 1px solid #ff2343; 
-}
-
-/*  For Fields */ 
-.required-placeholder-text{ 
-  font-size: 14px;  
-  display: inline-block;  
-  position: absolute; 
-  top: .4em;  
-  right: .6em;  
-  opacity: .9;  
-  color: #ff2343 !important;  
-}
-
-.required-message{  
-font-size: 16px;  
-color: #ff2343; 
-display: inline-block;  
-position: absolute; 
-top: .4em;  
-right: .6em;  
-opacity: .9;  
-} 
-.color-red{ 
-  color: #ff2343 !important;  
-}
-
-.progress-bar__progress { 
-    background:  rgba(63, 120, 189, 0.25);
-    color:    #fff; 
-    white-space:    nowrap; 
-    position:    relative; 
-    font-size:    25px; 
-    height:  16px; 
-    line-height:    1em;
-    border-radius:  50px; 
-} 
-
-.progress-bar__progress  { 
-    overflow: hidden;
-} 
-
-.progress-bar--size-large .progress-bar__progress  { 
-    font-size: 40px;
-} 
-
-.progress-bar__bar { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    bottom: 0; 
-    background: #000; 
-    max-width: 100%; 
-    overflow: hidden; 
-    transition: .4s cubic-bezier(.2,0,.1,1);
-} 
-
-.progress-bar__bar--animated { 
-    animation: appearIn 1.75s cubic-bezier(.2,0,.1,1) .75s forwards; 
-    transform: translate(-100%); 
-    transform: translate3d(-100%,0,0);
-} 
-
-.progress-bar__bar { 
-    background:  #3F78BD; 
-    border-radius:  50px;
-} 
-
-.spinner{
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin: auto;
-  border: 4px solid #fff;
-  border-top-color: transparent;
-  border-radius: 50%;
-  animation: spinner 0.7s linear infinite;
-}
-
-@keyframes spinner{
-  from{}
-    to{
-      transform: rotate(360deg);
-    }
-}
-
-button:disabled,
-button[disabled]{
-  cursor: not-allowed !important;
-  opacity: 0.7;
-}
-
-.amount-placeholder::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #ff2343;
-  opacity: 1; /* Firefox */
-}
-
-#cover-spin {
-    position:fixed;
-    width:100%;
-    left:0;right:0;top:0;bottom:0;
-    background-color: rgba(255,255,255,0.7);
-    z-index:9999;
-    display:none;
-}
-
-@-webkit-keyframes spin {
-	from {-webkit-transform:rotate(0deg);}
-	to {-webkit-transform:rotate(360deg);}
-}
-
-@keyframes spin {
-	from {transform:rotate(0deg);}
-	to {transform:rotate(360deg);}
-}
-
-#cover-spin::after {
-    content:'';
-    display:block;
-    position:absolute;
-    left:48%;top:40%;
-    width:40px;height:40px;
-    border-style:solid;
-    border-color:white;
-    border-top-color:transparent;
-    border-width: 4px;
-    border-radius:50%;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-</style>
-<script>
-
-window.onload = hideMonthly;
-window.onload = selectCC;
-window.onload = showPlatformFees;
-window.onload = set1;
-
-let currentStep = 1;
-let totalAmount = 0;
-let requiredMessage = "This field is required";
-
-const emailRegex = /([a-zA-Z0-9_\-.]+)@(([a-z]{1,3}.[a-z]{1,3}.[a-z]{1,3}.)|(([a-zA-Z0-9-]+.)+))([a-zA-Z]{2,4}|[0-9]{1,3})/;
-const phoneRegex = /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{4}\)?[\s.-]?\d{3}[\s.-]?\d{3}$/;
-
-function setAmount()
-{
-  console.log()
-  totalAmount = 0;
-  let am=document.getElementById('amountValue').value;
-  let amountTextClasses = document.getElementsByClassName('totalAmount');
-  let amValue = totalAmount+=Number(am);
-  for(let i=0;i<amountTextClasses.length;i++)
-  {
-    amountTextClasses[i].innerText = amValue;
-  }
-  var amounts = document.getElementsByClassName('amountText');
-  for (i = 0; i < amounts.length; i++)
-  {
-    var elem = amounts[i];
-    elem.innerText = am;
-  }
-  document.getElementById('Amount').value=totalAmount;
-}
-
-function showMonthly()
-{
-document.getElementById('l1').classList.remove('form-7yz');
-document.getElementById('l1').classList.add('form-6x8');
-document.getElementById('l2').classList.remove('form-6x8');
-document.getElementById('l2').classList.add('form-7yz');
-document.getElementById('hearts-animation').style.display = 'block';
-document.getElementById("payment-type").style.display = "block";
-document.getElementById("bc1").checked = true;
-document.getElementById("bc2").checked = false;
-
-document.getElementsByClassName('donating-in')[0].innerText=' every month';
-document.getElementsByClassName('donating-in')[1].innerText=' every month';
-
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1; //January is 0!
-var yyyy = today.getFullYear();
-if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm}
-today = yyyy+"-"+mm+"-"+dd;
-document.getElementById("startdate").value = today;
-document.getElementById("transactionperiod").value = "Monthly";
-
-}
-
-function hideMonthly()
-{
-document.getElementById('l2').classList.remove('form-7yz');
-document.getElementById('l2').classList.add('form-6x8');
-document.getElementById('l1').classList.remove('form-6x8');
-document.getElementById('l1').classList.add('form-7yz');
-document.getElementById('hearts-animation').style.display = 'none';
-document.getElementsByClassName('donating-in')[0].innerText='Donating in ';
-document.getElementsByClassName('donating-in')[1].innerText='';
-document.getElementById("payment-type").style.display = "none";
-document.getElementById("bc1").checked = true;
-document.getElementById("bc2").checked = false;
-}
-
-function selectCC()
-{
-document.getElementById('pm2').classList.remove('form-7yz');
-document.getElementById('pm2').classList.add('form-6x8');
-document.getElementById('pm1').classList.remove('form-6x8');
-document.getElementById('pm1').classList.add('form-7yz');
-}
-
-function selectDD()
-{
-document.getElementById('pm1').classList.remove('form-7yz');
-document.getElementById('pm1').classList.add('form-6x8');
-document.getElementById('pm2').classList.remove('form-6x8');
-document.getElementById('pm2').classList.add('form-7yz');
-}
-
-function nextStep()
-{
-  if (currentStep === 1)
-  {
-    const chargetype = document.querySelector('input[name="chargetype"]:checked');
-    if(!chargetype)
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Make the tomorrow beautiful</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <style type="text/css">
+    body
     {
-
-      return;
+      
+      /* CSS Variables that may have been missed get put on body */
+      --row-vertical-spacing: 40px;
+      --row-gutter: 0px;
+      --padding: 25px;
+      --padding: 25px;
+      --padding: 25px;
+      --padding: 25px;
+      --padding: 25px;
+      --padding: 25px;
+      --gap: 8px;
+      --pad-y: 18px;
+      --pad-x: 10px;
+      --border-radius: 5px;
+      --gap: 8px;
+      --pad-y: 18px;
+      --pad-x: 10px;
+      --border-radius: 5px;
     }
-    else
-    {
+    
+    *,:after,:before {
+      box-sizing: inherit;
     }
-    const paymentmethod = document.querySelector('input[name="paymentmethod"]:checked');
-    if (!paymentmethod)
-    {
-      alert("Please select a payment method.");
-      return;
+    
+    input:focus {
+      outline:none;
     }
-    const amount = document.getElementById('amountValue').value;
-    if (!amount)
-    {
-      document.getElementById('amountValue').classList.add('required-input'); // input outline red
-      document.getElementById('amountValue').classList.add('amount-placeholder'); // label red
-      document.getElementsByClassName('required-placeholder-text')[0].innerHTML='Required';
-      document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
-      document.getElementsByClassName('required-placeholder-icon')[0].style.display='none';
-      return;
+    
+    div {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
     }
-    else if(Number(amount)<=0){
-      document.getElementById('amountValue').classList.add('required-input'); // input outline red
-      //document.getElementsByClassName('field-lot')[0].classList.add('color-red'); // label red
-      document.getElementsByClassName('required-placeholder-text')[0].innerHTML='Required';
-      document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
-      document.getElementsByClassName('required-placeholder-icon')[0].style.display='none'; 
+    
+    body {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      max-width: 100vw;
+      overflow-x: hidden;
     }
-  }
-
-  if (currentStep === 2)
-  {
-    const firstname = document.getElementById('firstname').value;
-    const lastname = document.getElementById('lastname').value;
-    const email = document.getElementById('email').value;
-    const phonenumber = document.getElementById('phone').value;
-    if(!firstname || !lastname || !email || !phonenumber)
-    {
-      if (!firstname){
-        document.getElementById('firstname').classList.add('required-input'); // input outline red
-        document.getElementsByClassName('field-lot')[0].classList.add('color-red'); // label red
-        document.getElementsByClassName('required-placeholder-text')[1].innerHTML=requiredMessage;
-        document.getElementsByClassName('required-placeholder-text')[1].style.display='block';
-        document.getElementsByClassName('required-placeholder-icon')[1].style.display='none';
-      }if(!lastname){
-        document.getElementById('lastname').classList.add('required-input');
-        document.getElementsByClassName('field-lot')[1].classList.add('color-red');
-        document.getElementsByClassName('required-placeholder-text')[2].innerHTML=requiredMessage;
-        document.getElementsByClassName('required-placeholder-text')[2].style.display='block';
-        document.getElementsByClassName('required-placeholder-icon')[2].style.display='none';
-      }if(!email){
-        document.getElementById('email').classList.add('required-input');
-        document.getElementsByClassName('field-lot')[2].classList.add('color-red');
-        document.getElementsByClassName('required-placeholder-text')[3].innerHTML=requiredMessage;
-        document.getElementsByClassName('required-placeholder-text')[3].style.display='block';
-        document.getElementsByClassName('required-placeholder-icon')[3].style.display='none';
-      }if(!phonenumber){
-        document.getElementById('phone').classList.add('required-input');
-        document.getElementsByClassName('field-lot')[3].classList.add('color-red');
-        document.getElementsByClassName('required-placeholder-text')[4].innerHTML=requiredMessage;
-        document.getElementsByClassName('required-placeholder-text')[4].style.display='block';
-        document.getElementsByClassName('required-placeholder-icon')[4].style.display='none';
+    
+    body {
+      color: #323232;
+      line-height: 1.5;
+      font-family: "Lexend Deca";
+    }
+    
+    html {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      box-sizing: border-box;
+    }
+    
+    :root {
+      --PhoneInput-color--focus: #03b2cb;
+      --PhoneInputCountrySelect-marginRight: 0.35em;
+      --PhoneInputCountrySelectArrow-marginLeft: var(--PhoneInputCountrySelect-marginRight);
+      --PhoneInputCountrySelectArrow-color--focus: var(--PhoneInput-color--focus);
+      --PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus);
+    }
+    
+    .css-c36 {
+      background-color: #fae2d3;
+      padding: 50px;
+      margin-top: 0px;
+    }
+    
+    .container-c9b {
+      width: 100%;
+      margin: auto;
+    }
+    .css-gdc{
+      color: rgb(50, 95, 150);  
+    }
+    
+    p {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 1rem;
+      font: inherit;
+      vertical-align: baseline;
+      font-family: "Lexend Deca";
+      letter-spacing: 0em;
+      line-height: 1.5;
+    }
+    
+    .css-n1b {
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+    
+    .css-jc2 {
+      color: rgb(0, 0, 0);
+      border-style: solid;
+    }
+    
+    .css-m3b {
+      border-style: solid;
+    }
+    
+    .css-tre {
+      margin-top: 30px;
+    }
+    
+    .css-y1l {
+      color: rgb(0, 0, 0);
+    }
+    
+    span {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    .form-oqi {
+      --padding: 25px;
+      color: #254770;
+      max-width: none;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      background-color: #f6f5fa;
+      border: 1px solid lightgrey;
+      position: relative;
+      border-radius: 10px;
+      background: transparent;
+      box-shadow: none;
+      overflow: hidden;
+    }
+    
+    .progress-xhn {
+      position: relative;
+      color: inherit;
+      font-weight: 700;
+      font-size: .8rem;
+      font-family: "Lexend Deca";
+    }
+    
+    .progress-ogw {
+      font-size: 1.25rem;
+    }
+    
+    .header-sge {
+      display: flex;
+      padding: 0;
+      background: none;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    
+    .form-cf9 {
+      padding: 0 1.5rem;
+      position: relative;
+      border-radius: inherit;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      background: white;
+    }
+    
+    .progress-hrs {
+      position: relative;
+      min-height: 1rem;
+    }
+    
+    .progress-hrs {
+      line-height: 1;
+      color: inherit;
+    }
+    
+    .progress-2hx {
+      margin-bottom: .5em;
+    }
+    
+    .progress-ogw .progress-hrs {
+      min-height: 1em;
+    }
+    
+    .form-bpp {
+      display: block;
+      width: 100%;
+      margin-left: 1px;
+      overflow: hidden;
+      position: relative;
+      background: white;
+      justify-content: space-between;
+      border-radius: 5px 5px 0 0;
+      padding-top: 2rem;
+      margin: 0;
+    }
+    
+    .message-r9z {
+      padding: 1em;
+      margin: var(--spacing) 0;
+      border-radius: .333em;
+      font-size: Max(.9rem,14px);
+      font-weight: 700;
+      line-height: 1.4;
+      box-shadow: inset 0 0 0 2px rgba(0,0,0,.10196078431372549);
+    }
+    
+    .message-2tf {
+      color: #4c290a;
+      background: #ffaf3e;
+    }
+    
+    .form-cf9 > * {
+      position: relative;
+    }
+    
+    .message-2tf {
+      margin-bottom: 1.5rem;
+    }
+    
+    .message-r9z:first-child {
+      margin-top: 0;
+    }
+    
+    .form-or5 .message-2tf {
+      margin-bottom: 1rem;
+    }
+    
+    .form-lix {
+      display: inline-block;
+      position: relative;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-radius: 7.5px;
+    }
+    
+    .form-edo {
+      display: flex;
+      --gap: 8px;
+      --pad-y: 18px;
+      --pad-x: 10px;
+      --border-radius: 5px;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 1rem;
+      font-family: "Lexend Deca";
+    }
+    
+    .form-e6x {
+      margin: 1em 0 0;
+      font-size: Max(0.7em, 14px);
+      padding-bottom: 1em;
+    }
+    
+    .progress-to6 {
+      opacity: 0;
+      animation: appearIn .3s cubic-bezier(.2,0,.1,1) .25s forwards;
+      text-align: left;
+      position: absolute;
+      left: .5em;
+      z-index: 0;
+      width: 50%;
+    }
+    
+    .progress-hrs .progress-to6 {
+      left: 0;
+    }
+    
+    .progress-fgo {
+      opacity: 0.75;
+      animation: appearIn .3s cubic-bezier(.2,0,.1,1) .25s forwards;
+      text-align: right;
+      position: absolute;
+      right: 0;
+      width: 50%;
+    }
+    
+    .form-oao {
+      cursor: default;
+      display: inline-block;
+      font-weight: 700;
+      border: 1px solid #888;
+      width: var(--padding);
+      height: var(--padding);
+      padding: 0;
+      text-align: center;
+      line-height: 22px;
+      font-size: .825rem;
+      margin: 0 .25rem;
+      border-radius: 100%;
+      background: #fff;
+    }
+    
+    .form-9a6 {
+      background-color: #d7d3e9;
+    }
+    
+    .form-oao {
+      font-size: 1.25rem;
+      position: relative;
+      z-index: 1;
+      font-family: "Lexend Deca";
+      font-weight: bold;
+      color: white;
+      opacity: 0.5;
+    }
+    
+    .form-9a6 {
+      color: #6392cb;
+      opacity: 1;
+    }
+    
+    .form-oao {
+      width: auto;
+      height: auto;
+      background: transparent;
+      border: none;
+      color: black;
+      padding: 1rem;
+      margin: 0;
+    }
+    
+    .form-9a6 {
+      color: #3f78bd;
+    }
+    
+    .form-9a6:before,.form-9a6:after {
+      opacity: 0.75;
+      background: currentColor;
+    }
+    
+    .form-oao:before,.form-oao:after {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      bottom: 0;
+      width: 0;
+      transition: 0.3s cubic-bezier(0.2, 0, 0.1, 1);
+    }
+    
+    .form-oao:before {
+      right: 0;
+    }
+    
+    .form-oao:last-child {
+      margin-right: 0;
+    }
+    
+    .form-oao:last-of-type:before {
+      content: none;
+    }
+    
+    .message-r9z p {
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: 400;
+      margin-bottom: .25em;
+    }
+    
+    .message-r9z p:last-child {
+      margin-bottom: 0;
+    }
+    
+    button {
+      cursor: pointer;
+    }
+    
+    .form-h92 {
+      border-width: 1px;
+      border-style: solid;
+      font-weight: 700;
+      font-family: inherit;
+      border-radius: 0;
+      cursor: pointer;
+      border-color: #254770;
+      padding: 0.55em .75em;
+      margin: 0;
+      font-weight: bold;
+      line-height: 1;
+      letter-spacing: 0.05em;
+      background: transparent;
+      color: #254770;
+      border-color: #192f4a;
+    }
+    
+    .form-6x8 {
+      color: #fff;
+    }
+    
+    .form-6x8 {
+      background-color: #254770;
+      color: #d6e2f1;
+    }
+    
+    .form-6x8 {
+      background: white;
+      color: #8aadd8;
+    }
+    
+    .form-h92{
+      border-radius: 5px;
+    }
+    
+    
+    /*
+    .form-h92:first-of-type {
+      border-radius: 5px 0 0 5px;
+    }
+    
+    .form-h92:last-child {
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+      border-right-width: 1px;
+    }
+    
+    .form-h92:last-of-type {
+      border-radius: 0 5px 5px 0;
+    }
+    
+    */
+    
+    .form-7yz {
+      background-color: transparent;
+      color: inherit;
+    }
+    
+    
+    
+    .form-7yz:hover {
+      color: #325f96;
+    }
+    
+    .wrapper-zeh {
+      display: flex;
+      position: relative;
+      flex-basis: auto;
+      justify-content: center;
+    }
+    
+    .field-kvl {
+      width: 200px;
+      margin: var(--gap);
+      display: inline-block;
+      font-size: inherit;
+    }
+    
+    .field-bsg {
+      position: relative;
+      background: #fff;
+      font-size: .9em;
+      line-height: 1;
+      text-align: left;
+      transition: border-color .3s cubic-bezier(.2,0,.1,1);
+      padding: .54em;
+      border: .9px solid #444;
+      border-radius: 2.7px;
+    }
+    
+    .field-ggk {
+      padding: 0;
+      font-size: 1.17em;
+    }
+    
+    .field-bsg {
+      border-color: rgba(37, 71, 112, 0.5);
+      color: #254770;
+      background: white;
+    }
+    
+    .field-kvl {
+      width: 100%;
+      max-width: unset;
+    }
+    
+    .field-bsg {
+      border-width: 1px;
+      border-color: currentColor;
+    }
+    
+    .field-kvl.field-bsg {
+      font-weight: 700;
+      min-width: Min(100%,13ch);
+      width: 20%;
+    }
+    
+    .form-oqi .field-bsg {
+      margin-bottom: 1rem;
+    }
+    
+    .field-kvl.field-bsg {
+      border-color: #325f96;
+      background: white;
+    }
+    
+    .form-oqi .field-bsg {
+      margin-bottom: 0.25rem;
+    }
+    
+    .field-kvl.field-bsg.field-bsg {
+      margin-bottom: var(--gap);
+    }
+    
+    .form-yo8 {
+      display: inline-block;
+      vertical-align: baseline;
+      position: relative;
+      padding: .25em 1.75em .25em .25em;
+      margin-left: -.15em;
+      font-size: inherit;
+      font-weight: 700;
+      line-height: 1rem;
+      height: 1.2rem;
+      text-align: left;
+      min-width: 7ch;
+    }
+    
+    i {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      font-style: italic;
+    }
+    
+    .icon-w3c {
+      display: inline-block;
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      font-feature-settings: "liga";
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    i.icon-w3c {
+      font-style: normal;
+    }
+    
+    .message-r9z i.icon-w3c {
+      font-size: 1.25em;
+      vertical-align: middle;
+      margin: -.2em .25em 0;
+      opacity: .75;
+    }
+    
+    strong {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      font-weight: 700;
+      line-height: 1;
+    }
+    
+    a {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      cursor: pointer;
+      color: #325f96;
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: underline;
+    }
+    
+    .message-r9z a {
+      color: inherit;
+    }
+    
+    a:hover {
+      color: #3f78bd;
+      font-weight: normal;
+      font-style: normal;
+      text-decoration: underline;
+    }
+    
+    .message-r9z a,.message-r9z a:hover {
+      color: inherit;
+    }
+    
+    .form-ho3 {
+      cursor: pointer;
+      margin: var(--gap);
+      padding: var(--pad-y) var(--pad-x);
+      min-width: 20%;
+      flex-basis: auto;
+      background-color: #fff;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: var(--border-radius);
+      font-weight: 700;
+      font-family: inherit;
+      font-size: inherit;
+      transition: .3s cubic-bezier(.2,0,.1,1);
+    }
+    
+    .form-ho3 {
+      border-color: transparent;
+      background: white;
+      color: #19304b;
+      border-radius: 5px;
+      transition: 0.3s cubic-bezier(0.2, 0, 0.1, 1);
+      position: relative;
+      font-size: 1.25em;
+      border: 1px solid lightgrey;
+    }
+    
+    .wrapper-zeh .form-ho3 {
+      flex-basis: auto;
+      width: 100%;
+    }
+    
+    .button-tbw:hover {
+      background: #3f77bc;
+      border-color: #3f77bc;
+      color: white;
+    }
+    
+    .form-ho3:hover {
+      background: #3f78bd;
+      border-color: #3f77bc;
+      color: white;
+      background-position: right !important;
+    }
+    
+    label {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    .field-bsg > label {
+      z-index: 2;
+      pointer-events: none;
+      vertical-align: top;
+      display: inline-block;
+    }
+    
+    .field-ggk > label {
+      position: absolute;
+      top: .54em;
+      left: .54em;
+    }
+    
+    .field-wgf {
+      display: flex;
+      align-items: center;
+    }
+    
+    .field-kvl .field-wgf {
+      height: 100%;
+    }
+    
+    .form-yo8 span {
+      position: relative;
+    }
+    
+    .form-yo8 span:before {
+      content: "";
+      position: absolute;
+      top: calc(50% - .66em);
+      left: calc(100% + .75em);
+      font-size: clamp(8px,11px,.666em);
+      width: 1em;
+      height: 1em;
+      border-right: 2px solid;
+      border-bottom: 2px solid;
+      transform: rotate(45deg);
+      opacity: .5;
+    }
+    
+    select {
+      color: #323232;
+      line-height: 1.5;
+      font-family: "Lexend Deca";
+      font-size: 1em;
+      letter-spacing: 0em;
+    }
+    
+    .select-6wt {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      padding: 0;
+      width: 100%;
+      background: transparent;
+      display: inline-block;
+      font-weight: 700;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    
+    .field-8lb {
+      display: block;
+      color: #19304b;
+      font-weight: 700;
+      transition: color .2s ease;
+      line-height: 1;
+      font-size: .855rem;
+      margin-bottom: .36em;
+      align-self: end;
+    }
+    
+    .field-kvl .field-8lb {
+      display: none;
+    }
+    
+    .field-wgf > * {
+      font-size: inherit;
+    }
+    
+    .field-qhl {
+      font-weight: 600;
+      margin-right: -.33em;
+      opacity: .5;
+      padding: 1.88em 0 .54em .621em;
+      position: absolute;
+    }
+    
+    .field-kvl .field-qhl {
+      padding: 18px 0 18px 10px;
+    }
+    
+    .field-edh .field-qhl {
+      position: relative;
+    }
+    
+    input {
+      color: #323232;
+      line-height: 1.5;
+      font-family: "Lexend Deca";
+      font-size: 1em;
+      letter-spacing: 0em;
+    }
+    
+    .field-bsg input {
+      background: transparent;
+      border: 0;
+      margin: 0;
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      color: inherit;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    
+    .field-qhl + input {
+      display: inline-block;
+      margin-left: .09em;
+      width: 90%;
+      width: calc(100% - 1.35em);
+      padding-left: 1.5em!important;
+    }
+    
+    .field-ggk input {
+      padding: 1.88em .54em .54em;
+    }
+    
+    .field-kvl input {
+      min-height: 55px;
+    }
+    
+    .field-bsg input {
+      color: #19304b;
+    }
+    
+    .field-kvl.field-bsg .input-vjj {
+      padding: 18px 5px 18px 10px;
+      width: 0;
+      flex-grow: 1;
+      font-size: inherit;
+      line-height: 1;
+      font-weight: inherit;
+      color: inherit;
+      height: 100%;
+      margin-left: -.05em;
+    }
+    
+    .field-edh .field-wgf .input-vjj {
+      margin-left: 0;
+      flex-grow: 1;
+      padding-left: .54em!important;
+    }
+    
+    
+    @keyframes appearIn {
+      100% {
+        opacity: 1;
+        transform: none;
+        opacity: 1;
+        transform: none;
       }
-      return;
+      
     }
-    else
+    /* These were inline style tags. Uses id+class to override almost everything */
+    
+    
+    /*New CSS*/
+    body {
+      /* CSS Variables that may have been missed get put on body */
+      --row-vertical-spacing: 40px;
+      --row-gutter: 0px;
+      --padding: 25px;
+      --padding: 25px;
+      --padding: 25px;
+      --padding: 25px;
+      --padding: 25px;
+      --padding: 25px;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      max-width: 100vw;
+      overflow-x: hidden;
+    }
+    
+    body {
+      color: #323232;
+      line-height: 1.5;
+      font-family: "Lexend Deca";
+    }
+    
+    html {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      box-sizing: border-box;
+    }
+    
+    :root {
+      --PhoneInput-color--focus: #03b2cb;
+      --PhoneInputCountrySelect-marginRight: 0.35em;
+      --PhoneInputCountrySelectArrow-marginLeft: var(--PhoneInputCountrySelect-marginRight);
+      --PhoneInputCountrySelectArrow-color--focus: var(--PhoneInput-color--focus);
+      --PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus);
+    }
+    
+    *,:after,:before {
+      box-sizing: inherit;
+    }
+    
+    p {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 1rem;
+      font: inherit;
+      vertical-align: baseline;
+      font-family: "Lexend Deca";
+      letter-spacing: 0em;
+      line-height: 1.5;
+    }
+    
+    span {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    .form-bg5 {
+      padding: 0 1.5rem;
+      position: relative;
+      border-radius: inherit;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      background: white;
+    }
+    
+    .label-9wv {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px!important;
+      padding: 10px;
+      font-size: .875rem;
+      font-weight: 600;
+    }
+    
+    .form-bg5 > * {
+      position: relative;
+    }
+    
+    .label-9wv {
+      background-color: #254770;
+      color: #d6e2f1;
+    }
+    
+    h3 {
+      display: block;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 1.625rem;
+      font: inherit;
+      vertical-align: baseline;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-family: "Lexend Deca";
+      font-weight: bold;
+      letter-spacing: 0em;
+      line-height: 1.2;
+      color: #19304b;
+    }
+    
+    .form-bg5 .title-bot {
+      margin-top: 0;
+      color: inherit;
+      font-size: 18px;
+    }
+    
+    .label-9wv + .title-bot {
+      /*margin-top: 8px;*/
+      margin-bottom: 4px;
+    }
+    
+    form {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    .label-ix2 {
+      position: relative;
+      z-index: 2;
+      width: 1rem;
+      height: 1rem;
+    }
+    
+    .form-bg5 .wrapper-5bi {
+      padding: 0.25rem;
+    }
+    
+    .form-bg5 .form-i4o {
+      border-radius: inherit;
+    }
+    
+    .icon-pzi {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    .icon-v44 {
+      width: 1.125rem;
+      height: 1.125rem;
+      font-size: 1.125rem;
+    }
+    
+    .icon-bej {
+      fill: currentColor;
+      color: inherit;
+    }
+    
+    .label-ix2 span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    
+    .label-ix2 span.icon-pzi {
+      width: 1rem;
+      height: 1rem;
+      font-size: 1rem;
+    }
+    
+    .label-ix2 span.ani-zvx {
+      opacity: 0;
+    }
+    
+    .label-ix2.ani-w9j .cen-333 {
+      opacity: 1;
+      transition: opacity 1s;
+    }
+    
+    .label-ix2 span.left-75z {
+      transform: rotate(-10deg);
+    }
+    
+    .label-ix2.ani-w9j .left-75z {
+      transform: rotate(-10deg) translate(-10px,-10px);
+      transition: transform 1s .3s;
+      animation: fade-in-out 1s .3s forwards;
+    }
+    
+    .label-ix2 span.right-x57 {
+      transform: rotate(10deg);
+    }
+    
+    .label-ix2.ani-w9j .right-x57 {
+      transform: rotate(10deg) translate(10px,-10px);
+      transition: transform 1s .5s;
+      animation: fade-in-out 1s .5s forwards;
+    }
+    
+    .label-ix2.ani-w9j .center-8nc {
+      transform: translateY(-20px);
+      transition: transform 1.5s;
+      animation: fade-in-out 1.5s forwards;
+    }
+    
+    .field-zcb {
+      position: relative;
+      background: #fff;
+      font-size: .9em;
+      line-height: 1;
+      text-align: left;
+      transition: border-color .3s cubic-bezier(.2,0,.1,1);
+      padding: .54em;
+      border: .9px solid #444;
+      border-radius: 2.7px;
+    }
+    
+    .field-c6x {
+      padding: 0;
+      font-size: 1.05em;
+    }
+    
+    .field-zcb {
+      border-color: currentColor;
+      color: #254770;
+      background: white;
+      border-width: 1px;
+    }
+    
+    .field-c6x {
+      padding: 0;
+    }
+    
+    .checkbox-n1l {
+      background: none;
+      padding: 0;
+      border-width: 0 !important;
+      color: inherit;
+    }
+    
+    nav {
+      display: block;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    .form-x4j {
+      display: flex;
+      width: 100%;
+      width: calc(100% + var(--padding)*2);
+      margin-top: 10px;
+      margin-left: calc(var(--padding)*-1);
+      position: relative;
+      border-radius: inherit;
+      overflow: hidden;
+    }
+    
+    i {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      font-style: italic;
+    }
+    
+    .icon-xcf {
+      display: inline-block;
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      font-feature-settings: "liga";
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    i.icon-xcf {
+      font-style: normal;
+    }
+    
+    .icon-pzi i.icon-xcf {
+      font-size: inherit;
+      font-style: normal;
+      vertical-align: top;
+    }
+    
+    .field-hem {
+      display: inline-block;
+      position: absolute;
+      top: .2em;
+      right: .6em;
+      opacity: .5;
+      color: inherit;
+    }
+    
+    label {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    .field-zcb > label {
+      z-index: 2;
+      pointer-events: none;
+      vertical-align: top;
+      display: inline-block;
+    }
+    
+    .field-c6x > label {
+      position: absolute;
+      top: .54em;
+      left: .54em;
+    }
+    
+    input {
+      color: #323232;
+      line-height: 1.5;
+      font-family: "Lexend Deca";
+      font-size: 1em;
+      letter-spacing: 0em;
+    }
+    
+    .field-zcb input {
+      background: transparent;
+      border: 0;
+      margin: 0;
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      color: inherit;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    
+    .field-c6x input {
+      padding: 1.38em .50em .50em;
+    }
+    
+    .field-zcb input {
+      color: #19304b;
+    }
+    
+    .field-c6x > label {
+      position: absolute;
+      top: .54em;
+      left: .54em;
+    }
+    
+    .checkbox-n1l > label {
+      cursor: pointer;
+      display: inline-flex;
+      align-items: flex-start;
+      pointer-events: all;
+      border-color: inherit;
+      margin-top: -.2em;
+    }
+    
+    button {
+      cursor: pointer;
+    }
+    
+    .button-j7f {
+      border-radius: 2px;
+      border: 2px solid transparent;
+      line-height: 1;
+      transition: .3s cubic-bezier(.22,.24,.18,1);
+      margin-right: .5em;
+      font-family: inherit;
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      user-select: none;
+      text-decoration: none;
+      font-style: normal;
+    }
+    
+    .button-4dx {
+      color: #ed6239;
+      padding: 0.875em 3em;
+      font-size: 0.875em;
+      font-weight: bold;
+      text-transform: uppercase;
+      background-color: #325f96;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+    .button-j7f {
+      border-style: solid;
+      border-width: 2px;
+      transition: 0.3s cubic-bezier(0.2, 0, 0.1, 1);
+    }
+    
+    .button-j7f {
+      border-radius: 5px;
+    }
+    
+    .button-4dx {
+      text-transform: uppercase;
+    }
+    
+    .form-x4j .button-j7f,.form-x4j .button-4dx {
+      flex-grow: 1;
+      width: 100%;
+    }
+    
+    .form-x4j .form-53y {
+      width: 20%;
+      margin: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      color: #333;
+      background: rgba(0,0,0,.1);
+      padding-left: .5em!important;
+      padding-right: .5em!important;
+    }
+    
+    .form-x4j .button-4dx {
+      font-size: 1.25rem;
+      border-radius: inherit;
+    }
+    
+    .form-x4j .button-j7f {
+      border-radius: 0;
+      border-bottom-left-radius: 7.5px;
+      border-bottom-right-radius: 7.5px;
+    }
+    
+    .form-x4j .button-j7f.form-53y {
+      border-bottom-right-radius: 0;
+    }
+    
+    .form-x4j .button-4dx:first-of-type:not(:last-of-type) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    
+    .button-j7f:before,.button-j7f:after {
+      transition: 0.3s cubic-bezier(0.2, 0, 0.1, 1), border-color 0s;
+    }
+    
+    .form-53y:before {
+      opacity: 0.1;
+    }
+    
+    .button-j7f:active,.button-j7f:hover {
+      font-style: normal;
+      text-decoration: none;
+    }
+    
+    .button-4dx:hover {
+      color: white;
+      font-weight: bold;
+      background: #3f77bc;
+      border-color: #3f77bc;
+    }
+    
+    .form-x4j .form-53y:hover {
+      background: rgba(0,0,0,.15);
+      border-color: transparent;
+      color: #333;
+    }
+    
+    .button-j7f:last-child {
+      margin-right: 0;
+    }
+    
+    .form-x4j .form-apk {
+      width: 80%;
+      margin: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    
+    .form-x4j .button-j7f.form-apk {
+      border-bottom-left-radius: 0;
+    }
+    
+    .form-x4j .button-4dx:last-of-type:not(:first-of-type) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    
+    .field-lem {
+      font-style: normal;
+      font-size: .75em;
+    }
+    
+    .field-lot {
+      display: block;
+      color: #19304b;
+      font-weight: 700;
+      transition: color .2s ease;
+      line-height: 1;
+      font-size: .855rem;
+      margin-bottom: .36em;
+      align-self: end;
+    }
+    
+    .checkbox-n1l input {
+      display: inline-block;
+      position: relative;
+      top: 0;
+      margin-top: 0;
+      flex-shrink: 0;
+      flex: 0 0 auto;
+      vertical-align: baseline;
+      width: 1em;
+      height: 1em;
+      appearance: none;
+      outline: none;
+      background: url("data:image/svg+xml;utf8,<svg stroke='none' xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='6'><path d='M25 8.3L13.4 23.1l-7-7.6'></path></svg>") no-repeat 50%/100%;
+      background-color: #fff;
+      border: 1px solid;
+      border-color: rgba(50, 95, 150, 0.75);
+      border-radius: 4px;
+      margin-right: .5rem;
+      background-image: url("data:image/svg+xml;utf8,<svg stroke='none' xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='6'><path d='M25 8.3L13.4 23.1l-7-7.6'></path></svg>");
+      background-position-x: 50%;
+      background-position-y: center;
+      background-size: 100%;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      padding: 9px;
+    }
+    
+    .checkbox-n1l input:checked {
+      background: url("data:image/svg+xml;utf8,<svg stroke='%23262861' xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='6'><path d='M25 8.3L13.4 23.1l-7-7.6'></path></svg>") no-repeat 50%/100%;
+      background-color: #fff;
+      background-image: url("data:image/svg+xml;utf8,<svg stroke='%23262861' xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='6'><path d='M25 8.3L13.4 23.1l-7-7.6'></path></svg>");
+      background-position-x: 50%;
+      background-position-y: center;
+      background-size: 100%;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      border-color: #325f96;
+    }
+    
+    .checkbox-n1l .field-lot {
+      line-height: 1.4;
+      margin-bottom: 0;
+      color: inherit;
+    }
+    
+    .icon-cdy {
+      color: #333;
+      fill: #333;
+    }
+    
+    .button-j7f .icon-pzi {
+      display: inline-block;
+      margin-bottom: 0;
+      line-height: 0;
+      vertical-align: middle;
+      margin: 0 .25em;
+    }
+    
+    .form-x4j .form-53y .icon-pzi {
+      color: inherit;
+      fill: currentColor;
+      transition: .4s cubic-bezier(.2,0,.1,1);
+    }
+    
+    .button-j7f .icon-pzi:last-child:first-child {
+      line-height: 1;
+    }
+    
+    .form-x4j .form-53y:hover .icon-pzi {
+      transform: translate3d(-15%,0,0);
+    }
+    
+    .form-x4j .form-apk .icon-pzi {
+      color: currentColor;
+      fill: currentColor;
+      transition: .3s cubic-bezier(.2,0,.1,1);
+    }
+    
+    .form-x4j .form-apk:hover .icon-pzi {
+      transform: translate3d(15%,0,0);
+    }
+    
+    
+    @keyframes appearIn {
+      100% {
+        opacity: 1;
+        transform: none;
+        opacity: 1;
+        transform: none;
+      }
+      
+    }
+    @keyframes fade-in-out {
+      0%, 100% {
+        opacity: 0;
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+        opacity: 1;
+      }
+      
+    }
+    /* These were inline style tags. Uses id+class to override almost everything */
+    
+    
+    /* New CSS 2 */
+    
+    span {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    .form-k2v {
+      --padding: 25px;
+      color: #254770;
+      max-width: none;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      background-color: #f6f5fa;
+      border: 1px solid lightgrey;
+      position: relative;
+      border-radius: 10px;
+      background: transparent;
+      box-shadow: none;
+      overflow: hidden;
+    }
+    
+    .header-8s3 {
+      display: flex;
+      padding: 0;
+      background: none;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    
+    .form-itb {
+      padding: 0 1.5rem;
+      position: relative;
+      border-radius: inherit;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+      background: white;
+    }
+    
+    .form-o1m {
+      display: block;
+      width: 100%;
+      margin-left: 1px;
+      overflow: hidden;
+      position: relative;
+      background: white;
+      justify-content: space-between;
+      border-radius: 5px 5px 0 0;
+      padding-top: 2rem;
+      margin: 0;
+    }
+    
+    h3 {
+      display: block;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 1.625rem;
+      font: inherit;
+      vertical-align: baseline;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-family: "Lexend Deca";
+      font-weight: bold;
+      letter-spacing: 0em;
+      line-height: 1.2;
+      color: #19304b;
+    }
+    
+    .form-itb > * {
+      position: relative;
+    }
+    
+    .form-k2v h3 {
+      color: inherit;
+    }
+    
+    .form-itb .title-er1 {
+      font-size: 22px;
+      margin-top: 0;
+    }
+    
+    .form-o9z > div {
+      border-radius: inherit;
+    }
+    
+    .form-xrs {
+      cursor: default;
+      display: inline-block;
+      font-weight: 700;
+      border: 1px solid #888;
+      width: var(--padding);
+      height: var(--padding);
+      padding: 0;
+      text-align: center;
+      line-height: 22px;
+      font-size: .825rem;
+      margin: 0 .25rem;
+      border-radius: 100%;
+      background: #fff;
+    }
+    
+    .form-ezb {
+      color: black;
+    }
+    
+    .form-xrs {
+      font-size: 1.25rem;
+      position: relative;
+      z-index: 1;
+      font-family: "Lexend Deca";
+      font-weight: bold;
+      color: white;
+    }
+    
+    .form-ezb {
+      opacity: 1;
+    }
+    
+    .form-xrs {
+      width: auto;
+      height: auto;
+      background: transparent;
+      border: none;
+      color: black;
+      padding: 1rem;
+      margin: 0;
+    }
+    
+    .form-xrs:before,.form-xrs:after {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      bottom: 0;
+      width: 0;
+      transition: 0.3s cubic-bezier(0.2, 0, 0.1, 1);
+    }
+    
+    .form-xrs:before {
+      right: 0;
+    }
+    
+    .form-8wa {
+      color: #3f78bd;
+    }
+    
+    .form-xrs:last-child {
+      margin-right: 0;
+    }
+    
+    .form-xrs:last-of-type:before {
+      content: none;
+    }
+    
+    form {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    .form-gqi {
+      font-size: Max(.8rem,13px);
+      line-height: 1.5rem;
+      margin-bottom: .3rem;
+      display: inline-block;
+    }
+    
+    .form-gqi.onxmc {
+      position: relative;
+      margin-top: 1em;
+      margin-bottom: 16px;
+      width: 100%;
+      border: 1.5px solid #ebebeb;
+      border-radius: 5px;
+      background: hsla(0,0%,96.1%,.5);
+      padding: 14px;
+      color: #222;
+      transition: all .75s ease-in-out;
+    }
+    
+    .form-k2v .form-gqi.onxmc.form-o19 {
+      border-color: #325f96;
+    }
+    
+    .message-svm {
+      margin-top: .5em;
+      font-size: Max(.8rem,13px);
+    }
+    
+    .field-65r {
+      position: relative;
+      background: white;
+      font-size: .9em;
+      line-height: 1;
+      text-align: left;
+      transition: border-color .3s cubic-bezier(.2,0,.1,1);
+      padding: .54em;
+      border: .9px solid #444;
+      border-radius: 2.7px;
+      border-color: currentColor;
+      color: #254770;
+      border-width: 1px;
+    }
+    
+    .form-gqi .field-65r {
+      font-size: inherit;
+    }
+    
+    .form-k2v .field-65r {
+      margin-bottom: 0.25rem;
+    }
+    
+    .form-gqi.onxmc .field-65r {
+      border: none;
+      background: transparent;
+      padding: 0;
+      color: inherit;
+      font-size: 14px;
+    }
+    
+    .form-gqi.onxmc .donation-form__raisely-fee__donationHeart {
+      opacity: 0;
+      transition: all .75s ease-in-out;
+      position: absolute;
+      top: -10px;
+      right: 5px;
+      height: 30px;
+      font-size: 16px;
+      stroke: #fff;
+      fill: currentColor;
+    }
+    
+    .form-gqi.onxmc .donation-form__raisely-fee__donationHeart--active {
+      opacity: 1;
+    }
+    
+    .form-k2v .form-gqi.onxmc .donation-form__raisely-fee__donationHeart {
+      fill: #325f96;
+      stroke: white;
+    }
+    
+    table {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    
+    .form-gqi.onxmc .table-at1 {
+      opacity: .9;
+      min-height: 34px;
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 130%;
+      text-align: left;
+      width: 100%;
+    }
+    
+    b {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      font-weight: 700;
+    }
+    
+    button {
+      cursor: pointer;
+    }
+    
+    .field-xk8 {
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: .3rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 70px;
+      height: 32px;
+      border-radius: 35px;
+    }
+    
+    .field-1g3 {
+      width: 35px;
+      height: 20px;
+      border-radius: 17.5px;
+      margin-left: calc(35px + .3rem);
+    }
+    
+    .field-mmo button {
+      border: 0;
+      background: none;
+      padding: 0;
+    }
+    
+    .form-gqi.onxmc .field-1g3 {
+      margin-left: 0;
+    }
+    
+    label {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    .field-65r > label {
+      z-index: 2;
+      pointer-events: none;
+      vertical-align: top;
+      display: inline-block;
+    }
+    
+    .field-mmo label {
+      vertical-align: middle;
+      width: calc(100% - 70px - .3rem);
+    }
+    
+    .form-gqi.onxmc .field-mmo label {
+      z-index: 0;
+      width: calc(100% - 35px);
+    }
+    
+    .form-gqi.onxmc .field-mmo label:before {
+      content: none;
+    }
+    
+    tr {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    .switch-cmk {
+      position: relative;
+      font-size: .625rem;
+      cursor: pointer;
+      display: block;
+      overflow: hidden;
+      box-sizing: content-box;
+      border-radius: 19px;
+      height: 100%;
+      background: #cfcfe6;
+      transition: .25s cubic-bezier(.2,0,.1,1);
+      vertical-align: middle;
+    }
+    
+    .switch-wyo {
+      background: #325f96;
+    }
+    
+    .form-k2v .form-gqi.onxmc .switch-wyo {
+      background: #325f96;
+    }
+    
+    .field-ok6 {
+      display: block;
+      color: #19304b;
+      font-weight: 700;
+      transition: color .2s ease;
+      line-height: 1;
+      font-size: .855rem;
+      margin-bottom: .36em;
+      align-self: end;
+    }
+    
+    .field-mmo .field-ok6 {
+      margin-bottom: 0;
+    }
+    
+    .form-gqi.onxmc .field-ok6 {
+      padding-left: 6px;
+      font-size: 14px;
+    }
+    
+    td {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    
+    .form-gqi.onxmc .column-xxr {
+      text-align: right;
+    }
+    
+    .switch-ah4 {
+      display: inline-block;
+      box-sizing: border-box;
+      position: absolute;
+      transition: all .2s cubic-bezier(.2,0,.1,1);
+      width: 100%;
+      z-index: 2;
+      padding: 1px 10px;
+      height: 100%;
+      opacity: 0;
+      line-height: 30px;
+      color: #fff;
+      text-align: left;
+      left: 0;
+    }
+    
+    .switch-6ly .switch-ah4 {
+      line-height: 18px;
+      padding: 1px 7px;
+    }
+    
+    .switch-wyo .switch-ah4 {
+      opacity: 1;
+    }
+    
+    .switch-c6j {
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      left: 3px;
+      z-index: 3;
+      overflow: hidden;
+      height: 26px;
+      border-radius: 16px;
+    }
+    
+    .switch-6ly .switch-c6j {
+      height: 14px;
+      border-radius: 10px;
+    }
+    
+    .form-gqi.onxmc .switch-c6j {
+      z-index: 0;
+    }
+    
+    .switch-c6j:after,.switch-c6j:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: #fff;
+      border-radius: 50%;
+      width: 28px;
+    }
+    
+    .switch-c6j:before {
+      transition: .2s cubic-bezier(.2,0,.1,1);
+    }
+    
+    .switch-6ly .switch-c6j:after,.switch-6ly .switch-c6j:before {
+      width: 16px;
+    }
+    
+    .switch-wyo .switch-c6j:after,.switch-wyo .switch-c6j:before {
+      transform: translate3d(calc(64px - 100%),0,0);
+    }
+    
+    .switch-wyo.switch-6ly .switch-c6j:after,.switch-wyo.switch-6ly .switch-c6j:before {
+      transform: translate3d(calc(29px - 100%),0,0);
+    }
+    
+    .switch-c6j:after {
+      transition: .3s cubic-bezier(.2,0,.1,1);
+    }
+    
+    .switch-njp {
+      display: inline-block;
+      box-sizing: border-box;
+      position: absolute;
+      transition: all .2s cubic-bezier(.2,0,.1,1);
+      width: 100%;
+      z-index: 2;
+      padding: 1px 10px;
+      height: 100%;
+      opacity: 0;
+      line-height: 30px;
+      right: 0;
+      text-align: right;
+      color: #262861;
+    }
+    
+    .switch-6ly .switch-njp {
+      line-height: 18px;
+      padding: 1px 7px;
+    }
+    
+    .form-gqi.onxmc .tooltip-38y {
+      display: inline;
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .icon-yqf {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    .icon-x6y {
+      width: 1.125rem;
+      height: 1.125rem;
+      font-size: 1.125rem;
+    }
+    
+    .icon-bb8 {
+      color: #333;
+      fill: #333;
+    }
+    
+    .tooltip-26s {
+      pointer-events: none;
+      z-index: 2;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      border-radius: .3rem;
+      padding: .5rem;
+      margin-bottom: .333em;
+      background: #000;
+      color: #fff;
+      font-size: .7rem;
+      line-height: normal;
+      opacity: 0;
+      transition: opacity .2s ease;
+    }
+    
+    .form-gqi.onxmc .tooltip-26s {
+      left: 140%;
+    }
+    
+    .tooltip-26s:after {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      bottom: -5px;
+      left: calc(50% - 2.5px);
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #000;
+    }
+    
+    .form-gqi.onxmc .tooltip-26s:after {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      bottom: -5px;
+      left: calc(40% - 2.5px);
+      border-top: 5px solid #000;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+    }
+    
+    i {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      font-style: italic;
+    }
+    
+    .icon-oxj {
+      display: inline-block;
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      font-feature-settings: "liga";
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    i.icon-oxj {
+      font-style: normal;
+    }
+    
+    .icon-yqf i.icon-oxj {
+      font-size: inherit;
+      font-style: normal;
+      vertical-align: top;
+    }
+    
+    .form-gqi.onxmc .icon-yqf i.icon-oxj {
+      font-size: 16px;
+      opacity: .5;
+    } /* And @keyframes with prefixes */
+    
+    @keyframes appearIn {
+      100% {
+        opacity: 1;
+        transform: none;
+        opacity: 1;
+        transform: none;
+      }
+      
+    }
+    /* These were inline style tags. Uses id+class to override almost everything */
+    
+    /*  For Fields */ 
+    
+    body { 
+      margin:  0; 
+      padding:  0; 
+      border:  0; 
+      font-size:  100%; 
+      font:  inherit; 
+      vertical-align:  baseline;
+      -webkit-font-smoothing: antialiased; 
+      -moz-osx-font-smoothing: grayscale; 
+      max-width: 100vw; 
+      overflow-x: hidden;
+    } 
+    
+    body { 
+      color: #323232; 
+      line-height: 1.5; 
+      font-family: "Lexend Deca";
+    } 
+    
+    html { 
+      margin:  0; 
+      padding:  0; 
+      border:  0; 
+      font-size:  100%; 
+      font:  inherit; 
+      vertical-align:  baseline;
+      box-sizing: border-box;
+    } 
+    
+    :root { 
+      --PhoneInput-color--focus: #03b2cb; 
+      --PhoneInputCountrySelect-marginRight: 0.35em; 
+      --PhoneInputCountrySelectArrow-marginLeft: var(--PhoneInputCountrySelect-marginRight); 
+      --PhoneInputCountrySelectArrow-color--focus: var(--PhoneInput-color--focus); 
+      --PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus); 
+    } 
+    
+    h3 { 
+      display:   block; 
+      margin:    0; 
+      padding:    0; 
+      border:    0; 
+      font-size:  1.625rem;
+      font:    inherit; 
+      vertical-align:    baseline;
+      width:   100%;
+      margin-top:  1rem; 
+      margin-bottom:  1rem; 
+      font-family:  "Lexend Deca"; 
+      font-weight:  bold; 
+      letter-spacing:  0em; 
+      line-height:  1.2; 
+      color:  #19304b;
+    } 
+    
+    form { 
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font-size: 100%; 
+      font: inherit; 
+      vertical-align: baseline;
+    } 
+    
+    .donation-form__raisely-fee { 
+      font-size: Max(.8rem,13px); 
+      line-height: 1.5rem; 
+      margin-bottom: .3rem; 
+      display: inline-block;
+    } 
+    
+    .donation-form__raisely-fee.v3 { 
+      position: relative; 
+      margin-top: 1em; 
+      margin-bottom: 16px; 
+      width: 100%; 
+      border: 1.5px solid #ebebeb; 
+      border-radius: 5px; 
+      background: hsla(0,0%,96.1%,.5); 
+      padding: 14px; 
+      color: #222; 
+      transition: all .75s ease-in-out;
+    } 
+    
+    .form-field { 
+      position:   relative; 
+      background:   white;
+      font-size:   .9em; 
+      line-height:   1; 
+      text-align:   left; 
+      transition:   border-color .3s cubic-bezier(.2,0,.1,1); 
+      padding:   .54em; 
+      border:   .9px solid #444; 
+      border-radius:   2.7px;
+      border-color:  currentColor;
+      color:  #254770; 
+      border-width: 1px; 
+    } 
+    
+    .donation-form__raisely-fee .form-field  { 
+      font-size: inherit;
+    } 
+    
+    .donation-form__raisely-fee.v3 .form-field  { 
+      border: none; 
+      background: transparent; 
+      padding: 0; 
+      color: inherit; 
+      font-size: 14px;
+    } 
+    
+    .donation-form__raisely-fee.v3 .donation-form__raisely-fee__donationHeart  { 
+      opacity: 0; 
+      transition: all .75s ease-in-out; 
+      position: absolute; 
+      top: -10px; 
+      right: 5px; 
+      height: 30px; 
+      font-size: 16px; 
+      stroke: #fff; 
+      fill: currentColor;
+    } 
+    
+    .donation-form__raisely-fee.v3 .donation-form__raisely-fee__text  { 
+      opacity: .9; 
+      min-height: 34px; 
+      margin-bottom: 0;
+      margin-top: 5px; 
+      font-weight: 400; 
+      font-size: 13px; 
+      line-height: 130%; 
+      text-align: left;
+    } 
+    
+    b { 
+      margin:  0; 
+      padding:  0; 
+      border:  0; 
+      font-size:  100%; 
+      font:  inherit; 
+      vertical-align:  baseline;
+      font-weight: 700;
+    } 
+    
+    button { 
+      cursor: pointer;
+    } 
+    
+    .form-field--boolean__inline { 
+      overflow: hidden; 
+      display: inline-block; 
+      vertical-align: middle; 
+      margin-left: .3rem; 
+      text-transform: uppercase; 
+      font-weight: 700; 
+      -webkit-touch-callout: none; 
+      -webkit-user-select: none; 
+      -khtml-user-select: none; 
+      -moz-user-select: none; 
+      -ms-user-select: none; 
+      user-select: none; 
+      width: 70px; 
+      height: 32px; 
+      border-radius: 35px;
+    } 
+    
+    .form-field--boolean__inline--tiny { 
+      width: 35px; 
+      height: 20px; 
+      border-radius: 17.5px; 
+      margin-left: calc(35px + .3rem);
+    } 
+    
+    .form-field--boolean button  { 
+      border: 0; 
+      background: none; 
+      padding: 0;
+    } 
+    
+    .donation-form__raisely-fee.v3 .form-field--boolean__inline--tiny  { 
+      margin-left: 0;
+    } 
+    
+    label { 
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font-size: 100%; 
+      font: inherit; 
+      vertical-align: baseline;
+    } 
+    
+    .form-field > label  { 
+      z-index: 2; 
+      pointer-events: none; 
+      vertical-align: top; 
+      display: inline-block;
+    } 
+    
+    .form-field--boolean label  { 
+      vertical-align: middle; 
+      width: calc(100% - 70px - .3rem);
+    } 
+    
+    .donation-form__raisely-fee.v3 .form-field--boolean label  { 
+      z-index: 0; 
+      width: calc(100% - 35px);
+    } 
+    
+    .donation-form__raisely-fee.v3 .form-field--boolean label:before  { 
+      content: none;
+    } 
+    
+    .form-field--boolean__switch { 
+      position: relative; 
+      font-size: .625rem; 
+      cursor: pointer; 
+      display: block; 
+      overflow: hidden; 
+      box-sizing: content-box; 
+      border-radius: 19px; 
+      height: 100%; 
+      background: #cfcfe6; 
+      transition: .25s cubic-bezier(.2,0,.1,1); 
+      vertical-align: middle;
+    } 
+    
+    .form-field__label-text { 
+      display:    block; 
+      color:  #19304b;
+      font-weight:    700; 
+      transition:    color .2s ease; 
+      line-height:    1;
+      font-size:   .855rem; 
+      margin-bottom:   .36em;
+      align-self:  end;
+    } 
+    
+    .form-field--boolean .form-field__label-text  { 
+      margin-bottom: 0;
+    } 
+    
+    .donation-form__raisely-fee.v3 .form-field__label-text  { 
+      padding-left: 6px; 
+      font-size: 14px;
+    } 
+    
+    .form-field--boolean__switch__left { 
+      display:  inline-block; 
+      box-sizing:  border-box; 
+      position:  absolute; 
+      transition:  all .2s cubic-bezier(.2,0,.1,1); 
+      width:  100%; 
+      z-index:  2; 
+      padding:  1px 10px; 
+      height:  100%; 
+      opacity:  0; 
+      line-height:  30px;
+      color: #fff; 
+      text-align: left; 
+      left: 0;
+    } 
+    
+    .form-field--boolean__switch--tiny .form-field--boolean__switch__left  { 
+      line-height: 18px; 
+      padding: 1px 7px;
+    } 
+    
+    .form-field--boolean__switch__knob { 
+      position: absolute; 
+      top: 3px; 
+      right: 3px; 
+      left: 3px; 
+      z-index: 3; 
+      overflow: hidden; 
+      height: 26px; 
+      border-radius: 16px;
+    } 
+    
+    .form-field--boolean__switch--tiny .form-field--boolean__switch__knob  { 
+      height: 14px; 
+      border-radius: 10px;
+    } 
+    
+    .donation-form__raisely-fee.v3 .form-field--boolean__switch__knob  { 
+      z-index: 0;
+    } 
+    
+    .form-field--boolean__switch__knob:after,.form-field--boolean__switch__knob:before { 
+      content: ""; 
+      position: absolute; 
+      top: 0; 
+      bottom: 0; 
+      left: 0; 
+      background: #fff; 
+      border-radius: 50%; 
+      width: 28px;
+    } 
+    
+    .form-field--boolean__switch__knob:before { 
+      transition: .2s cubic-bezier(.2,0,.1,1);
+    } 
+    
+    .form-field--boolean__switch--tiny .form-field--boolean__switch__knob:after,.form-field--boolean__switch--tiny .form-field--boolean__switch__knob:before  { 
+      width: 16px;
+    } 
+    
+    .form-field--boolean__switch__knob:after { 
+      transition: .3s cubic-bezier(.2,0,.1,1);
+    } 
+    
+    .form-field--boolean__switch__right { 
+      display:  inline-block; 
+      box-sizing:  border-box; 
+      position:  absolute; 
+      transition:  all .2s cubic-bezier(.2,0,.1,1); 
+      width:  100%; 
+      z-index:  2; 
+      padding:  1px 10px; 
+      height:  100%; 
+      opacity:  0; 
+      line-height:  30px;
+      right: 0; 
+      text-align: right; 
+      color: #262861;
+    } 
+    
+    .form-field--boolean__switch--tiny .form-field--boolean__switch__right  { 
+      line-height: 18px; 
+      padding: 1px 7px;
+    } 
+    
+    .form-field--boolean__switch--off .form-field--boolean__switch__right  { 
+      opacity: 1;
+    } 
+    
+    
+    @keyframes appearIn { 
+      100% {  
+        opacity: 1; 
+        transform: none; 
+        opacity: 1; 
+        transform: none; 
+      }  
+      
+    } 
+    /* These were inline style tags. Uses id+class to override almost everything */  
+    .tooltip-38y:hover .tooltip-26s {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    .button--loading .button__text {
+      visibility: hidden;
+      opacity: 0;
+    }
+    .button--loading .icon-pzi{
+      visibility: hidden;
+      opacity: 0;
+    }
+    
+    .button--loading::after{  
+      content: "";  
+      position: absolute;
+      width: 28px;  
+      height: 28px; 
+      top: 0; 
+      left: 0;  
+      right: 0; 
+      bottom: 0;  
+      margin: auto; 
+      border: 4px solid transparent;  
+      border-top-color: #ffffff;  
+      border-radius: 50%; 
+      animation: button-loading-spinner 1s ease infinite; 
+    } 
+    @keyframes button-loading-spinner { 
+      from {  
+        transform: rotate(0turn); 
+      } 
+      to {  
+        transform: rotate(1turn); 
+      } 
+    }
+    
+    .required-input{  
+      outline: 1px solid #ff2343; 
+    }
+    
+    /*  For Fields */ 
+    .required-placeholder-text{ 
+      font-size: 14px;  
+      display: inline-block;  
+      position: absolute; 
+      top: .4em;  
+      right: .6em;  
+      opacity: .9;  
+      color: #ff2343 !important;  
+    }
+    
+    .required-message{  
+      font-size: 16px;  
+      color: #ff2343; 
+      display: inline-block;  
+      position: absolute; 
+      top: .4em;  
+      right: .6em;  
+      opacity: .9;  
+    } 
+    .color-red{ 
+      color: #ff2343 !important;  
+    }
+    
+    .progress-bar__progress { 
+      background:  rgba(63, 120, 189, 0.25);
+      color:    #fff; 
+      white-space:    nowrap; 
+      position:    relative; 
+      font-size:    25px; 
+      height:  16px; 
+      line-height:    1em;
+      border-radius:  50px; 
+    } 
+    
+    .progress-bar__progress  { 
+      overflow: hidden;
+    } 
+    
+    .progress-bar--size-large .progress-bar__progress  { 
+      font-size: 40px;
+    } 
+    
+    .progress-bar__bar { 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      bottom: 0; 
+      background: #000; 
+      max-width: 100%; 
+      overflow: hidden; 
+      transition: .4s cubic-bezier(.2,0,.1,1);
+    } 
+    
+    .progress-bar__bar--animated { 
+      animation: appearIn 1.75s cubic-bezier(.2,0,.1,1) .75s forwards; 
+      transform: translate(-100%); 
+      transform: translate3d(-100%,0,0);
+    } 
+    
+    .progress-bar__bar { 
+      background:  #3F78BD; 
+      border-radius:  50px;
+    } 
+    
+    .spinner{
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: auto;
+      border: 4px solid #fff;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spinner 0.7s linear infinite;
+    }
+    
+    @keyframes spinner{
+      from{}
+      to{
+        transform: rotate(360deg);
+      }
+    }
+    
+    button:disabled,
+    button[disabled]{
+      cursor: not-allowed !important;
+      opacity: 0.7;
+    }
+    
+    .amount-placeholder::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #ff2343;
+      opacity: 1; /* Firefox */
+    }
+    
+    #cover-spin {
+      position:fixed;
+      width:100%;
+      left:0;right:0;top:0;bottom:0;
+      background-color: rgba(255,255,255,0.7);
+      z-index:9999;
+      display:none;
+    }
+    
+    @-webkit-keyframes spin {
+      from {-webkit-transform:rotate(0deg);}
+      to {-webkit-transform:rotate(360deg);}
+    }
+    
+    @keyframes spin {
+      from {transform:rotate(0deg);}
+      to {transform:rotate(360deg);}
+    }
+    
+    #cover-spin::after {
+      content:'';
+      display:block;
+      position:absolute;
+      left:48%;top:40%;
+      width:40px;height:40px;
+      border-style:solid;
+      border-color:white;
+      border-top-color:transparent;
+      border-width: 4px;
+      border-radius:50%;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+    
+  </style>
+  <script>
+    
+    window.onload = hideMonthly;
+    window.onload = selectCC;
+    window.onload = showPlatformFees;
+    window.onload = set1;
+    
+    let currentStep = 1;
+    let totalAmount = 0;
+    let requiredMessage = "This field is required";
+    
+    const emailRegex = /([a-zA-Z0-9_\-.]+)@(([a-z]{1,3}.[a-z]{1,3}.[a-z]{1,3}.)|(([a-zA-Z0-9-]+.)+))([a-zA-Z]{2,4}|[0-9]{1,3})/;
+    const phoneRegex = /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{4}\)?[\s.-]?\d{3}[\s.-]?\d{3}$/;
+    
+    function setAmount()
     {
-      if(!emailRegex.test(email))
+      console.log()
+      totalAmount = 0;
+      let am=document.getElementById('amountValue').value;
+      let amountTextClasses = document.getElementsByClassName('totalAmount');
+      let amValue = totalAmount+=Number(am);
+      for(let i=0;i<amountTextClasses.length;i++)
       {
-        document.getElementById("email").classList.add('required-input');
-        document.getElementsByClassName('field-lot')[2].classList.add('color-red');
-        document.getElementsByClassName('required-placeholder-text')[3].innerHTML="Please enter valid email.";
-        document.getElementsByClassName('required-placeholder-text')[3].style.display='block';
-        document.getElementsByClassName('required-placeholder-icon')[3].style.display='none';
-        return;
+        amountTextClasses[i].innerText = amValue;
       }
-      if(!phoneRegex.test(phonenumber))
+      var amounts = document.getElementsByClassName('amountText');
+      for (i = 0; i < amounts.length; i++)
       {
-        document.getElementById("phone").classList.add('required-input');
-        document.getElementsByClassName('field-lot')[3].classList.add('color-red');
-        document.getElementsByClassName('required-placeholder-text')[4].innerHTML='Please enter valid phone number.';
-        document.getElementsByClassName('required-placeholder-text')[4].style.display='block';
-        document.getElementsByClassName('required-placeholder-icon')[4].style.display='none';
-        return;
+        var elem = amounts[i];
+        elem.innerText = am;
+      }
+      document.getElementById('Amount').value=totalAmount;
+    }
+    
+    function showMonthly()
+    {
+      document.getElementById('l1').classList.remove('form-7yz');
+      document.getElementById('l1').classList.add('form-6x8');
+      document.getElementById('l2').classList.remove('form-6x8');
+      document.getElementById('l2').classList.add('form-7yz');
+      document.getElementById('hearts-animation').style.display = 'block';
+      document.getElementById("payment-type").style.display = "block";
+      document.getElementById("bc1").checked = true;
+      document.getElementById("bc2").checked = false;
+      
+      document.getElementsByClassName('donating-in')[0].innerText=' every month';
+      document.getElementsByClassName('donating-in')[1].innerText=' every month';
+      
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth()+1; //January is 0!
+      var yyyy = today.getFullYear();
+      if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm}
+      today = yyyy+"-"+mm+"-"+dd;
+      document.getElementById("startdate").value = today;
+      document.getElementById("transactionperiod").value = "Monthly";
+      
+    }
+    
+    function hideMonthly()
+    {
+      document.getElementById('l2').classList.remove('form-7yz');
+      document.getElementById('l2').classList.add('form-6x8');
+      document.getElementById('l1').classList.remove('form-6x8');
+      document.getElementById('l1').classList.add('form-7yz');
+      document.getElementById('hearts-animation').style.display = 'none';
+      document.getElementsByClassName('donating-in')[0].innerText='Donating in ';
+      document.getElementsByClassName('donating-in')[1].innerText='';
+      document.getElementById("payment-type").style.display = "none";
+      document.getElementById("bc1").checked = true;
+      document.getElementById("bc2").checked = false;
+      document.getElementById("transactionperiod").value = "";
+    }
+    
+    function selectCC()
+    {
+      document.getElementById('pm2').classList.remove('form-7yz');
+      document.getElementById('pm2').classList.add('form-6x8');
+      document.getElementById('pm1').classList.remove('form-6x8');
+      document.getElementById('pm1').classList.add('form-7yz');
+    }
+    
+    function selectDD()
+    {
+      document.getElementById('pm1').classList.remove('form-7yz');
+      document.getElementById('pm1').classList.add('form-6x8');
+      document.getElementById('pm2').classList.remove('form-6x8');
+      document.getElementById('pm2').classList.add('form-7yz');
+    }
+    
+    function nextStep()
+    {
+      
+      if (currentStep === 1)
+      {
+        const chargetype = document.querySelector('input[name="chargetype"]:checked');
+        if(!chargetype)
+        {
+          
+          return;
+        }
+        else
+        {
+        }
+        const paymentmethod = document.querySelector('input[name="paymentmethod"]:checked');
+        if (!paymentmethod)
+        {
+          alert("Please select a payment method.");
+          return;
+        }
+        const amount = document.getElementById('amountValue').value;
+        if (!amount)
+        {
+          document.getElementById('amountValue').classList.add('required-input'); // input outline red
+          document.getElementById('amountValue').classList.add('amount-placeholder'); // label red
+          document.getElementsByClassName('required-placeholder-text')[0].innerHTML='Required';
+          document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
+          document.getElementsByClassName('required-placeholder-icon')[0].style.display='none';
+          return;
+        }
+        else if(Number(amount)<=0){
+          document.getElementById('amountValue').classList.add('required-input'); // input outline red
+          //document.getElementsByClassName('field-lot')[0].classList.add('color-red'); // label red
+          document.getElementsByClassName('required-placeholder-text')[0].innerHTML='Required';
+          document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
+          document.getElementsByClassName('required-placeholder-icon')[0].style.display='none'; 
+        }
+      }
+      
+      if (currentStep === 2)
+      {
+        const firstname = document.getElementById('firstname').value;
+        const lastname = document.getElementById('lastname').value;
+        const email = document.getElementById('email').value;
+        const phonenumber = document.getElementById('phone').value;
+        if(!firstname || !lastname || !email || !phonenumber)
+        {
+          if (!firstname){
+            document.getElementById('firstname').classList.add('required-input'); // input outline red
+            document.getElementsByClassName('field-lot')[0].classList.add('color-red'); // label red
+            document.getElementsByClassName('required-placeholder-text')[1].innerHTML=requiredMessage;
+            document.getElementsByClassName('required-placeholder-text')[1].style.display='block';
+            document.getElementsByClassName('required-placeholder-icon')[1].style.display='none';
+          }if(!lastname){
+            document.getElementById('lastname').classList.add('required-input');
+            document.getElementsByClassName('field-lot')[1].classList.add('color-red');
+            document.getElementsByClassName('required-placeholder-text')[2].innerHTML=requiredMessage;
+            document.getElementsByClassName('required-placeholder-text')[2].style.display='block';
+            document.getElementsByClassName('required-placeholder-icon')[2].style.display='none';
+          }if(!email){
+            document.getElementById('email').classList.add('required-input');
+            document.getElementsByClassName('field-lot')[2].classList.add('color-red');
+            document.getElementsByClassName('required-placeholder-text')[3].innerHTML=requiredMessage;
+            document.getElementsByClassName('required-placeholder-text')[3].style.display='block';
+            document.getElementsByClassName('required-placeholder-icon')[3].style.display='none';
+          }if(!phonenumber){
+            document.getElementById('phone').classList.add('required-input');
+            document.getElementsByClassName('field-lot')[3].classList.add('color-red');
+            document.getElementsByClassName('required-placeholder-text')[4].innerHTML=requiredMessage;
+            document.getElementsByClassName('required-placeholder-text')[4].style.display='block';
+            document.getElementsByClassName('required-placeholder-icon')[4].style.display='none';
+          }
+          return;
+        }
+        else
+        {
+          if(!emailRegex.test(email))
+          {
+            document.getElementById("email").classList.add('required-input');
+            document.getElementsByClassName('field-lot')[2].classList.add('color-red');
+            document.getElementsByClassName('required-placeholder-text')[3].innerHTML="Please enter valid email.";
+            document.getElementsByClassName('required-placeholder-text')[3].style.display='block';
+            document.getElementsByClassName('required-placeholder-icon')[3].style.display='none';
+            return;
+          }
+          if(!phoneRegex.test(phonenumber))
+          {
+            document.getElementById("phone").classList.add('required-input');
+            document.getElementsByClassName('field-lot')[3].classList.add('color-red');
+            document.getElementsByClassName('required-placeholder-text')[4].innerHTML='Please enter valid phone number.';
+            document.getElementsByClassName('required-placeholder-text')[4].style.display='block';
+            document.getElementsByClassName('required-placeholder-icon')[4].style.display='none';
+            return;
+          }
+        }
+
+        var checkedValue = null; 
+        var inputElements = document.getElementsByClassName('messageCheckbox');
+        if(document.getElementById("transactionperiod").value == "Monthly"){
+          document.getElementById('CoverAmountBox').style.display='none';
+          document.getElementById('ptag1').style.display='none';
+          document.getElementById('ptag2').style.display='block';
+
+        }else{
+          document.getElementById('CoverAmountBox').style.display='block';
+          document.getElementById('ptag1').style.display='block';
+          document.getElementById('ptag2').style.display='none';
+        }
+      }
+      
+      currentStep++;
+      updateStepDisplay();
+    }
+    
+    function showPlatformFees(){
+      let platformCostPerent = document.getElementById('platformCost').value;
+      platformCostPerent = Number(platformCostPerent);
+      totalAmount = Number(totalAmount);
+      
+      document.getElementById("showPlatformFees").style.transition = "opacity 5s";
+
+      document.getElementById("isPlatformCostCovered").value = "true";
+      document.getElementById("originalAmount").value = totalAmount;
+      
+      document.getElementById("Amount").value = (totalAmount + (platformCostPerent * (totalAmount/100))).toFixed(2);
+      document.getElementById('showPlatformFees').style.display='block';
+      
+      document.getElementById('hidePlatformFees').style.display='none';
+      let amText = document.getElementsByClassName('totalAmount');
+      for(let i=0;i<amText.length;i++)
+      {
+        amText[i].innerText = (totalAmount + (platformCostPerent * (totalAmount/100))).toFixed(2);
       }
     }
-  }
-
-  currentStep++;
-  updateStepDisplay();
-}
-
-function showPlatformFees(){
-  console.log('showPlatformFees');
-  totalAmount+=2.75;
-  document.getElementById("showPlatformFees").style.transition = "opacity 5s";
-  document.getElementById("Amount").value = totalAmount;
-  document.getElementById('showPlatformFees').style.display='block';
-  document.getElementById('hidePlatformFees').style.display='none';
-  let amText = document.getElementsByClassName('totalAmount');
-  for(let i=0;i<amText.length;i++)
-  {
-    console.log('showPlatformFees');
-    amText[i].innerText = totalAmount;
-  }
-}
-function hidePlatformFees(){
-  console.log('hidePlatformFees');
-  totalAmount-=2.75;
-  document.getElementById("hidePlatformFees").style.transition = "opacity 5s";
-  document.getElementById("Amount").value = totalAmount;
-  document.getElementById('hidePlatformFees').style.display='block';
-  document.getElementById('showPlatformFees').style.display='none';
-  let amText = document.getElementsByClassName('totalAmount');
-  for(let i=0;i<amText.length;i++)
-  {
-    console.log('hidePlatformFees');
-    amText[i].innerText = totalAmount;
-  }
-}
-
-function prevStep() {
-currentStep--;
-updateStepDisplay();
-}
-
-function updateStepDisplay() {
-document.querySelectorAll('.step').forEach(step => {
-step.style.display = 'none';
-});
-document.querySelector(`#step${currentStep}`).style.display = 'block';
-}
-
-function set1(){
-document.getElementById("amount1").value = "10";
-document.getElementById("Amount").value = Number("10");
-document.getElementById("amountValue").value = Number("10");
-setAmount();
-}
-function set2(){
-document.getElementById("amount2").value = "20";
-document.getElementById("Amount").value = Number("20");
-document.getElementById("amountValue").value = Number("20");
-setAmount();
-}
-function set3(){
-document.getElementById("amount3").value ="50";
-document.getElementById("Amount").value = ("50");
-document.getElementById("amountValue").value = ("50");
-setAmount();
-}
-function set4(){
-document.getElementById("amount4").value = "70";
-document.getElementById("Amount").value = ("70");
-document.getElementById("amountValue").value = ("70");
-setAmount();
-}
-function set5(){
-document.getElementById("amount5").value = "100";
-document.getElementById("Amount").value = ("100");
-document.getElementById("amountValue").value = ("100");
-setAmount();
-}
-
-function removeOutline(id)
-{
-  if(id === 'amountValue')
-  {
-    document.getElementById(id+"-required").style.display='block';
-    //document.getElementsByClassName('field-lot')[0].classList.remove('color-red');
-    document.getElementById(id).classList.remove('required-input');
-    document.getElementsByClassName('required-placeholder-text')[0].innerHTML='';
-    document.getElementsByClassName('required-placeholder-text')[0].style.display='none';
-    document.getElementsByClassName('required-placeholder-icon')[0].style.display='block';
-  }
-  if(id === 'firstname')
-  {
-    document.getElementById(id+"-required").style.display='block';
-    document.getElementsByClassName('field-lot')[0].classList.remove('color-red');
-    document.getElementById(id).classList.remove('required-input');
-    document.getElementsByClassName('required-placeholder-text')[1].innerHTML='';
-    document.getElementsByClassName('required-placeholder-text')[1].style.display='none';
-    document.getElementsByClassName('required-placeholder-icon')[1].style.display='block';
-  }
-  if(id === 'lastname')
-  {
-    document.getElementById(id+"-required").style.display='block';
-    document.getElementsByClassName('field-lot')[1].classList.remove('color-red');
-    document.getElementById(id).classList.remove('required-input');
-    document.getElementsByClassName('required-placeholder-text')[2].innerHTML='';
-    document.getElementsByClassName('required-placeholder-text')[2].style.display='none';
-    document.getElementsByClassName('required-placeholder-icon')[2].style.display='block';
-  }
-  if(id === 'email')
-  {
-    document.getElementById(id+"-required").style.display='block';
-    document.getElementsByClassName('field-lot')[2].classList.remove('color-red');
-    document.getElementById(id).classList.remove('required-input');
-    document.getElementsByClassName('required-placeholder-text')[3].innerHTML='';
-    document.getElementsByClassName('required-placeholder-text')[3].style.display='none';
-    document.getElementsByClassName('required-placeholder-icon')[3].style.display='block';
-  }
-  if(id === 'phone')
-  {
-    document.getElementById(id+"-required").style.display='block';
-    document.getElementsByClassName('field-lot')[3].classList.remove('color-red');
-    document.getElementById(id).classList.remove('required-input');
-    document.getElementsByClassName('required-placeholder-text')[4].innerHTML='';
-    document.getElementsByClassName('required-placeholder-text')[4].style.display='none';
-    document.getElementsByClassName('required-placeholder-icon')[4].style.display='block';
-  }
-}
-
-function onFocusLeft(id)
-{
-  if(id === 'amountValue')
-  {
-    const amount = document.getElementById('amountValue').value;
-    if(!amount)
-    {
-      document.getElementById('amountValue').classList.add('required-input');
-      //document.getElementsByClassName('field-lot')[0].classList.add('color-red');
-      document.getElementsByClassName('required-placeholder-text')[0].innerHTML="Required";
-      document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
-      document.getElementsByClassName('required-placeholder-icon')[0].style.display='none';
+    
+    function hidePlatformFees(){
+      
+      console.log('hidePlatformFees');
+      document.getElementById("hidePlatformFees").style.transition = "opacity 5s";
+      document.getElementById("Amount").value = totalAmount;
+      document.getElementById("originalAmount").value = totalAmount;
+      document.getElementById('hidePlatformFees').style.display='block';
+      document.getElementById('showPlatformFees').style.display='none';
+      document.getElementById("isPlatformCostCovered").value = "false";
+      let amText = document.getElementsByClassName('totalAmount');
+      for(let i=0;i<amText.length;i++)
+      {
+        console.log('hidePlatformFees');
+        amText[i].innerText = totalAmount;
+      }
     }
-  }
-  if(id === 'firstname')
-  {
-    const firstname = document.getElementById('firstname').value;
-    if(!firstname)
-    {
-      document.getElementById('firstname').classList.add('required-input');
-      document.getElementsByClassName('field-lot')[0].classList.add('color-red');
-      document.getElementsByClassName('required-placeholder-text')[1].innerHTML=requiredMessage;
-      document.getElementsByClassName('required-placeholder-text')[1].style.display='block';
-      document.getElementsByClassName('required-placeholder-icon')[1].style.display='none';
+    
+    function prevStep() {
+      currentStep--;
+      updateStepDisplay();
     }
-  }
-  if(id === 'lastname')
-  {
-    const lastname = document.getElementById('lastname').value;
-    if(!lastname)
-    {
-      document.getElementById("lastname").classList.add('required-input');
-      document.getElementsByClassName('field-lot')[1].classList.add('color-red');
-      document.getElementsByClassName('required-placeholder-text')[2].innerHTML=requiredMessage;
-      document.getElementsByClassName('required-placeholder-text')[2].style.display='block';
-      document.getElementsByClassName('required-placeholder-icon')[2].style.display='none';
+    
+    function updateStepDisplay() {
+      document.querySelectorAll('.step').forEach(step => {
+        step.style.display = 'none';
+      });
+      document.querySelector(`#step${currentStep}`).style.display = 'block';
     }
-  }
-  if(id === 'email')
-  {
-    const email = document.getElementById('email').value;
-    if(!email)
-    {
-      document.getElementById("email").classList.add('required-input');
-      document.getElementsByClassName('field-lot')[2].classList.add('color-red');
-      document.getElementsByClassName('required-placeholder-text')[3].innerHTML=requiredMessage;
-      document.getElementsByClassName('required-placeholder-text')[3].style.display='block';
-      document.getElementsByClassName('required-placeholder-icon')[3].style.display='none';
+    
+    function set1(){
+      document.getElementById("amount1").value = "10";
+      document.getElementById("Amount").value = Number("10");
+      document.getElementById("amountValue").value = Number("10");
+      setAmount();
     }
-    else if(!emailRegex.test(email))
-    {
-      document.getElementById("email").classList.add('required-input');
-      document.getElementsByClassName('field-lot')[2].classList.add('color-red');
-      document.getElementsByClassName('required-placeholder-text')[3].innerHTML='Please enter valid email.';
-      document.getElementsByClassName('required-placeholder-text')[3].style.display='block';
-      document.getElementsByClassName('required-placeholder-icon')[3].style.display='none';
+    function set2(){
+      document.getElementById("amount2").value = "20";
+      document.getElementById("Amount").value = Number("20");
+      document.getElementById("amountValue").value = Number("20");
+      setAmount();
     }
-  }
-  if(id === 'phone')
-  {
-    const phone = document.getElementById('phone').value;
-    if(!phone)
-    {
-      document.getElementById(id).classList.add('required-input');
-      document.getElementsByClassName('field-lot')[3].classList.add('color-red');
-      document.getElementsByClassName('required-placeholder-text')[4].innerHTML=requiredMessage;
-      document.getElementsByClassName('required-placeholder-text')[4].style.display='block';
-      document.getElementsByClassName('required-placeholder-icon')[4].style.display='none';
+    function set3(){
+      document.getElementById("amount3").value ="50";
+      document.getElementById("Amount").value = ("50");
+      document.getElementById("amountValue").value = ("50");
+      setAmount();
     }
-    else if(!phoneRegex.test(phone))
-    {
-      document.getElementById(id).classList.add('required-input');
-      document.getElementsByClassName('field-lot')[3].classList.add('color-red');
-      document.getElementsByClassName('required-placeholder-text')[4].innerHTML='Please enter valid phone number.';
-      document.getElementsByClassName('required-placeholder-text')[4].style.display='block';
-      document.getElementsByClassName('required-placeholder-icon')[4].style.display='none';
+    function set4(){
+      document.getElementById("amount4").value = "70";
+      document.getElementById("Amount").value = ("70");
+      document.getElementById("amountValue").value = ("70");
+      setAmount();
     }
-  }
-}
-
-function setAnonymousData()
-{
-  if(document.getElementById('is-anonymous').checked)
-  {
-    document.getElementById('firstname').value="Anonymous";
-    document.getElementById('lastname').value="Anonymous";
-    document.getElementById('email').value="anonymous@example.com";
-    document.getElementById('phone').value="0234567890";
-    let allInputs = document.getElementsByClassName('wrapper-5bi');
-    for (let i=0;i<4;i++)
-    {
-      var elem = allInputs[i];
-      elem.style.display = "none";
+    function set5(){
+      document.getElementById("amount5").value = "100";
+      document.getElementById("Amount").value = ("100");
+      document.getElementById("amountValue").value = ("100");
+      setAmount();
     }
-  }
-  else
-  {
-    document.getElementById('firstname').value="";
-    document.getElementById('lastname').value="";
-    document.getElementById('email').value="";
-    document.getElementById('phone').value="";
-    let allInputs = document.getElementsByClassName('wrapper-5bi');
-    for (let i=0;i<4;i++)
+    
+    function removeOutline(id)
     {
-      var elem = allInputs[i];
-      elem.style.display = "block";
+      if(id === 'amountValue')
+      {
+        document.getElementById(id+"-required").style.display='block';
+        //document.getElementsByClassName('field-lot')[0].classList.remove('color-red');
+        document.getElementById(id).classList.remove('required-input');
+        document.getElementsByClassName('required-placeholder-text')[0].innerHTML='';
+        document.getElementsByClassName('required-placeholder-text')[0].style.display='none';
+        document.getElementsByClassName('required-placeholder-icon')[0].style.display='block';
+      }
+      if(id === 'firstname')
+      {
+        document.getElementById(id+"-required").style.display='block';
+        document.getElementsByClassName('field-lot')[0].classList.remove('color-red');
+        document.getElementById(id).classList.remove('required-input');
+        document.getElementsByClassName('required-placeholder-text')[1].innerHTML='';
+        document.getElementsByClassName('required-placeholder-text')[1].style.display='none';
+        document.getElementsByClassName('required-placeholder-icon')[1].style.display='block';
+      }
+      if(id === 'lastname')
+      {
+        document.getElementById(id+"-required").style.display='block';
+        document.getElementsByClassName('field-lot')[1].classList.remove('color-red');
+        document.getElementById(id).classList.remove('required-input');
+        document.getElementsByClassName('required-placeholder-text')[2].innerHTML='';
+        document.getElementsByClassName('required-placeholder-text')[2].style.display='none';
+        document.getElementsByClassName('required-placeholder-icon')[2].style.display='block';
+      }
+      if(id === 'email')
+      {
+        document.getElementById(id+"-required").style.display='block';
+        document.getElementsByClassName('field-lot')[2].classList.remove('color-red');
+        document.getElementById(id).classList.remove('required-input');
+        document.getElementsByClassName('required-placeholder-text')[3].innerHTML='';
+        document.getElementsByClassName('required-placeholder-text')[3].style.display='none';
+        document.getElementsByClassName('required-placeholder-icon')[3].style.display='block';
+      }
+      if(id === 'phone')
+      {
+        document.getElementById(id+"-required").style.display='block';
+        document.getElementsByClassName('field-lot')[3].classList.remove('color-red');
+        document.getElementById(id).classList.remove('required-input');
+        document.getElementsByClassName('required-placeholder-text')[4].innerHTML='';
+        document.getElementsByClassName('required-placeholder-text')[4].style.display='none';
+        document.getElementsByClassName('required-placeholder-icon')[4].style.display='block';
+      }
     }
-  }
-}
-
-function setAnonymousText()
-{
-  if(document.getElementById('is-anonymous').checked)
-  {
-    document.getElementById('is-anonymous').checked = false;
-    document.getElementById('firstname').value="";
-    document.getElementById('lastname').value="";
-    document.getElementById('email').value="";
-    document.getElementById('phone').value="";
-    let allInputs = document.getElementsByClassName('wrapper-5bi');
-    for (let i=0;i<4;i++)
+    
+    function onFocusLeft(id)
     {
-      var elem = allInputs[i];
-      elem.style.display = "block";
+      if(id === 'amountValue')
+      {
+        const amount = document.getElementById('amountValue').value;
+        if(!amount)
+        {
+          document.getElementById('amountValue').classList.add('required-input');
+          //document.getElementsByClassName('field-lot')[0].classList.add('color-red');
+          document.getElementsByClassName('required-placeholder-text')[0].innerHTML="Required";
+          document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
+          document.getElementsByClassName('required-placeholder-icon')[0].style.display='none';
+        }
+      }
+      if(id === 'firstname')
+      {
+        const firstname = document.getElementById('firstname').value;
+        if(!firstname)
+        {
+          document.getElementById('firstname').classList.add('required-input');
+          document.getElementsByClassName('field-lot')[0].classList.add('color-red');
+          document.getElementsByClassName('required-placeholder-text')[1].innerHTML=requiredMessage;
+          document.getElementsByClassName('required-placeholder-text')[1].style.display='block';
+          document.getElementsByClassName('required-placeholder-icon')[1].style.display='none';
+        }
+      }
+      if(id === 'lastname')
+      {
+        const lastname = document.getElementById('lastname').value;
+        if(!lastname)
+        {
+          document.getElementById("lastname").classList.add('required-input');
+          document.getElementsByClassName('field-lot')[1].classList.add('color-red');
+          document.getElementsByClassName('required-placeholder-text')[2].innerHTML=requiredMessage;
+          document.getElementsByClassName('required-placeholder-text')[2].style.display='block';
+          document.getElementsByClassName('required-placeholder-icon')[2].style.display='none';
+        }
+      }
+      if(id === 'email')
+      {
+        const email = document.getElementById('email').value;
+        if(!email)
+        {
+          document.getElementById("email").classList.add('required-input');
+          document.getElementsByClassName('field-lot')[2].classList.add('color-red');
+          document.getElementsByClassName('required-placeholder-text')[3].innerHTML=requiredMessage;
+          document.getElementsByClassName('required-placeholder-text')[3].style.display='block';
+          document.getElementsByClassName('required-placeholder-icon')[3].style.display='none';
+        }
+        else if(!emailRegex.test(email))
+        {
+          document.getElementById("email").classList.add('required-input');
+          document.getElementsByClassName('field-lot')[2].classList.add('color-red');
+          document.getElementsByClassName('required-placeholder-text')[3].innerHTML='Please enter valid email.';
+          document.getElementsByClassName('required-placeholder-text')[3].style.display='block';
+          document.getElementsByClassName('required-placeholder-icon')[3].style.display='none';
+        }
+      }
+      if(id === 'phone')
+      {
+        const phone = document.getElementById('phone').value;
+        if(!phone)
+        {
+          document.getElementById(id).classList.add('required-input');
+          document.getElementsByClassName('field-lot')[3].classList.add('color-red');
+          document.getElementsByClassName('required-placeholder-text')[4].innerHTML=requiredMessage;
+          document.getElementsByClassName('required-placeholder-text')[4].style.display='block';
+          document.getElementsByClassName('required-placeholder-icon')[4].style.display='none';
+        }
+        else if(!phoneRegex.test(phone))
+        {
+          document.getElementById(id).classList.add('required-input');
+          document.getElementsByClassName('field-lot')[3].classList.add('color-red');
+          document.getElementsByClassName('required-placeholder-text')[4].innerHTML='Please enter valid phone number.';
+          document.getElementsByClassName('required-placeholder-text')[4].style.display='block';
+          document.getElementsByClassName('required-placeholder-icon')[4].style.display='none';
+        }
+      }
     }
-
-  }
-  else
-  {
-    document.getElementById('is-anonymous').checked = true;
-    document.getElementById('firstname').value="Anonymous";
-    document.getElementById('lastname').value="Anonymous";
-    document.getElementById('email').value="anonymous@example.com";
-    document.getElementById('phone').value="1234567890";
-    let allInputs = document.getElementsByClassName('wrapper-5bi');
-    for (let i=0;i<4;i++)
+    
+    function setAnonymousData()
     {
-      var elem = allInputs[i];
-      elem.style.display = "none";
+      if(document.getElementById('is-anonymous').checked)
+      {
+        document.getElementById('firstname').value="Anonymous";
+        document.getElementById('lastname').value="Anonymous";
+        document.getElementById('email').value="anonymous@example.com";
+        document.getElementById('phone').value="0234567890";
+        let allInputs = document.getElementsByClassName('wrapper-5bi');
+        for (let i=0;i<4;i++)
+        {
+          var elem = allInputs[i];
+          elem.style.display = "none";
+        }
+      }
+      else
+      {
+        document.getElementById('firstname').value="";
+        document.getElementById('lastname').value="";
+        document.getElementById('email').value="";
+        document.getElementById('phone').value="";
+        let allInputs = document.getElementsByClassName('wrapper-5bi');
+        for (let i=0;i<4;i++)
+        {
+          var elem = allInputs[i];
+          elem.style.display = "block";
+        }
+      }
     }
-  }
-}
-
-function showSpinner(){
-  document.getElementById('button-text').innerText = "";
-  document.getElementById('button-text').classList.add('spinner');
-  document.getElementById('next-icon').style.display = 'none';
-  document.getElementById('donate-button').disabled = true;
-  document.getElementById('next-button').disabled = true;
-  document.getElementById('cover-spin').style.display = 'block';
-}
-
-document.addEventListener('DOMContentLoaded', function (){
-  updateStepDisplay();
-});
-
-</script>
+    
+    function setAnonymousText()
+    {
+      if(document.getElementById('is-anonymous').checked)
+      {
+        document.getElementById('is-anonymous').checked = false;
+        document.getElementById('firstname').value="";
+        document.getElementById('lastname').value="";
+        document.getElementById('email').value="";
+        document.getElementById('phone').value="";
+        let allInputs = document.getElementsByClassName('wrapper-5bi');
+        for (let i=0;i<4;i++)
+        {
+          var elem = allInputs[i];
+          elem.style.display = "block";
+        }
+        
+      }
+      else
+      {
+        document.getElementById('is-anonymous').checked = true;
+        document.getElementById('firstname').value="Anonymous";
+        document.getElementById('lastname').value="Anonymous";
+        document.getElementById('email').value="anonymous@example.com";
+        document.getElementById('phone').value="1234567890";
+        let allInputs = document.getElementsByClassName('wrapper-5bi');
+        for (let i=0;i<4;i++)
+        {
+          var elem = allInputs[i];
+          elem.style.display = "none";
+        }
+      }
+    }
+    
+    function showSpinner(){
+      document.getElementById('button-text').innerText = "";
+      document.getElementById('button-text').classList.add('spinner');
+      document.getElementById('next-icon').style.display = 'none';
+      document.getElementById('donate-button').disabled = true;
+      document.getElementById('next-button').disabled = true;
+      document.getElementById('cover-spin').style.display = 'block';
+    }
+    
+    document.addEventListener('DOMContentLoaded', function (){
+      updateStepDisplay();
+    });
+    
+  </script>
 </head>
 <body>
-<div id="cover-spin" style="display: none;"></div>
-<div class="container-c9b css-c36">
-<h2 class="css-gdc">BECOME A CHANGEMAKER TODAY!</h2>
-<p class="css-n1b css-jc2">Your support today will help to save lives defeat poverty and achieve social justice.</p>
-<div class="css-m3b" style="display: block;">
-<form onsubmit="showSpinner();" action="https://wired-payments-npc.my.salesforce-sites.com/services/apexrest/w_pay/charge" method="POST" class="rounded" data-aos="fade-up">
-<div class="form-oqi form-or5 step" id="step1">
-<div class="header-sge">
-<div class="form-bpp">
-<div class="form-oao form-9a6">1</div>
-<div class="form-oao">2</div>
-<div class="form-oao">3</div>
-</div>
-</div>
-<div class="form-cf9" style="padding-top:10px;">
-<div class="message-r9z message-2tf" style="display: none;">
-<p><i class="icon-w3c">error</i><strong>Connect a Payment Provider</strong></p>
-<p>In order to take live payments, you'll need to <a href="#">add a Payment Gateway</a> in your Dashboard</p>
-</div>
-<div class="form-lix">
-<input type="radio" id="b1" checked style="appearance: none;margin: 0px;padding: 0px;" name="chargetype" value="OneTime" class="radio"/>
-<label class="form-h92 form-7yz" id="l1" for="b1" onclick="hideMonthly()">OneTime</label>
-<input type="radio" id="b2" style="appearance: none;margin: 0px;padding: 0px;" name="chargetype" value="Recurring" class="radio"/>
-<label class="form-h92 form-6x8" id="l2" for="b2" onclick="showMonthly()">Monthly</label>
-<input type="hidden" id="startdate" name="startdate" value="" class="name"/>
-<input type="hidden" id="transactionperiod" name="transactionperiod" value="Monthly" class="name"/>
-</div>
-<br/>
-
-<div class="form-lix" id="payment-type" style="margin-top: 10px;display: none;">
-<input type="radio" id="bc1" checked name="paymentmethod" value="Credit Card" style="appearance: none;margin: 0px;padding: 0px;" class="radio"/>
-<label class="form-h92 form-7yz reducetop" for="bc1" id="pm1" onclick="selectCC()">Credit Card</label>
-<input type="radio" id="bc2" name="paymentmethod" value="Direct Debit" style="appearance: none;margin: 0px;padding: 0px;" class="radio"/>
-<label class="form-h92 form-6x8 reducetop" for="bc2" id="pm2" onclick="selectDD()">Direct Debit</label>
-</div>
-<div class="form-edo">
-<div class="wrapper-zeh"><button type="button" class="form-ho3 button-tbw" id="amount1" onclick="set1()"><span>$10</span></button></div>
-<div class="wrapper-zeh"><button type="button" class="form-ho3 button-tbw" id="amount2" onclick="set2()"><span>$20</span></button></div>
-<div class="wrapper-zeh"><button type="button" class="form-ho3 button-tbw" id="amount3" onclick="set3()"><span>$50</span></button></div>
-<div class="wrapper-zeh"><button type="button" class="form-ho3 button-tbw" id="amount4" onclick="set4()"><span>$70</span></button></div>
-<div class="wrapper-zeh"><button type="button" class="form-ho3 button-tbw" id="amount5" onclick="set5()"><span>$100</span></button></div>
-<div class="field-bsg field-ggk field-edh field-kvl"><label for="amount"><span class="field-8lb">Other Amount</span></label>
-<div class="field-wgf">
-  <!--span class="field-qhl">$</span-->
-  <span style="position: absolute; margin-left: 3px;">$</span>
-  <div class="field-hem required-placeholder-text" style="display:none;font-size: 10px;"></div>
-  <div class="field-hem required-placeholder-icon"><i class="field-lem" id="amountValue-required"><svg width="15px" height="15px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M50.92 67.87L29.87 61.8c-1.04-.3-1.62-1.4-1.29-2.43l3.38-10.39a1.914 1.914 0 0 1 2.51-1.19l20.78 8.04c1.29.5 2.66-.49 2.6-1.87L56.81 30c-.05-1.09.82-2 1.91-2h11.05c1.09 0 1.96.91 1.91 2l-1.05 24.48c-.06 1.38 1.32 2.36 2.6 1.87l20.34-7.87c1.03-.4 2.18.16 2.52 1.21l3.34 10.62c.32 1.03-.27 2.12-1.3 2.41l-21.48 6.09a1.92 1.92 0 0 0-1.01 2.99L89.6 90.38c.64.85.46 2.06-.4 2.69l-8.96 6.55c-.9.66-2.16.41-2.75-.53L65.05 79.2c-.75-1.19-2.48-1.2-3.23-.02L49.55 98.41c-.59.92-1.82 1.16-2.71.54l-9.01-6.29a1.916 1.916 0 0 1-.43-2.73l14.5-19.06c.83-1.07.32-2.62-.98-3z"></path></svg></i></div>
-  <input name="amountValue" id="amountValue" style="padding-left: 15px !important;" type="number" min="1" max="10000" class="input-vjj" placeholder="Other" onchange="setAmount()" onfocus="removeOutline('amountValue')" onblur="onFocusLeft('amountValue')"/>
-  <input id="Amount" name="amount" type="hidden"/>
-</div>
-</div>
-</div>
-<div class="form-i4o">
-<nav class="form-x4j">
-<button type="button" class="button-j7f button-4dx form-apk" onclick="nextStep()">Next <span class="icon-pzi icon-cdy icon-v44" id="next-svg"><i class="icon-xcf"><svg class="svg-icon" style="width: 18px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M333.1 126.5l-0.7 0.7c-12.3 12.3-12.3 32.4 0 44.7l339.9 339.9-340.1 340.1c-12.5 12.5-12.5 32.9 0 45.4s32.9 12.5 45.4 0L740 535s0.1-0.1 0.2-0.1l0.7-0.7c12.3-12.3 12.3-32.4 0-44.7l-363-363c-12.4-12.3-32.5-12.3-44.8 0z"/></svg></i></span></button></nav>
-</div>
-</div>
-</div>
-<div class="form-oqi step" id="step2" style="display: none;">
-<div class="header-sge">
-<div class="form-bpp">
-<div class="form-oao form-ezb">1</div>
-<div class="form-oao form-9a6">2</div>
-<div class="form-oao">3</div>
-</div>
-</div>
-<div class="form-bg5">
-<div class="label-9wv" style="display:none;">
-<div class="label-ix2 ani-w9j" id="hearts-animation" style="display:none;">
-<span class="icon-pzi icon-bej icon-v44">
-  <i class="icon-xcf"><svg width="16px" height="16px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868c-3.308 0-6.227 1.633-8.018 4.129c-1.791-2.496-4.71-4.129-8.017-4.129c-5.45 0-9.868 4.417-9.868 9.868c0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959c.17-.721.268-1.469.268-2.242z" fill="#F74440"></path></svg></i>
-</span>
-<span class="icon-pzi icon-bej icon-v44 ani-zvx cen-333">
-  <i class="icon-xcf"><svg width="16px" height="16px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868c-3.308 0-6.227 1.633-8.018 4.129c-1.791-2.496-4.71-4.129-8.017-4.129c-5.45 0-9.868 4.417-9.868 9.868c0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959c.17-.721.268-1.469.268-2.242z" fill="#F74440"></path></svg></i>
-</span>
-<span class="icon-pzi icon-bej icon-v44 ani-zvx left-75z">
-  <i class="icon-xcf"><svg width="16px" height="16px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868c-3.308 0-6.227 1.633-8.018 4.129c-1.791-2.496-4.71-4.129-8.017-4.129c-5.45 0-9.868 4.417-9.868 9.868c0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959c.17-.721.268-1.469.268-2.242z" fill="#F74440"></path></svg></i>
-</span>
-<span class="icon-pzi icon-bej icon-v44 ani-zvx right-x57">
-  <i class="icon-xcf"><svg width="16px" height="16px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868c-3.308 0-6.227 1.633-8.018 4.129c-1.791-2.496-4.71-4.129-8.017-4.129c-5.45 0-9.868 4.417-9.868 9.868c0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959c.17-.721.268-1.469.268-2.242z" fill="#F74440"></path></svg></i>
-</span>
-<span class="icon-pzi icon-bej icon-v44 ani-zvx center-8nc">
-  <i class="icon-xcf"><svg width="16px" height="16px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868c-3.308 0-6.227 1.633-8.018 4.129c-1.791-2.496-4.71-4.129-8.017-4.129c-5.45 0-9.868 4.417-9.868 9.868c0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959c.17-.721.268-1.469.268-2.242z" fill="#F74440"></path></svg></i>
-</span>
-</div>
-<span class="amountText">Donating 0$</span>
-</div>
-<h3 class="title-bot">Your Details</h3>
-<div class="wrapper-5bi">
-<div class="field-zcb field-c6x">
-<div class="field-hem required-placeholder-text" style="display:none;"></div>
-<div class="field-hem required-placeholder-icon"><i class="field-lem" id="firstname-required"><svg width="15px" height="15px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M50.92 67.87L29.87 61.8c-1.04-.3-1.62-1.4-1.29-2.43l3.38-10.39a1.914 1.914 0 0 1 2.51-1.19l20.78 8.04c1.29.5 2.66-.49 2.6-1.87L56.81 30c-.05-1.09.82-2 1.91-2h11.05c1.09 0 1.96.91 1.91 2l-1.05 24.48c-.06 1.38 1.32 2.36 2.6 1.87l20.34-7.87c1.03-.4 2.18.16 2.52 1.21l3.34 10.62c.32 1.03-.27 2.12-1.3 2.41l-21.48 6.09a1.92 1.92 0 0 0-1.01 2.99L89.6 90.38c.64.85.46 2.06-.4 2.69l-8.96 6.55c-.9.66-2.16.41-2.75-.53L65.05 79.2c-.75-1.19-2.48-1.2-3.23-.02L49.55 98.41c-.59.92-1.82 1.16-2.71.54l-9.01-6.29a1.916 1.916 0 0 1-.43-2.73l14.5-19.06c.83-1.07.32-2.62-.98-3z"></path></svg></i></div>
-<label for="firstName"><span class="field-lot">First Name</span></label>
-<input id="firstname" name="firstName" id="fir-mrk" required placeholder="" type="text" value="" onfocus="removeOutline('firstname')" onblur="onFocusLeft('firstname')"/>
-</div>
-</div>
-<div class="wrapper-5bi">
-<div class="field-zcb field-c6x">
-<div class="field-hem required-placeholder-text" style="display:none;"></div>
-<div class="field-hem required-placeholder-icon"><i class="field-lem" id="lastname-required"><svg width="15px" height="15px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M50.92 67.87L29.87 61.8c-1.04-.3-1.62-1.4-1.29-2.43l3.38-10.39a1.914 1.914 0 0 1 2.51-1.19l20.78 8.04c1.29.5 2.66-.49 2.6-1.87L56.81 30c-.05-1.09.82-2 1.91-2h11.05c1.09 0 1.96.91 1.91 2l-1.05 24.48c-.06 1.38 1.32 2.36 2.6 1.87l20.34-7.87c1.03-.4 2.18.16 2.52 1.21l3.34 10.62c.32 1.03-.27 2.12-1.3 2.41l-21.48 6.09a1.92 1.92 0 0 0-1.01 2.99L89.6 90.38c.64.85.46 2.06-.4 2.69l-8.96 6.55c-.9.66-2.16.41-2.75-.53L65.05 79.2c-.75-1.19-2.48-1.2-3.23-.02L49.55 98.41c-.59.92-1.82 1.16-2.71.54l-9.01-6.29a1.916 1.916 0 0 1-.43-2.73l14.5-19.06c.83-1.07.32-2.62-.98-3z"></path></svg></i></div>
-<label for="lastName"><span class="field-lot">Last Name</span></label>
-<input id="lastname" name="lastName" id="las-vtn" required placeholder="" type="text" value="" onfocus="removeOutline('lastname')" onblur="onFocusLeft('lastname')"/>
-</div>
-</div>
-<div class="wrapper-5bi">
-<div class="field-zcb field-c6x">
-<div class="field-hem required-placeholder-text" style="display:none;"></div>
-<div class="field-hem required-placeholder-icon"><i class="field-lem" id="email-required"><?xml version="1.0" encoding="utf-8"?>
-<svg width="15px" height="15px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M50.92 67.87L29.87 61.8c-1.04-.3-1.62-1.4-1.29-2.43l3.38-10.39a1.914 1.914 0 0 1 2.51-1.19l20.78 8.04c1.29.5 2.66-.49 2.6-1.87L56.81 30c-.05-1.09.82-2 1.91-2h11.05c1.09 0 1.96.91 1.91 2l-1.05 24.48c-.06 1.38 1.32 2.36 2.6 1.87l20.34-7.87c1.03-.4 2.18.16 2.52 1.21l3.34 10.62c.32 1.03-.27 2.12-1.3 2.41l-21.48 6.09a1.92 1.92 0 0 0-1.01 2.99L89.6 90.38c.64.85.46 2.06-.4 2.69l-8.96 6.55c-.9.66-2.16.41-2.75-.53L65.05 79.2c-.75-1.19-2.48-1.2-3.23-.02L49.55 98.41c-.59.92-1.82 1.16-2.71.54l-9.01-6.29a1.916 1.916 0 0 1-.43-2.73l14.5-19.06c.83-1.07.32-2.62-.98-3z"></path></svg></i></div>
-<label for="email"><span class="field-lot">Email</span></label>
-<input id="email" name="email" id="ema-ocn" placeholder="" required type="email" value="" onfocus="removeOutline('email')" onblur="onFocusLeft('email')"/>
-</div>
-</div>
-<div class="wrapper-5bi">
-<div class="field-zcb field-c6x">
-<div class="field-hem required-placeholder-text" style="display:none;"></div>
-<div class="field-hem required-placeholder-icon"><i class="field-lem" id="phone-required"><?xml version="1.0" encoding="utf-8"?>
-<svg width="15px" height="15px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M50.92 67.87L29.87 61.8c-1.04-.3-1.62-1.4-1.29-2.43l3.38-10.39a1.914 1.914 0 0 1 2.51-1.19l20.78 8.04c1.29.5 2.66-.49 2.6-1.87L56.81 30c-.05-1.09.82-2 1.91-2h11.05c1.09 0 1.96.91 1.91 2l-1.05 24.48c-.06 1.38 1.32 2.36 2.6 1.87l20.34-7.87c1.03-.4 2.18.16 2.52 1.21l3.34 10.62c.32 1.03-.27 2.12-1.3 2.41l-21.48 6.09a1.92 1.92 0 0 0-1.01 2.99L89.6 90.38c.64.85.46 2.06-.4 2.69l-8.96 6.55c-.9.66-2.16.41-2.75-.53L65.05 79.2c-.75-1.19-2.48-1.2-3.23-.02L49.55 98.41c-.59.92-1.82 1.16-2.71.54l-9.01-6.29a1.916 1.916 0 0 1-.43-2.73l14.5-19.06c.83-1.07.32-2.62-.98-3z"></path></svg></i></div>
-<label for="phone"><span class="field-lot">Phone</span></label>
-<input id="phone" name="phone" id="ema-ocn" placeholder="" required type="phone" value="" onfocus="removeOutline('phone')" onblur="onFocusLeft('phone')"/>
-</div>
-</div>
-<!--div class="wrapper-5bi">
-<div class="field-zcb field-c6x field-rso"><label for="message"><span class="field-lot">Your Message</span></label><textarea></textarea></div>
-</div-->
-<div class="wrapper-5bi"></div>
-<div class="wrapper-5bi">
-<div class="field-zcb checkbox-n1l"><label for="anonymous"><input type="checkbox" name="anonymous" id="is-anonymous" onclick="setAnonymousData();" /><span class="field-lot" onclick="setAnonymousText()">Keep my donation anonymous</span></label></div>
-</div>
-<p class="message-svm">Donating <b>$</b><b class="totalAmount">2.75</b><span class="donating-in"></span></p>
-<div class="form-i4o">
-<nav class="form-x4j">
-<button type="button" class="button-j7f button-4dx form-53y" onclick="prevStep()"><span class="icon-pzi icon-cdy icon-v44"><i class="icon-xcf"><svg class="svg-icon" style="width: 18px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M690.8 126.5l0.7 0.7c12.3 12.3 12.3 32.4 0 44.7l-340 340L691.6 852c12.5 12.5 12.5 32.9 0 45.4s-32.9 12.5-45.4 0L283.9 535s-0.1-0.1-0.2-0.1l-0.7-0.7c-12.3-12.3-12.3-32.4 0-44.7l363-363c12.4-12.3 32.5-12.3 44.8 0z"/></svg></i></span></button>
-<button type="button" class="button-j7f button-4dx form-apk" onclick="nextStep()">Next <span class="icon-pzi icon-cdy icon-v44"><i class="icon-xcf"><svg class="svg-icon" style="width: 18px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M333.1 126.5l-0.7 0.7c-12.3 12.3-12.3 32.4 0 44.7l339.9 339.9-340.1 340.1c-12.5 12.5-12.5 32.9 0 45.4s32.9 12.5 45.4 0L740 535s0.1-0.1 0.2-0.1l0.7-0.7c12.3-12.3 12.3-32.4 0-44.7l-363-363c-12.4-12.3-32.5-12.3-44.8 0z"/></svg></i></span></button></nav>
-</div>
-</div>
-</div>
-<div class="form-k2v step" id="step3" style="display: none;">
-<div class="header-8s3">
-<div class="form-o1m">
-<div class="form-xrs form-ezb">1</div>
-<div class="form-xrs form-ezb">2</div>
-<div class="form-xrs form-8wa">3</div>
-</div>
-</div>
-<div class="form-itb form-o9z">
-<h3 class="title-er1">Your Donation Details</h3>
-<div>
-<div class="donation-form__raisely-fee v3" id="hidePlatformFees">
-                            <div class="form-field form-field--boolean form-field--empty form-field--valid">
-                              <button type="button" class="form-field--boolean__inline form-field--boolean__inline--tiny " aria-label="Cover our platform costs" onclick="showPlatformFees()">
-                                    <div class="form-field--boolean__switch
-              form-field--boolean__switch--off
-              form-field--boolean__switch--tiny
-            ">
-                                        <div class="form-field--boolean__switch__left"> </div>
-                                        <div class="form-field--boolean__switch__knob">&nbsp;</div>
-                                        <div class="form-field--boolean__switch__right"> </div>
-                                    </div>
-                                </button><label for="feeOptIn"><span class="form-field__label-text">Cover our platform costs</span></label></div><svg width="34" height="34" viewBox="0 0 34 34" class="donation-form__raisely-fee__donationHeart">
-                                <path d="M12.2,30.3L12.2,30.3L12.2,30.3c0.1,0.2,0.1,0.4,0.2,0.5c0.1,0.2,0.3,0.6,0.6,0.9c0.4,0.4,1,0.8,1.6,0.9 c0.5,0.1,0.9,0.1,1.1,0.1c0.2,0,0.4-0.1,0.5-0.1l0,0l0,0l0,0c1.2-0.2,3.3-0.7,5.5-1.2c2.1-0.5,4.4-1.1,5.8-1.7 c4.2-1.7,6.4-6.3,4.7-10.7c-1.3-3.6-4.6-5.4-7.9-5.2c-1.5-2.9-4.6-5-8.5-4.2c-4.5,0.8-7.5,5-6.9,9.5c0.2,1.5,0.8,3.8,1.5,5.9 C11.1,27.1,11.8,29.2,12.2,30.3 M20.9,2c-3.5-1.6-7-0.5-9.2,1.9c-3.1-1-6.8-0.2-9,3c-2.6,3.8-1.8,8.8,1.8,11.6 c0.6,0.5,1.4,1,2.3,1.5c0.4,0.2,0.8,0.2,1.2,0c0.4-0.2,0.6-0.7,0.5-1.1c-0.5-4.6,2.6-8.8,7.2-9.6c3.3-0.6,6,0.7,7.8,2.8 c0.3,0.3,0.7,0.5,1.1,0.4c0.4-0.1,0.8-0.4,0.9-0.8C26.5,7.8,24.7,3.7,20.9,2" stroke-width="2.2857" stroke-linejoin="round" stroke-linecap="round"></path>
-                            </svg>
-                            <p class="donation-form__raisely-fee__text">Your generosity will help our donation platform to continue to support us for free.</p>
+  <div id="cover-spin" style="display: none;"></div>
+  <div class="container-c9b css-c36">
+    <h2 class="css-gdc">BECOME A CHANGEMAKER TODAY!</h2>
+    <p class="css-n1b css-jc2">Your support today will help to save lives defeat poverty and achieve social justice.</p>
+    <div class="css-m3b" style="display: block;">
+      <form onsubmit="showSpinner();" action="https://wired-payments-npc.my.salesforce-sites.com/services/apexrest/w_pay/charge" method="POST" class="rounded" data-aos="fade-up">
+        <div class="form-oqi form-or5 step" id="step1">
+          <div class="header-sge">
+            <div class="form-bpp">
+              <div class="form-oao form-9a6">1</div>
+              <div class="form-oao">2</div>
+              <div class="form-oao">3</div>
+            </div>
+          </div>
+          <div class="form-cf9" style="padding-top:10px;">
+            <div class="message-r9z message-2tf" style="display: none;">
+              <p><i class="icon-w3c">error</i><strong>Connect a Payment Provider</strong></p>
+              <p>In order to take live payments, you'll need to <a href="#">add a Payment Gateway</a> in your Dashboard</p>
+            </div>
+            <div class="form-lix">
+              <input type="radio" id="b1" checked style="appearance: none;margin: 0px;padding: 0px;" name="chargetype" value="OneTime" class="radio"/>
+              <label class="form-h92 form-7yz" id="l1" for="b1" onclick="hideMonthly()">OneTime</label>
+              <input type="radio" id="b2" style="appearance: none;margin: 0px;padding: 0px;" name="chargetype" value="Recurring" class="radio"/>
+              <label class="form-h92 form-6x8" id="l2" for="b2" onclick="showMonthly()">Monthly</label>
+              <input type="hidden" id="startdate" name="startdate" value="" class="name"/>
+              <input type="hidden" id="transactionperiod" name="transactionperiod" value="" class="name"/>
+            </div>
+            <br/>
+            
+            <div class="form-lix" id="payment-type" style="margin-top: 10px;display: none;">
+              <input type="radio" id="bc1" checked name="paymentmethod" value="Credit Card" style="appearance: none;margin: 0px;padding: 0px;" class="radio"/>
+              <label class="form-h92 form-7yz reducetop" for="bc1" id="pm1" onclick="selectCC()">Credit Card</label>
+              <input type="radio" id="bc2" name="paymentmethod" value="Direct Debit" style="appearance: none;margin: 0px;padding: 0px;" class="radio"/>
+              <label class="form-h92 form-6x8 reducetop" for="bc2" id="pm2" onclick="selectDD()">Direct Debit</label>
+            </div>
+            <div class="form-edo">
+              <div class="wrapper-zeh"><button type="button" class="form-ho3 button-tbw" id="amount1" onclick="set1()"><span>$10</span></button></div>
+              <div class="wrapper-zeh"><button type="button" class="form-ho3 button-tbw" id="amount2" onclick="set2()"><span>$20</span></button></div>
+              <div class="wrapper-zeh"><button type="button" class="form-ho3 button-tbw" id="amount3" onclick="set3()"><span>$50</span></button></div>
+              <div class="wrapper-zeh"><button type="button" class="form-ho3 button-tbw" id="amount4" onclick="set4()"><span>$70</span></button></div>
+              <div class="wrapper-zeh"><button type="button" class="form-ho3 button-tbw" id="amount5" onclick="set5()"><span>$100</span></button></div>
+              <div class="field-bsg field-ggk field-edh field-kvl"><label for="amount"><span class="field-8lb">Other Amount</span></label>
+                <div class="field-wgf">
+                  <!--span class="field-qhl">$</span-->
+                  <span style="position: absolute; margin-left: 3px;">$</span>
+                  <div class="field-hem required-placeholder-text" style="display:none;font-size: 10px;"></div>
+                  <div class="field-hem required-placeholder-icon"><i class="field-lem" id="amountValue-required"><svg width="15px" height="15px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M50.92 67.87L29.87 61.8c-1.04-.3-1.62-1.4-1.29-2.43l3.38-10.39a1.914 1.914 0 0 1 2.51-1.19l20.78 8.04c1.29.5 2.66-.49 2.6-1.87L56.81 30c-.05-1.09.82-2 1.91-2h11.05c1.09 0 1.96.91 1.91 2l-1.05 24.48c-.06 1.38 1.32 2.36 2.6 1.87l20.34-7.87c1.03-.4 2.18.16 2.52 1.21l3.34 10.62c.32 1.03-.27 2.12-1.3 2.41l-21.48 6.09a1.92 1.92 0 0 0-1.01 2.99L89.6 90.38c.64.85.46 2.06-.4 2.69l-8.96 6.55c-.9.66-2.16.41-2.75-.53L65.05 79.2c-.75-1.19-2.48-1.2-3.23-.02L49.55 98.41c-.59.92-1.82 1.16-2.71.54l-9.01-6.29a1.916 1.916 0 0 1-.43-2.73l14.5-19.06c.83-1.07.32-2.62-.98-3z"></path></svg></i></div>
+                  <input name="amountValue" id="amountValue" style="padding-left: 15px !important;" type="number" min="1" max="10000" class="input-vjj" placeholder="Other" onchange="setAmount()" onfocus="removeOutline('amountValue')" onblur="onFocusLeft('amountValue')"/>
+                  <input id="Amount" name="amount" type="hidden"/>
+                </div>
+              </div>
+            </div>
+            <div class="form-i4o">
+              <nav class="form-x4j">
+                <button type="button" class="button-j7f button-4dx form-apk" onclick="nextStep()">Next <span class="icon-pzi icon-cdy icon-v44" id="next-svg"><i class="icon-xcf"><svg class="svg-icon" style="width: 18px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M333.1 126.5l-0.7 0.7c-12.3 12.3-12.3 32.4 0 44.7l339.9 339.9-340.1 340.1c-12.5 12.5-12.5 32.9 0 45.4s32.9 12.5 45.4 0L740 535s0.1-0.1 0.2-0.1l0.7-0.7c12.3-12.3 12.3-32.4 0-44.7l-363-363c-12.4-12.3-32.5-12.3-44.8 0z"/></svg></i></span></button></nav>
+              </div>
+            </div>
+          </div>
+          <div class="form-oqi step" id="step2" style="display: none;">
+            <div class="header-sge">
+              <div class="form-bpp">
+                <div class="form-oao form-ezb">1</div>
+                <div class="form-oao form-9a6">2</div>
+                <div class="form-oao">3</div>
+              </div>
+            </div>
+            <div class="form-bg5">
+              <div class="label-9wv" style="display:none;">
+                <div class="label-ix2 ani-w9j" id="hearts-animation" style="display:none;">
+                  <span class="icon-pzi icon-bej icon-v44">
+                    <i class="icon-xcf"><svg width="16px" height="16px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868c-3.308 0-6.227 1.633-8.018 4.129c-1.791-2.496-4.71-4.129-8.017-4.129c-5.45 0-9.868 4.417-9.868 9.868c0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959c.17-.721.268-1.469.268-2.242z" fill="#F74440"></path></svg></i>
+                  </span>
+                  <span class="icon-pzi icon-bej icon-v44 ani-zvx cen-333">
+                    <i class="icon-xcf"><svg width="16px" height="16px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868c-3.308 0-6.227 1.633-8.018 4.129c-1.791-2.496-4.71-4.129-8.017-4.129c-5.45 0-9.868 4.417-9.868 9.868c0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959c.17-.721.268-1.469.268-2.242z" fill="#F74440"></path></svg></i>
+                  </span>
+                  <span class="icon-pzi icon-bej icon-v44 ani-zvx left-75z">
+                    <i class="icon-xcf"><svg width="16px" height="16px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868c-3.308 0-6.227 1.633-8.018 4.129c-1.791-2.496-4.71-4.129-8.017-4.129c-5.45 0-9.868 4.417-9.868 9.868c0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959c.17-.721.268-1.469.268-2.242z" fill="#F74440"></path></svg></i>
+                  </span>
+                  <span class="icon-pzi icon-bej icon-v44 ani-zvx right-x57">
+                    <i class="icon-xcf"><svg width="16px" height="16px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868c-3.308 0-6.227 1.633-8.018 4.129c-1.791-2.496-4.71-4.129-8.017-4.129c-5.45 0-9.868 4.417-9.868 9.868c0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959c.17-.721.268-1.469.268-2.242z" fill="#F74440"></path></svg></i>
+                  </span>
+                  <span class="icon-pzi icon-bej icon-v44 ani-zvx center-8nc">
+                    <i class="icon-xcf"><svg width="16px" height="16px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path d="M35.885 11.833c0-5.45-4.418-9.868-9.867-9.868c-3.308 0-6.227 1.633-8.018 4.129c-1.791-2.496-4.71-4.129-8.017-4.129c-5.45 0-9.868 4.417-9.868 9.868c0 .772.098 1.52.266 2.241C1.751 22.587 11.216 31.568 18 34.034c6.783-2.466 16.249-11.447 17.617-19.959c.17-.721.268-1.469.268-2.242z" fill="#F74440"></path></svg></i>
+                  </span>
+                </div>
+                <span class="amountText">Donating 0$</span>
+              </div>
+              <h3 class="title-bot">Your Details</h3>
+              <div class="wrapper-5bi">
+                <div class="field-zcb field-c6x">
+                  <div class="field-hem required-placeholder-text" style="display:none;"></div>
+                  <div class="field-hem required-placeholder-icon"><i class="field-lem" id="firstname-required"><svg width="15px" height="15px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M50.92 67.87L29.87 61.8c-1.04-.3-1.62-1.4-1.29-2.43l3.38-10.39a1.914 1.914 0 0 1 2.51-1.19l20.78 8.04c1.29.5 2.66-.49 2.6-1.87L56.81 30c-.05-1.09.82-2 1.91-2h11.05c1.09 0 1.96.91 1.91 2l-1.05 24.48c-.06 1.38 1.32 2.36 2.6 1.87l20.34-7.87c1.03-.4 2.18.16 2.52 1.21l3.34 10.62c.32 1.03-.27 2.12-1.3 2.41l-21.48 6.09a1.92 1.92 0 0 0-1.01 2.99L89.6 90.38c.64.85.46 2.06-.4 2.69l-8.96 6.55c-.9.66-2.16.41-2.75-.53L65.05 79.2c-.75-1.19-2.48-1.2-3.23-.02L49.55 98.41c-.59.92-1.82 1.16-2.71.54l-9.01-6.29a1.916 1.916 0 0 1-.43-2.73l14.5-19.06c.83-1.07.32-2.62-.98-3z"></path></svg></i></div>
+                  <label for="firstName"><span class="field-lot">First Name</span></label>
+                  <input id="firstname" name="firstName" id="fir-mrk" required placeholder="" type="text" value="" onfocus="removeOutline('firstname')" onblur="onFocusLeft('firstname')"/>
+                </div>
+              </div>
+              <div class="wrapper-5bi">
+                <div class="field-zcb field-c6x">
+                  <div class="field-hem required-placeholder-text" style="display:none;"></div>
+                  <div class="field-hem required-placeholder-icon"><i class="field-lem" id="lastname-required"><svg width="15px" height="15px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M50.92 67.87L29.87 61.8c-1.04-.3-1.62-1.4-1.29-2.43l3.38-10.39a1.914 1.914 0 0 1 2.51-1.19l20.78 8.04c1.29.5 2.66-.49 2.6-1.87L56.81 30c-.05-1.09.82-2 1.91-2h11.05c1.09 0 1.96.91 1.91 2l-1.05 24.48c-.06 1.38 1.32 2.36 2.6 1.87l20.34-7.87c1.03-.4 2.18.16 2.52 1.21l3.34 10.62c.32 1.03-.27 2.12-1.3 2.41l-21.48 6.09a1.92 1.92 0 0 0-1.01 2.99L89.6 90.38c.64.85.46 2.06-.4 2.69l-8.96 6.55c-.9.66-2.16.41-2.75-.53L65.05 79.2c-.75-1.19-2.48-1.2-3.23-.02L49.55 98.41c-.59.92-1.82 1.16-2.71.54l-9.01-6.29a1.916 1.916 0 0 1-.43-2.73l14.5-19.06c.83-1.07.32-2.62-.98-3z"></path></svg></i></div>
+                  <label for="lastName"><span class="field-lot">Last Name</span></label>
+                  <input id="lastname" name="lastName" id="las-vtn" required placeholder="" type="text" value="" onfocus="removeOutline('lastname')" onblur="onFocusLeft('lastname')"/>
+                </div>
+              </div>
+              <div class="wrapper-5bi">
+                <div class="field-zcb field-c6x">
+                  <div class="field-hem required-placeholder-text" style="display:none;"></div>
+                  <div class="field-hem required-placeholder-icon"><i class="field-lem" id="email-required"><?xml version="1.0" encoding="utf-8"?>
+                    <svg width="15px" height="15px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M50.92 67.87L29.87 61.8c-1.04-.3-1.62-1.4-1.29-2.43l3.38-10.39a1.914 1.914 0 0 1 2.51-1.19l20.78 8.04c1.29.5 2.66-.49 2.6-1.87L56.81 30c-.05-1.09.82-2 1.91-2h11.05c1.09 0 1.96.91 1.91 2l-1.05 24.48c-.06 1.38 1.32 2.36 2.6 1.87l20.34-7.87c1.03-.4 2.18.16 2.52 1.21l3.34 10.62c.32 1.03-.27 2.12-1.3 2.41l-21.48 6.09a1.92 1.92 0 0 0-1.01 2.99L89.6 90.38c.64.85.46 2.06-.4 2.69l-8.96 6.55c-.9.66-2.16.41-2.75-.53L65.05 79.2c-.75-1.19-2.48-1.2-3.23-.02L49.55 98.41c-.59.92-1.82 1.16-2.71.54l-9.01-6.29a1.916 1.916 0 0 1-.43-2.73l14.5-19.06c.83-1.07.32-2.62-.98-3z"></path></svg></i></div>
+                    <label for="email"><span class="field-lot">Email</span></label>
+                    <input id="email" name="email" id="ema-ocn" placeholder="" required type="email" value="" onfocus="removeOutline('email')" onblur="onFocusLeft('email')"/>
+                  </div>
+                </div>
+                <div class="wrapper-5bi">
+                  <div class="field-zcb field-c6x">
+                    <div class="field-hem required-placeholder-text" style="display:none;"></div>
+                    <div class="field-hem required-placeholder-icon"><i class="field-lem" id="phone-required"><?xml version="1.0" encoding="utf-8"?>
+                      <svg width="15px" height="15px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet"><path d="M50.92 67.87L29.87 61.8c-1.04-.3-1.62-1.4-1.29-2.43l3.38-10.39a1.914 1.914 0 0 1 2.51-1.19l20.78 8.04c1.29.5 2.66-.49 2.6-1.87L56.81 30c-.05-1.09.82-2 1.91-2h11.05c1.09 0 1.96.91 1.91 2l-1.05 24.48c-.06 1.38 1.32 2.36 2.6 1.87l20.34-7.87c1.03-.4 2.18.16 2.52 1.21l3.34 10.62c.32 1.03-.27 2.12-1.3 2.41l-21.48 6.09a1.92 1.92 0 0 0-1.01 2.99L89.6 90.38c.64.85.46 2.06-.4 2.69l-8.96 6.55c-.9.66-2.16.41-2.75-.53L65.05 79.2c-.75-1.19-2.48-1.2-3.23-.02L49.55 98.41c-.59.92-1.82 1.16-2.71.54l-9.01-6.29a1.916 1.916 0 0 1-.43-2.73l14.5-19.06c.83-1.07.32-2.62-.98-3z"></path></svg></i></div>
+                      <label for="phone"><span class="field-lot">Phone</span></label>
+                      <input id="phone" name="phone" id="ema-ocn" placeholder="" required type="phone" value="" onfocus="removeOutline('phone')" onblur="onFocusLeft('phone')"/>
+                    </div>
+                  </div>
+                  <!--div class="wrapper-5bi">
+                    <div class="field-zcb field-c6x field-rso"><label for="message"><span class="field-lot">Your Message</span></label><textarea></textarea></div>
+                  </div-->
+                  <div class="wrapper-5bi"></div>
+                  <div class="wrapper-5bi">
+                    <div class="field-zcb checkbox-n1l"><label for="anonymous"><input type="checkbox" name="anonymous" id="is-anonymous" onclick="setAnonymousData();" /><span class="field-lot" onclick="setAnonymousText()">Keep my donation anonymous</span></label></div>
+                  </div>
+                  <p class="message-svm">Donating <b>$</b><b class="totalAmount">2.75</b><span class="donating-in"></span></p>
+                  <div class="form-i4o">
+                    <nav class="form-x4j">
+                      <button type="button" class="button-j7f button-4dx form-53y" onclick="prevStep()"><span class="icon-pzi icon-cdy icon-v44"><i class="icon-xcf"><svg class="svg-icon" style="width: 18px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M690.8 126.5l0.7 0.7c12.3 12.3 12.3 32.4 0 44.7l-340 340L691.6 852c12.5 12.5 12.5 32.9 0 45.4s-32.9 12.5-45.4 0L283.9 535s-0.1-0.1-0.2-0.1l-0.7-0.7c-12.3-12.3-12.3-32.4 0-44.7l363-363c12.4-12.3 32.5-12.3 44.8 0z"/></svg></i></span></button>
+                      <button type="button" class="button-j7f button-4dx form-apk" onclick="nextStep()">Next <span class="icon-pzi icon-cdy icon-v44"><i class="icon-xcf"><svg class="svg-icon" style="width: 18px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M333.1 126.5l-0.7 0.7c-12.3 12.3-12.3 32.4 0 44.7l339.9 339.9-340.1 340.1c-12.5 12.5-12.5 32.9 0 45.4s32.9 12.5 45.4 0L740 535s0.1-0.1 0.2-0.1l0.7-0.7c12.3-12.3 12.3-32.4 0-44.7l-363-363c-12.4-12.3-32.5-12.3-44.8 0z"/></svg></i></span></button></nav>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-k2v step" id="step3" style="display: none;">
+                  <div class="header-8s3">
+                    <div class="form-o1m">
+                      <div class="form-xrs form-ezb">1</div>
+                      <div class="form-xrs form-ezb">2</div>
+                      <div class="form-xrs form-8wa">3</div>
+                    </div>
+                  </div>
+                  <div class="form-itb form-o9z">
+                    <h3 class="title-er1">Your Donation Details</h3>
+                    <div>
+                      <div class="donation-form__raisely-fee v3" id="hidePlatformFees">
+                        <div class="form-field form-field--boolean form-field--empty form-field--valid" Id="CoverAmountBox" style="display: block;">
+                          <button type="button" class="form-field--boolean__inline form-field--boolean__inline--tiny " aria-label="Cover our platform costs" onclick="showPlatformFees()">
+                            <div class="form-field--boolean__switch
+                            form-field--boolean__switch--off
+                            form-field--boolean__switch--tiny
+                            ">
+                            <div class="form-field--boolean__switch__left"> </div>
+                            <div class="form-field--boolean__switch__knob">&nbsp;</div>
+                            <div class="form-field--boolean__switch__right"> </div>
+                          </div>
+                        </button><label for="feeOptIn"><span class="form-field__label-text">Cover our platform costs</span></label>
+                      </div><svg width="34" height="34" viewBox="0 0 34 34" class="donation-form__raisely-fee__donationHeart">
+                          <path d="M12.2,30.3L12.2,30.3L12.2,30.3c0.1,0.2,0.1,0.4,0.2,0.5c0.1,0.2,0.3,0.6,0.6,0.9c0.4,0.4,1,0.8,1.6,0.9 c0.5,0.1,0.9,0.1,1.1,0.1c0.2,0,0.4-0.1,0.5-0.1l0,0l0,0l0,0c1.2-0.2,3.3-0.7,5.5-1.2c2.1-0.5,4.4-1.1,5.8-1.7 c4.2-1.7,6.4-6.3,4.7-10.7c-1.3-3.6-4.6-5.4-7.9-5.2c-1.5-2.9-4.6-5-8.5-4.2c-4.5,0.8-7.5,5-6.9,9.5c0.2,1.5,0.8,3.8,1.5,5.9 C11.1,27.1,11.8,29.2,12.2,30.3 M20.9,2c-3.5-1.6-7-0.5-9.2,1.9c-3.1-1-6.8-0.2-9,3c-2.6,3.8-1.8,8.8,1.8,11.6 c0.6,0.5,1.4,1,2.3,1.5c0.4,0.2,0.8,0.2,1.2,0c0.4-0.2,0.6-0.7,0.5-1.1c-0.5-4.6,2.6-8.8,7.2-9.6c3.3-0.6,6,0.7,7.8,2.8 c0.3,0.3,0.7,0.5,1.1,0.4c0.4-0.1,0.8-0.4,0.9-0.8C26.5,7.8,24.7,3.7,20.9,2" stroke-width="2.2857" stroke-linejoin="round" stroke-linecap="round"></path>
+                        </svg>
+                        <p Id="ptag1" style="display: block;" class="donation-form__raisely-fee__text">Your generosity will help our donation platform to continue to support us for free.</p>
+                        <p Id="ptag2" style="display: none;" class="donation-form__raisely-fee__text">Before you proceed to checkout, please take a moment to double-check your donation details. If everything looks good, click "DONATE" to make your impactful contribution.</p>
+                      </div>
+                      <div class="form-gqi onxmc form-o19" id="showPlatformFees" style="display:none;">
+                        <div class="field-65r field-mmo">
+                          <button type="button" class="field-xk8 field-1g3" onclick="hidePlatformFees()">
+                            <div class="switch-cmk switch-wyo switch-6ly">
+                              <div class="switch-ah4"> </div>
+                              <div class="switch-c6j">&nbsp;</div>
+                              <div class="switch-njp"> </div>
+                            </div>
+                          </button><label for="feeOptIn"><span class="field-ok6">Cover our platform costs</span></label>
                         </div>
-<div class="form-gqi onxmc form-o19" id="showPlatformFees" style="display:none;">
-<div class="field-65r field-mmo">
-<button type="button" class="field-xk8 field-1g3" onclick="hidePlatformFees()">
-<div class="switch-cmk switch-wyo switch-6ly">
-<div class="switch-ah4"> </div>
-<div class="switch-c6j">&nbsp;</div>
-<div class="switch-njp"> </div>
-</div>
-</button><label for="feeOptIn"><span class="field-ok6">Cover our platform costs</span></label>
-</div>
-<svg width="34" height="34" viewBox="0 0 34 34" class="donation-form__raisely-fee__donationHeart donation-form__raisely-fee__donationHeart--active">
-<path d="M12.2,30.3L12.2,30.3L12.2,30.3c0.1,0.2,0.1,0.4,0.2,0.5c0.1,0.2,0.3,0.6,0.6,0.9c0.4,0.4,1,0.8,1.6,0.9 c0.5,0.1,0.9,0.1,1.1,0.1c0.2,0,0.4-0.1,0.5-0.1l0,0l0,0l0,0c1.2-0.2,3.3-0.7,5.5-1.2c2.1-0.5,4.4-1.1,5.8-1.7 c4.2-1.7,6.4-6.3,4.7-10.7c-1.3-3.6-4.6-5.4-7.9-5.2c-1.5-2.9-4.6-5-8.5-4.2c-4.5,0.8-7.5,5-6.9,9.5c0.2,1.5,0.8,3.8,1.5,5.9 C11.1,27.1,11.8,29.2,12.2,30.3 M20.9,2c-3.5-1.6-7-0.5-9.2,1.9c-3.1-1-6.8-0.2-9,3c-2.6,3.8-1.8,8.8,1.8,11.6 c0.6,0.5,1.4,1,2.3,1.5c0.4,0.2,0.8,0.2,1.2,0c0.4-0.2,0.6-0.7,0.5-1.1c-0.5-4.6,2.6-8.8,7.2-9.6c3.3-0.6,6,0.7,7.8,2.8 c0.3,0.3,0.7,0.5,1.1,0.4c0.4-0.1,0.8-0.4,0.9-0.8C26.5,7.8,24.7,3.7,20.9,2" stroke-width="2.2857" stroke-linejoin="round" stroke-linecap="round"></path>
-</svg>
-<table class="table-at1">
-<tbody>
-<tr>
-<td>Your donation</td>
-<td class="column-xxr">$<span class="amountText">0</span></td>
-</tr>
-<tr>
-<td>Cover platform costs <div class="tooltip-38y"><span class="icon-yqf icon-bb8 icon-x6y"><i class="icon-oxj"><svg class="svg-icon" style="width: 15px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M512 958.016C266.08 958.016 65.984 757.952 65.984 512 65.984 266.08 266.08 65.984 512 65.984c245.952 0 446.016 200.064 446.016 446.016 0 245.952-200.064 446.016-446.016 446.016z m0-828.032c-210.656 0-382.016 171.36-382.016 382.016 0 210.624 171.36 382.016 382.016 382.016 210.624 0 382.016-171.36 382.016-382.016S722.624 129.984 512 129.984zM464 304a1.5 1.5 0 1 0 96 0 1.5 1.5 0 1 0-96 0z m48 464c-17.664 0-32-14.304-32-32V448c0-17.664 14.336-32 32-32s32 14.336 32 32v288c0 17.696-14.336 32-32 32z"/></svg></i></span>
-<div class="tooltip-26s">Thank you for your generous donation and for covering the processing cost.</div>
-</div>
-</td>
-<td class="column-xxr">$2.75</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p class="message-svm">Donating <b>$</b><b class="totalAmount">2.75</b><span class="donating-in"></span></p>
-<input type="hidden" name="oid" value="00DF30000009wsI"/>
-<input type="hidden" name="campaignid" value="701F3000000ceokIAA" />
-<input type="hidden" name="gatewayname" id="gatewayname"/>
-<input type="hidden" id="environment" name="environment" value="NPC">
-<input type="hidden" id="returnurl" name="redirecturl" value="https://wired-apps.github.io/wiredpayments/foundation/foundation-thank-you.html?"/>
-<div class="form-i4o">
-<nav class="form-x4j">
-<button type="button" class="button-j7f button-4dx form-53y" id="next-button" onclick="prevStep()"><span class="icon-pzi icon-cdy icon-v44"><i class="icon-xcf"><svg class="svg-icon" style="width: 18px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M690.8 126.5l0.7 0.7c12.3 12.3 12.3 32.4 0 44.7l-340 340L691.6 852c12.5 12.5 12.5 32.9 0 45.4s-32.9 12.5-45.4 0L283.9 535s-0.1-0.1-0.2-0.1l-0.7-0.7c-12.3-12.3-12.3-32.4 0-44.7l363-363c12.4-12.3 32.5-12.3 44.8 0z"/></svg></i></span>
-</button>
-<div style="width: 100%;">
-<button type="submit" class="button-j7f button-4dx form-apk" id="donate-button" style="width:100%;">
-  <span id="button-text" style="height:30px;width: 30px;">Donate </span>
-  <span id="next-icon" class="icon-pzi icon-cdy icon-v44"><i class="icon-xcf"><svg class="svg-icon" style="width: 18px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M333.1 126.5l-0.7 0.7c-12.3 12.3-12.3 32.4 0 44.7l339.9 339.9-340.1 340.1c-12.5 12.5-12.5 32.9 0 45.4s32.9 12.5 45.4 0L740 535s0.1-0.1 0.2-0.1l0.7-0.7c12.3-12.3 12.3-32.4 0-44.7l-363-363c-12.4-12.3-32.5-12.3-44.8 0z"/></svg></i></span>
-</button>
-</div>
-</nav>
-</div>
-</div>
-</div>
-</div>
-</form>
-</div>
-</div>
-</body>
-</html>
+                        <svg width="34" height="34" viewBox="0 0 34 34" class="donation-form__raisely-fee__donationHeart donation-form__raisely-fee__donationHeart--active">
+                          <path d="M12.2,30.3L12.2,30.3L12.2,30.3c0.1,0.2,0.1,0.4,0.2,0.5c0.1,0.2,0.3,0.6,0.6,0.9c0.4,0.4,1,0.8,1.6,0.9 c0.5,0.1,0.9,0.1,1.1,0.1c0.2,0,0.4-0.1,0.5-0.1l0,0l0,0l0,0c1.2-0.2,3.3-0.7,5.5-1.2c2.1-0.5,4.4-1.1,5.8-1.7 c4.2-1.7,6.4-6.3,4.7-10.7c-1.3-3.6-4.6-5.4-7.9-5.2c-1.5-2.9-4.6-5-8.5-4.2c-4.5,0.8-7.5,5-6.9,9.5c0.2,1.5,0.8,3.8,1.5,5.9 C11.1,27.1,11.8,29.2,12.2,30.3 M20.9,2c-3.5-1.6-7-0.5-9.2,1.9c-3.1-1-6.8-0.2-9,3c-2.6,3.8-1.8,8.8,1.8,11.6 c0.6,0.5,1.4,1,2.3,1.5c0.4,0.2,0.8,0.2,1.2,0c0.4-0.2,0.6-0.7,0.5-1.1c-0.5-4.6,2.6-8.8,7.2-9.6c3.3-0.6,6,0.7,7.8,2.8 c0.3,0.3,0.7,0.5,1.1,0.4c0.4-0.1,0.8-0.4,0.9-0.8C26.5,7.8,24.7,3.7,20.9,2" stroke-width="2.2857" stroke-linejoin="round" stroke-linecap="round"></path>
+                        </svg>
+                        <table class="table-at1">
+                          <tbody>
+                            <tr>
+                              <td>Your donation</td>
+                              <td class="column-xxr">$<span class="amountText">0</span></td>
+                            </tr>
+                            <tr>
+                              <td>Cover platform costs <div class="tooltip-38y"><span class="icon-yqf icon-bb8 icon-x6y"><i class="icon-oxj"><svg class="svg-icon" style="width: 15px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M512 958.016C266.08 958.016 65.984 757.952 65.984 512 65.984 266.08 266.08 65.984 512 65.984c245.952 0 446.016 200.064 446.016 446.016 0 245.952-200.064 446.016-446.016 446.016z m0-828.032c-210.656 0-382.016 171.36-382.016 382.016 0 210.624 171.36 382.016 382.016 382.016 210.624 0 382.016-171.36 382.016-382.016S722.624 129.984 512 129.984zM464 304a1.5 1.5 0 1 0 96 0 1.5 1.5 0 1 0-96 0z m48 464c-17.664 0-32-14.304-32-32V448c0-17.664 14.336-32 32-32s32 14.336 32 32v288c0 17.696-14.336 32-32 32z"/></svg></i></span>
+                                <div class="tooltip-26s">Thank you for your generous donation and for covering the processing cost.</div>
+                              </div>
+                            </td>
+                            <td class="column-xxr">3%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p class="message-svm">Donating <b>$</b><b class="totalAmount">2.75</b><span class="donating-in"></span></p>
+                    <input type="hidden" name="oid" value="00D5h000008t6iy"/>
+                    
+                    <input type="hidden" name="environment" value="NPC" />
+                    <input type="hidden" name="campaignid" value="" />
+                    <input type="hidden" name="isPlatformCostCovered" Id="isPlatformCostCovered" value="false" />
+                    <input type="hidden" name="originalAmount" Id="originalAmount" value="" />
+                    <input type="hidden" name="PlatformCostinPercent" id="platformCost" value="3" />
+                    
+                    <input type="hidden" name="gatewayname" id="gatewayname"/>
+                    <input type="hidden" id="returnurl" name="redirecturl" value="https://wired-apps.github.io/wiredpayments/foundation/foundation-thank-you.html?"/>
+                    <div class="form-i4o">
+                      <nav class="form-x4j">
+                        <button type="button" class="button-j7f button-4dx form-53y" id="next-button" onclick="prevStep()"><span class="icon-pzi icon-cdy icon-v44"><i class="icon-xcf"><svg class="svg-icon" style="width: 18px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M690.8 126.5l0.7 0.7c12.3 12.3 12.3 32.4 0 44.7l-340 340L691.6 852c12.5 12.5 12.5 32.9 0 45.4s-32.9 12.5-45.4 0L283.9 535s-0.1-0.1-0.2-0.1l-0.7-0.7c-12.3-12.3-12.3-32.4 0-44.7l363-363c12.4-12.3 32.5-12.3 44.8 0z"/></svg></i></span>
+                        </button>
+                        <div style="width: 100%;">
+                          <button type="submit" class="button-j7f button-4dx form-apk" id="donate-button" style="width:100%;">
+                            <span id="button-text" style="height:30px;width: 30px;">Donate </span>
+                            <span id="next-icon" class="icon-pzi icon-cdy icon-v44"><i class="icon-xcf"><svg class="svg-icon" style="width: 18px; height: 15px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M333.1 126.5l-0.7 0.7c-12.3 12.3-12.3 32.4 0 44.7l339.9 339.9-340.1 340.1c-12.5 12.5-12.5 32.9 0 45.4s32.9 12.5 45.4 0L740 535s0.1-0.1 0.2-0.1l0.7-0.7c12.3-12.3 12.3-32.4 0-44.7l-363-363c-12.4-12.3-32.5-12.3-44.8 0z"/></svg></i></span>
+                          </button>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </body>
+      </html>
