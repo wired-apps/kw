@@ -2713,6 +2713,7 @@
       document.getElementById("bc1").checked = true;
       document.getElementById("bc2").checked = false;
       document.getElementById("transactionperiod").value = "";
+      document.getElementById("gatewayname").value = "simplify";
     }
     
     function selectCC()
@@ -3140,7 +3141,7 @@
             </div>
             <div class="form-lix">
               <input type="radio" id="b1" checked style="appearance: none;margin: 0px;padding: 0px;" name="chargetype" value="OneTime" class="radio"/>
-              <label class="form-h92 form-7yz" id="l1" for="b1" onclick="hideMonthly()">OneTime</label>
+              <label class="form-h92 form-7yz" id="l1" for="b1" onclick="hideMonthly()">One Off</label>
               <input type="radio" id="b2" style="appearance: none;margin: 0px;padding: 0px;" name="chargetype" value="Recurring" class="radio"/>
               <label class="form-h92 form-6x8" id="l2" for="b2" onclick="showMonthly()">Monthly</label>
               <input type="hidden" id="startdate" name="startdate" value="" class="name"/>
