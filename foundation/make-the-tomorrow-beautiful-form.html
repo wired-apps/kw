@@ -2729,6 +2729,7 @@
       document.getElementById('pm1').classList.add('form-6x8');
       document.getElementById('pm2').classList.remove('form-6x8');
       document.getElementById('pm2').classList.add('form-7yz');
+      document.getElementById('gatewayname').value = 'directdebit au';
     }
     
     function nextStep()
@@ -3321,7 +3322,7 @@
                     <input type="hidden" name="originalAmount" Id="originalAmount" value="" />
                     <input type="hidden" name="PlatformCostinPercent" id="platformCost" value="3" />
                     
-                    <input type="hidden" name="gatewayname" id="gatewayname"/>
+                    <input type="hidden" name="paymentprocessor" id="gatewayname" value="simplify"/>
                     <input type="hidden" id="returnurl" name="redirecturl" value="https://wired-apps.github.io/wiredpayments/foundation/foundation-thank-you.html?"/>
                     <div class="form-i4o">
                       <nav class="form-x4j">
