@@ -2654,7 +2654,6 @@
     let requiredMessage = "This field is required";
     
     const emailRegex = /([a-zA-Z0-9_\-.]+)@(([a-z]{1,3}.[a-z]{1,3}.[a-z]{1,3}.)|(([a-zA-Z0-9-]+.)+))([a-zA-Z]{2,4}|[0-9]{1,3})/;
-    const phoneRegex = /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{4}\)?[\s.-]?\d{3}[\s.-]?\d{3}$/;
     
     function setAmount()
     {
@@ -2815,15 +2814,6 @@
             document.getElementsByClassName('required-placeholder-text')[3].innerHTML="Please enter valid email.";
             document.getElementsByClassName('required-placeholder-text')[3].style.display='block';
             document.getElementsByClassName('required-placeholder-icon')[3].style.display='none';
-            return;
-          }
-          if(!phoneRegex.test(phonenumber))
-          {
-            document.getElementById("phone").classList.add('required-input');
-            document.getElementsByClassName('field-lot')[3].classList.add('color-red');
-            document.getElementsByClassName('required-placeholder-text')[4].innerHTML='Please enter valid phone number.';
-            document.getElementsByClassName('required-placeholder-text')[4].style.display='block';
-            document.getElementsByClassName('required-placeholder-icon')[4].style.display='none';
             return;
           }
         }
@@ -3042,14 +3032,6 @@
           document.getElementById(id).classList.add('required-input');
           document.getElementsByClassName('field-lot')[3].classList.add('color-red');
           document.getElementsByClassName('required-placeholder-text')[4].innerHTML=requiredMessage;
-          document.getElementsByClassName('required-placeholder-text')[4].style.display='block';
-          document.getElementsByClassName('required-placeholder-icon')[4].style.display='none';
-        }
-        else if(!phoneRegex.test(phone))
-        {
-          document.getElementById(id).classList.add('required-input');
-          document.getElementsByClassName('field-lot')[3].classList.add('color-red');
-          document.getElementsByClassName('required-placeholder-text')[4].innerHTML='Please enter valid phone number.';
           document.getElementsByClassName('required-placeholder-text')[4].style.display='block';
           document.getElementsByClassName('required-placeholder-icon')[4].style.display='none';
         }
