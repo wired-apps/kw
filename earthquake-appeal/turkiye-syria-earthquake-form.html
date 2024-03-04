@@ -1541,7 +1541,6 @@
         
         let currentStep = 1;
         const emailRegex = /([a-zA-Z0-9_\-.]+)@(([a-z]{1,3}.[a-z]{1,3}.[a-z]{1,3}.)|(([a-zA-Z0-9-]+.)+))([a-zA-Z]{2,4}|[0-9]{1,3})/;
-        const phoneRegex = /^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{4}\)?[\s.-]?\d{3}[\s.-]?\d{3}$/;
         
         function getGoogleAddress() {
             var autocomplete = new google.maps.places.Autocomplete((document.getElementById('txtPlaces')));
@@ -1680,13 +1679,6 @@
                 return false;
             }
             else{
-                if(!phoneRegex.test(phone))
-                {
-                    document.getElementById('phone').classList.add('required-input');
-                    document.getElementsByClassName('required-text')[4].style.display='block';
-                    document.getElementsByClassName('required-text')[4].innerHTML="Please enter valid phone number";
-                    return false;
-                }
                 if(!emailRegex.test(email))
                 {
                     document.getElementById('email').classList.add('required-input');
@@ -1809,12 +1801,6 @@
                     document.getElementById(id).classList.add('required-input');
                     document.getElementsByClassName('required-text')[4].style.display='block';
                     document.getElementsByClassName('required-text')[4].innerHTML="Required";
-                }
-                else if(!phoneRegex.test(phone))
-                {
-                    document.getElementById(id).classList.add('required-input');
-                    document.getElementsByClassName('required-text')[4].style.display='block';
-                    document.getElementsByClassName('required-text')[4].innerHTML="Please enter valid phone number";
                 }
             }
         }
@@ -2124,7 +2110,7 @@
                                             <div class="col-4fx">
                                                 <div class="form-group-19l">
                                                     <span class="required-text label-required-text" style="display: none;"></span>
-                                                    <input type="tel" name="phone" id="phone" class="form-control-te5" placeholder="10 Digit Mobile Number" onblur="onFocusLeft('phone')" onfocus="removeOutline('phone')"/>
+                                                    <input type="tel" name="phone" id="phone" class="form-control-te5" placeholder="Mobile Number" onblur="onFocusLeft('phone')" onfocus="removeOutline('phone')"/>
                                                 </div>
                                             </div>
                                         </div>
