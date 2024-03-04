@@ -2771,6 +2771,25 @@
           document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
           document.getElementsByClassName('required-placeholder-icon')[0].style.display='none'; 
         }
+
+        let chargeTypeList = document.getElementsByName('chargetype');
+        let isRecurring = false;
+        for(var i =0; i<chargeTypeList.length;i++){
+          if(chargeTypeList[i].checked && chargeTypeList[i].value=='Recurring'){
+              isRecurring= true;
+        }
+
+         if(isRecurring == true){
+           let paymentMethodList = document.getElementsByName('paymentmethod');
+           for(var i =0; i<paymentMethodList.length;i++){
+              if(paymentMethodList[i].checked && paymentMethodList[i].value=='Credit Card'){
+                    document.getElementById('gatewayname').value = 'simplify';
+              }else if(paymentMethodList[i].checked && paymentMethodList[i].value=='Direct Debit'){
+                  document.getElementById('gatewayname').value = 'directdebit au';
+              }
+           }
+         } 
+ 
       }
       
       if (currentStep === 2)
