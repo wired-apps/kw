@@ -1689,8 +1689,7 @@
                 if(document.getElementById('gatewayname').value == "paypal")
                 {
                     document.getElementById('donation-form').target = '_top';
-                    console.log('HELLLLLOOOOOOOOOOOO');
-                    document.getElementById('redirecturl').value = 'https://wired-apps.github.io/wiredpayments/earthquake-appeal/turkiye-syria-earthquake-receipt-information.html?';
+                    
                 }
                 showSpinner();
             }
@@ -1843,6 +1842,7 @@
             document.getElementById('paypal-button').classList.add('act-c8g');
             document.getElementById('paymentmethod').value = "Credit Card";
             document.getElementById('gatewayname').value = "paypal";
+            document.getElementById('redirecturl').value = 'https://wired-apps.github.io/wiredpayments/earthquake-appeal/turkiye-syria-earthquake-receipt-information.html?';
         }
         
         function set1(){
