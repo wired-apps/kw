@@ -2763,8 +2763,7 @@
           document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
           document.getElementsByClassName('required-placeholder-icon')[0].style.display='none';
           return;
-        }
-        if(Number(amount) < 1 && Number(amount) > 10000){
+        }else if(Number(amount) < 1 && Number(amount) > 10000){
           console.log('INISDE');
           document.getElementById('amountValue').classList.add('required-input'); // input outline red
           //document.getElementsByClassName('field-lot')[0].classList.add('color-red'); // label red
@@ -3003,8 +3002,8 @@
           document.getElementsByClassName('required-placeholder-text')[0].innerHTML="Required";
           document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
           document.getElementsByClassName('required-placeholder-icon')[0].style.display='none';
-        }
-         if(Number(amount)<1 && Number(amount)>10000){
+        }else if(Number(amount) < 1 && Number(amount) > 10000){
+          console.log('INISDE FOCUS LEFt');
            document.getElementById('amountValue').classList.add('required-input');
           document.getElementsByClassName('required-placeholder-text')[0].innerHTML="Required";
           document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
