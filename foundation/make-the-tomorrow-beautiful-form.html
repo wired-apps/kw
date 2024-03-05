@@ -2763,11 +2763,10 @@
           document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
           document.getElementsByClassName('required-placeholder-icon')[0].style.display='none';
           return;
-        }else if(Number(amount) < 1 && Number(amount) > 10000){
-          console.log('INISDE');
+        }else if(Number(amount) < 1 || Number(amount) > 10000){
           document.getElementById('amountValue').classList.add('required-input'); // input outline red
           //document.getElementsByClassName('field-lot')[0].classList.add('color-red'); // label red
-          document.getElementsByClassName('required-placeholder-text')[0].innerHTML='Required';
+          document.getElementsByClassName('required-placeholder-text')[0].innerHTML='Please enter amount between $1 to $10,000.';
           document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
           document.getElementsByClassName('required-placeholder-icon')[0].style.display='none';
           return;
@@ -3002,10 +3001,9 @@
           document.getElementsByClassName('required-placeholder-text')[0].innerHTML="Required";
           document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
           document.getElementsByClassName('required-placeholder-icon')[0].style.display='none';
-        }else if(Number(amount) < 1 && Number(amount) > 10000){
-          console.log('INISDE FOCUS LEFt');
+        }else if(Number(amount) < 1 || Number(amount) > 10000){
            document.getElementById('amountValue').classList.add('required-input');
-          document.getElementsByClassName('required-placeholder-text')[0].innerHTML="Required";
+          document.getElementsByClassName('required-placeholder-text')[0].innerHTML="Please enter amount between $1 to $10,000.";
           document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
           document.getElementsByClassName('required-placeholder-icon')[0].style.display='none';
         }
