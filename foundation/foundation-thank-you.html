@@ -150,7 +150,7 @@
         else
         {
           console.log('failed block');
-          document.getElementById("failure_message").innerHTML = ref_obj.paymentResponse;
+          document.getElementById("failure_message").innerHTML = 'We are extremely sorry for any incovenience caused. '+ref_obj.paymentResponse;
 					document.getElementById('failedDiv').style.display = "block";
 					if (ref_obj.retryURL != null && ref_obj.retryURL != undefined)
           {
