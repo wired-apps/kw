@@ -1550,6 +1550,7 @@
                 
                 var streetAdr = address.street_number != undefined ? address.street_number : '';
                 streetAdr += address.route != undefined ? ' '+address.route : '';
+                console.log('STREET ADDRESS ==>'+streetAdr);
                 
                 document.getElementById('street').value = streetAdr;
                 document.getElementById('country').value = address.country != undefined ? address.country : '' ;
