@@ -1843,6 +1843,14 @@
             document.getElementById('paymentmethod').value = "Credit Card";
             document.getElementById('gatewayname').value = "paypal";
             document.getElementById('returnurl').value = 'https://wired-apps.github.io/wiredpayments/earthquake-appeal/turkiye-syria-earthquake-receipt-information.html?';
+            let chargeType = document.getElementById('chargetype').value;
+            let transactionPeriod = document.getElementById('installmentperiod').value;
+            if(chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly' || transactionPeriod == 'Yearly')){
+                document.getElementById('errortext').innerHTML = 'We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
+                document.getElementById("next-btn").disabled = true;
+            }else{
+                document.getElementById("next-btn").disabled = false;
+            }
         }
         
         function set1(){
@@ -2006,7 +2014,7 @@
                                         <div class="form-group-19l">
                                             <span style="position: absolute; margin-left: 5px; margin-top: 3px;">$</span>
                                             <span class="required-text label-required-amount" style="display: none;"></span>
-                                            <input type="number" name="amount" id="amount" step=".01" onkeydown="if (/^[eE\+\-]$/.test(event.key))event.preventDefault();" onPaste="if (!/^\d+$/.test(event.clipboardData.getData('text/plain')))event.preventDefault();" novalidate class="form-control-te5 style-soTwY" style="padding-left: 15px;" placeholder="Other Amount" onblur="onFocusLeft('amount')" onfocus="removeOutline('amount')"/>
+                                            <input type="number" name="amount" id="amount" maxlength="5" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" step=".01" onkeydown="if (/^[eE\+\-]$/.test(event.key))event.preventDefault();" onPaste="if (!/^\d+$/.test(event.clipboardData.getData('text/plain')))event.preventDefault();" novalidate class="form-control-te5 style-soTwY" style="padding-left: 15px;" placeholder="Other Amount" onblur="onFocusLeft('amount')" onfocus="removeOutline('amount')"/>
                                             <!--<input type="number" name="amount" id="amount" step=".01"  style="padding-left: 15px;" placeholder="Other Amount" />-->
                                         </div>
                                         <div class="row-zdo" id="frequency" style="display:none;">
@@ -2035,6 +2043,9 @@
                                                             Yearly
                                                         </option>
                                                     </select>
+                                                </div>
+                                                <div>
+                                                    <p id="errortext"></p>
                                                 </div>
                                             </div>
                                         </div>
