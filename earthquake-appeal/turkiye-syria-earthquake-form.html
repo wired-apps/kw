@@ -1837,6 +1837,7 @@
             document.getElementById('paypal-button').classList.remove('act-c8g');
             document.getElementById('paymentmethod').value = "Credit Card";
             document.getElementById('gatewayname').value = "payway";
+            document.getElementById('errortext').innerHTML = '';
         }
         function selectDD() {
             document.getElementById('credit-card-button').classList.remove('act-c8g');
@@ -1844,6 +1845,7 @@
             document.getElementById('paypal-button').classList.remove('act-c8g');
             document.getElementById('paymentmethod').value = "Direct Debit";
             document.getElementById('gatewayname').value = "payway";
+            document.getElementById('errortext').innerHTML = '';
         }
         function selectPP() {
             document.getElementById('credit-card-button').classList.remove('act-c8g');
@@ -1857,7 +1859,7 @@
             if(chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly' || transactionPeriod == 'Yearly')){
                 document.getElementById('errortext').innerHTML = 'We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
             }else{
-                document.getElementById('errortext').innerHTML = 'We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
+                document.getElementById('errortext').innerHTML = '';
             }
         }
         
