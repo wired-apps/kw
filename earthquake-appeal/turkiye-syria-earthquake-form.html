@@ -1647,7 +1647,7 @@
                     let chargeType = document.getElementById('chargetype').value;
                     let transactionPeriod = document.getElementById('installmentperiod').value;
                     let gatewayname = document.getElementById('gatewayname').value;
-                    if(gatewayname == 'paypal' && chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly' || transactionPeriod == 'Yearly')){
+                    if(gatewayname == 'paypal' && chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly' )){
                         document.getElementById('errortext').innerHTML = '*We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
                         return;
                     }else{
@@ -1668,7 +1668,7 @@
             let chargeType = document.getElementById('chargetype').value;
             let transactionPeriod = document.getElementById('installmentperiod').value;
             let gatewayname = document.getElementById('gatewayname').value
-            if(gatewayname == 'paypal' && chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly' || transactionPeriod == 'Yearly')){
+            if(gatewayname == 'paypal' && chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly')){
                 document.getElementById('errortext').innerHTML = '*We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
                 return;
             }else{
@@ -1877,7 +1877,7 @@
             document.getElementById('returnurl').value = 'https://wired-apps.github.io/wiredpayments/earthquake-appeal/turkiye-syria-earthquake-receipt-information.html?';
             let chargeType = document.getElementById('chargetype').value;
             let transactionPeriod = document.getElementById('installmentperiod').value;
-            if(chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly' || transactionPeriod == 'Yearly')){
+            if(chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly')){
                 document.getElementById('errortext').innerHTML = '*We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
             }else{
                 document.getElementById('errortext').innerHTML = '';
