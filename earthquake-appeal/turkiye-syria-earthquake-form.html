@@ -1856,6 +1856,8 @@
             let transactionPeriod = document.getElementById('installmentperiod').value;
             if(chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly' || transactionPeriod == 'Yearly')){
                 document.getElementById('errortext').innerHTML = 'We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
+            }else{
+                document.getElementById('errortext').innerHTML = 'We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
             }
         }
         
