@@ -1644,7 +1644,7 @@
                     let chargeType = document.getElementById('chargetype').value;
                     let transactionPeriod = document.getElementById('installmentperiod').value;
                     if(chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly' || transactionPeriod == 'Yearly')){
-                        document.getElementById('errortext').innerHTML = 'We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
+                        document.getElementById('errortext').innerHTML = '*We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
                         return;
                     }
                 }catch(e){}
@@ -1857,7 +1857,7 @@
             let chargeType = document.getElementById('chargetype').value;
             let transactionPeriod = document.getElementById('installmentperiod').value;
             if(chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly' || transactionPeriod == 'Yearly')){
-                document.getElementById('errortext').innerHTML = 'We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
+                document.getElementById('errortext').innerHTML = '*We support only Weekly, Monthly, Quarterly and Yearly with PayPal.';
             }else{
                 document.getElementById('errortext').innerHTML = '';
             }
@@ -2055,7 +2055,7 @@
                                                     </select>
                                                 </div>
                                                 <div>
-                                                    <p id="errortext"></p>
+                                                    <p id="errortext" style="font-size:2vh;color:red;"></p>
                                                 </div>
                                             </div>
                                         </div>
