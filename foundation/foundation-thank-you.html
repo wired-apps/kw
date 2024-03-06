@@ -150,7 +150,9 @@
         else
         {
           console.log('failed block');
-          document.getElementById("failure_message").innerHTML = 'We are extremely sorry for any incovenience caused. '+ref_obj.paymentResponse;
+          document.getElementById("failure_message").innerHTML = 'We regret to inform you that your recent donation attempt of $'+ref_obj.amount+'. We are extremely sorry for any incovenience caused. '+ref_obj.paymentResponse;
+          document.getElementById("failure_body").innerHTML = ref_obj.paymentResponse;
+
 					document.getElementById('failedDiv').style.display = "block";
 					if (ref_obj.retryURL != null && ref_obj.retryURL != undefined)
           {
@@ -287,7 +289,8 @@
                                       </span>
                                     </p>
                                     <div id="failedDiv" style="display:none;font-size:14px">
-                                      <h1 class="header2" id="failure_message"></h1>
+                                      <h4 class="header2" id="failure_message"></h4>
+                                      <h4 class="header2" id="failure_body"></h4>
                                     </div>
                                   </div>
                                   <div id="retryBtn" style="display: none;justify-content: center;">
