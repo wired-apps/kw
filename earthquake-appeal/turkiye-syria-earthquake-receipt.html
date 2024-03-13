@@ -2418,7 +2418,7 @@
         var ref_obj = atob(decodeURIComponent(query_string[1]));
         ref_obj = JSON.parse(ref_obj);
         console.log(ref_obj);
-		   if(ref_obj.paymentResponse.includes('Payment was setup!') || ref_obj.paymentResponse.includes('Payment successful'))
+		   if(ref_obj.paymentResponse.includes('Payment was setup') || ref_obj.paymentResponse.includes('Payment successful'))
           {
             //If Success
             if(ref_obj.chargeType == "OneTime"){
