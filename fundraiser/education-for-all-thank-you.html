@@ -186,7 +186,7 @@ h1{
                     document.getElementById('headertext').innerHTML = 'Thank you !';
                     document.getElementById('redirectionmessage').innerHTML = 'Page will be redirected in 10 seconds.';
                     if(ref_obj.chargeType == 'OneTime'){
-                        document.getElementById('subheadertext').innerHTML = 'Thank you for your generous donation of <b>$'+ref_obj.amount+'</b>. Here is your transaction id <b>'+ref_obj.paymentId+'</b>.';
+                        document.getElementById('subheadertext').innerHTML = 'Thank you for your generous donation of <b>$'+Number(ref_obj.amount)+'</b>. Here is your transaction id <b>'+ref_obj.paymentId+'</b>.';
                         document.getElementById('receiptBody').innerHTML = 'Your generous donation is deeply appreciated and will create a meaningful impact.';
                     }else{
                         var date = ref_obj.nextInstallmentDate;                        
