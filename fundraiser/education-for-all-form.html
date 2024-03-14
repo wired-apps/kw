@@ -791,7 +791,15 @@
 
   function paymentByPaypal(){
     document.getElementById('paymentprocessor').value = 'paypal';
-    document.getElementById('paymentmethod').value = 'paypal';
+    //document.getElementById('paymentmethod').value = 'paypal';
+  /*  var paymentMethodList = document.getElementsByName('paymentmethod');
+    let paymentmethod;
+    for(var i = 0; i < paymentMethodList.length; i++){
+      if(paymentMethodList[i].checked){
+        paymentmethod = paymentMethodList[i].value;
+      }
+    }*/
+    
   }
 
   function paymentByAssignedGateway(){
