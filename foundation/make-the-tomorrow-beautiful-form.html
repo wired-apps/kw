@@ -2652,6 +2652,7 @@
     let currentStep = 1;
     let totalAmount = 0;
     let requiredMessage = "This field is required";
+    var numberRegex = /^(?:\d*\.\d{1,2}|\d+)$/;
     
     const emailRegex = /([a-zA-Z0-9_\-.]+)@(([a-z]{1,3}.[a-z]{1,3}.[a-z]{1,3}.)|(([a-zA-Z0-9-]+.)+))([a-zA-Z]{2,4}|[0-9]{1,3})/;
     
@@ -2770,6 +2771,11 @@
           document.getElementsByClassName('required-placeholder-text')[0].style.display='block';
           document.getElementsByClassName('required-placeholder-icon')[0].style.display='none';
           return;
+        }else if(!numberRegex.test(Number(amount))){
+          document.getElementById(id).classList.add('required-input');
+          document.getElementsByClassName('required-text')[0].style.display='block';
+          document.getElementsByClassName('required-text')[0].innerHTML="Please enter valid amount.";
+          document.getElementById("next-btn").disabled = true;
         }
 
         let chargeTypeList = document.getElementsByName('chargetype');
