@@ -746,6 +746,7 @@
       for(var i = 0; i < paymentMethodList.length; i++){
         if(paymentMethodList[i].checked == true && (paymentMethodList[i].value != 'Credit Card' && paymentMethodList[i].value != 'paypal')){
           paymentMethodList[i-1].checked = true;
+          document.getElementById('paymentprocessor').value = paymentMethodList[i-1].value;
         }
         
     }
