@@ -740,6 +740,19 @@
       transactionPeriodList[i].checked = false;
     }
     }
+
+    var paymentMethodList = document.getElementsByName('paymentmethod');
+    if(paymentMethodList.length > 0){
+      for(var i = 0; i < paymentMethodList.length; i++){
+        if(paymentMethodList[i].value != 'Credit Card'){
+          paymentMethodList[i].checked = false;
+        }else{
+          paymentMethodList[i].checked = true;
+        }
+        
+    }
+    }
+    paymentmethod
     
     document.getElementById("startdate").value = '';
     document.getElementById('directdebitContainer').classList.add('showAndHide');
