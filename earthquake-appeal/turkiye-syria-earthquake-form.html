@@ -1589,7 +1589,7 @@
             }
             document.getElementById('recurring-disclaimer').style.display='none';
             document.getElementById('frequency').style.display='none';
-            var paymentMethod = document.getElementById('paymentmethod');
+            var paymentMethod = document.getElementById('paymentmethod').value;
             if(paymentMethod == 'Direct Debit'){
                 selectDD();
             }else if(paymentMethod == 'Credit Card' && document.getElementById('gatewayname') != 'paypal'){
