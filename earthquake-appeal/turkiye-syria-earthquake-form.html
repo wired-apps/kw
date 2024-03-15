@@ -1592,9 +1592,9 @@
             var paymentMethod = document.getElementId('paymentmethod');
             if(paymentMethod == 'Direct Debit'){
                 selectDD();
-            }else if(paymentMethod == 'Credit Card' && document.getElementById('paymentprocessor') != 'paypal'){
+            }else if(paymentMethod == 'Credit Card' && document.getElementById('gatewayname') != 'paypal'){
                 selectCC();
-            }else if(paymentMethod == 'Credit Card' && document.getElementById('paymentprocessor') == 'paypal'){
+            }else if(paymentMethod == 'Credit Card' && document.getElementById('gatewayname') == 'paypal'){
                 selectPP();
             }
             
