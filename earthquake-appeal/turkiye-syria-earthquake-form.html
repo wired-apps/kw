@@ -1591,14 +1591,14 @@
             document.getElementById('frequency').style.display='none';
             var paymentMethod = document.getElementById('paymentmethod').value;
             if(paymentMethod == 'Direct Debit'){
-                selectDD();
                 console.log('INSIDE DIRECT DEBIT');
+                selectDD();
             }else if(paymentMethod == 'Credit Card' && document.getElementById('gatewayname').value != 'paypal'){
-                selectCC();
                 console.log('INSIDE Credit Card');
+                selectCC();
             }else if(paymentMethod == 'Credit Card' && document.getElementById('gatewayname').value == 'paypal'){
-                selectPP();
                 console.log('INSIDE PAYPAL');
+                selectPP();
             }
             
              
