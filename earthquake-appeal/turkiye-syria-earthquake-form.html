@@ -1539,6 +1539,11 @@
         window.onload = showOnetime;
         window.onload = set1;
 
+        window.addEventListener('keypress',function(e){
+            if(e.key == 'Enter'){
+                e.preventDefault();
+            }
+        })
         
         let currentStep = 1;
         const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
