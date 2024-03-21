@@ -1875,7 +1875,7 @@
             document.getElementById('paymentmethod').value = "Credit Card";
             document.getElementById('gatewayname').value = "payway";
             document.getElementById('errortext').innerHTML = '';
-            document.getElementById('returnurl').value = 'https://wired-apps.github.io/wiredpayments/earthquake-appeal/turkiye-syria-earthquake-receipt.html?';
+            document.getElementById('returnurl').value = 'https://wired-apps.github.io/kw/earthquake-appeal/turkiye-syria-earthquake-receipt.html?';
         }
         function selectDD() {
             document.getElementById('credit-card-button').classList.remove('act-c8g');
@@ -1884,7 +1884,7 @@
             document.getElementById('paymentmethod').value = "Direct Debit";
             document.getElementById('gatewayname').value = "payway";
             document.getElementById('errortext').innerHTML = '';
-            document.getElementById('returnurl').value = 'https://wired-apps.github.io/wiredpayments/earthquake-appeal/turkiye-syria-earthquake-receipt.html?';
+            document.getElementById('returnurl').value = 'https://wired-apps.github.io/kw/earthquake-appeal/turkiye-syria-earthquake-receipt.html?';
         }
         function selectPP() {
             document.getElementById('credit-card-button').classList.remove('act-c8g');
@@ -1892,7 +1892,7 @@
             document.getElementById('paypal-button').classList.add('act-c8g');
             document.getElementById('paymentmethod').value = "Credit Card";
             document.getElementById('gatewayname').value = "paypal";
-            document.getElementById('returnurl').value = 'https://wired-apps.github.io/wiredpayments/earthquake-appeal/turkiye-syria-earthquake-receipt-information.html?';
+            document.getElementById('returnurl').value = 'https://wired-apps.github.io/kw/earthquake-appeal/turkiye-syria-earthquake-receipt-information.html?';
             let chargeType = document.getElementById('chargetype').value;
             let transactionPeriod = document.getElementById('installmentperiod').value;
             if(chargeType == 'Recurring' && (transactionPeriod == 'Fortnightly' || transactionPeriod == 'Half Yearly')){
@@ -2018,7 +2018,7 @@
                                 <form onsubmit="return validateForm();" id="donation-form" action="https://saas-energy-82192-dev-ed.scratch.my.salesforce-sites.com/services/apexrest/w_pay/charge" method="POST">
                                     <input type="hidden" name="oid" value="00D9X000008FhhZ"/>
                                     <input type="hidden" name="campaignid" value="" />
-                                    <input type="hidden" id="returnurl" name="redirecturl" value="https://wired-apps.github.io/wiredpayments/earthquake-appeal/turkiye-syria-earthquake-receipt.html?"/>
+                                    <input type="hidden" id="returnurl" name="redirecturl" value="https://wired-apps.github.io/kw/earthquake-appeal/turkiye-syria-earthquake-receipt.html?"/>
                                     <input type="hidden" id="chargetype" name="chargetype" value="OneTime"/>
                                     <input type="hidden" id="startdate" name="startdate" value=""/>
                                     <input type="hidden" id="paymentmethod" name="paymentmethod" value="Credit Card"/>
