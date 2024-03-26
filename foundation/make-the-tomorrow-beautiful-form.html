@@ -2908,9 +2908,13 @@
     function prevStep() {
       console.log('currentStep '+currentStep);
       var pStep = currentStep;
+      console.log('pStep '+pStep);
       currentStep--;
       if(pStep == 3 && currentStep == 2){
-        document.getElementById("isPlatformCostCovered").value = "false";
+        console.log('In If ');
+        document.getElementById('hidePlatformFees').style.display='block';
+      document.getElementById('showPlatformFees').style.display='none';
+      document.getElementById("isPlatformCostCovered").value = "false";
       }
       updateStepDisplay();
     }
