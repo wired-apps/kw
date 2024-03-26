@@ -2924,6 +2924,10 @@
         step.style.display = 'none';
       });
       document.querySelector(`#step${currentStep}`).style.display = 'block';
+      if(currentStep == 3 && document.getElementById("isPlatformCostCovered").value == "true"){
+        console.log('In If updateStepDisplay');
+        showPlatformFees();
+      }
     }
     
     function set1(){
