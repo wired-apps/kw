@@ -2716,7 +2716,7 @@
       document.getElementById("bc1").checked = true;
       document.getElementById("bc2").checked = false;
       document.getElementById("transactionperiod").value = "";
-      document.getElementById("gatewayname").value = "simplify";
+      document.getElementById("gatewayname").value = "payway";
     }
     
     function selectCC()
@@ -2725,7 +2725,7 @@
       document.getElementById('pm2').classList.add('form-6x8');
       document.getElementById('pm1').classList.remove('form-6x8');
       document.getElementById('pm1').classList.add('form-7yz');
-      document.getElementById('gatewayname').value = 'simplify';
+      document.getElementById('gatewayname').value = 'payway';
     }
     
     function selectDD()
@@ -2792,7 +2792,7 @@
            let paymentMethodList = document.getElementsByName('paymentmethod');
            for(var i =0; i<paymentMethodList.length;i++){
               if(paymentMethodList[i].checked && paymentMethodList[i].value=='Credit Card'){
-                    document.getElementById('gatewayname').value = 'simplify';
+                    document.getElementById('gatewayname').value = 'payway';
               }else if(paymentMethodList[i].checked && paymentMethodList[i].value=='Direct Debit'){
                   document.getElementById('gatewayname').value = 'directdebit au';
               }
@@ -3362,7 +3362,7 @@
                     <input type="hidden" name="originalAmount" Id="originalAmount" value="" />
                     <input type="hidden" name="PlatformCostinPercent" id="platformCost" value="3" />
                     
-                    <input type="hidden" name="paymentprocessor" id="gatewayname" value="simplify"/>
+                    <input type="hidden" name="paymentprocessor" id="gatewayname" value="payway"/>
                     <input type="hidden" id="returnurl" name="redirecturl" value="https://wired-apps.github.io/kw/foundation/foundation-thank-you.html?"/>
                     <div class="form-i4o">
                       <nav class="form-x4j">
