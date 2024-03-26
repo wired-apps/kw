@@ -2907,7 +2907,11 @@
     
     function prevStep() {
       console.log('currentStep '+currentStep);
+      var pStep = currentStep;
       currentStep--;
+      if(pStep == 3 && currentStep == 2){
+        document.getElementById("isPlatformCostCovered").value = "false";
+      }
       updateStepDisplay();
     }
     
