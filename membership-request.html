@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>Membership registration form</title>
+  <title>Membership Request</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <style>
@@ -33,7 +33,7 @@
 
     h3 {
       margin: 12px 0;
-      color: #8ebf42;
+      color: 00000;
     }
 
     .main-block {
@@ -50,7 +50,7 @@
 
     fieldset {
       border: none;
-      border-top: 1px solid #8ebf42;
+      border-top: 1px solid ;
     }
 
     .account-details,
@@ -180,6 +180,15 @@
       }
     }
   </style>
+  <script>
+    function showOrganisation(select){
+      if(select.value=='Group'){
+        document.getElementById('organisationdetails').style.display = "block";
+      } else{
+        document.getElementById('organisationdetails').style.display = "none";
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -187,44 +196,42 @@
     <form action="https://app-customization-9808-dev-ed.scratch.my.salesforce-sites.com/services/apexrest/w_pay/request" method="POST" onsubmit="submitForm(event)">
 	<input type="hidden" id="oid" name="oid" value="00D9X00000B9CwU">
 	<!-- <input type="hidden" id="type" name="type" value="Individual"> -->
-      <h1>BECOME A MEMBER</h1>
+      <h1>Membership Request</h1>
       <fieldset>
         <legend>
-          <h3>Details</h3>
+          <h3>Select type of membership</h3>
         </legend>
         <div class="account-details">
 		  <div><label>Type:</label>
-			<select name="type" id="type">
+			<select name="type" id="type" onchange="showOrganisation(this);">
 			<option value="Individual" selected >Individual</option>
-			<option value="Group">Group</option>
+			<option value="Group">Organisation</option>
 			</select>
 		</div>
-          <div><label>Organization Name:</label><input type="text" id="organization-name" name="organization-name"></div>
-		  <div><label>ABN Number:</label><input type="text" id="abn-number" name="abn-number" ></div>
-          <div><label>First Name:</label><input type="text" id="first-name" name="first-name" required></div>
-          <div><label>Last Name:</label><input type="text" id="last-name" name="last-name" required></div>
-          <div><label>Email:</label><input type="text" id="email" name="email" required></div>
-          <div><label>Mobile Number:</label><input type="text" id="mobile-number" name="mobile-number" required></div>
-		  <div><label>Date Of Birth</label><input type="date" id="dob" name="dob"></div>
-        </div>
       </fieldset>
       <fieldset>
         <legend>
-          <h3>Personal Address</h3>
+          <h3>Your personal details</h3>
         </legend>
         <div class="personal-details">
+          <div> 
+            <div><label><span style="color:red;">* </span>First Name:</label><input type="text" id="first-name" name="first-name" required></div>
+            <div><label><span style="color:red;">* </span>Email:</label><input type="text" id="email" name="email" required></div>
+            <div><label>Street:</label><input type="text" id="street" name="street"></div>
+            <div><label>State:</label><input type="text" id="state" name="state"></div>
+            <div><label>Postal Code:</label><input type="text" id="postal-code" name="postal-code"></div>
+          </div>
           <div>
-			<div><label>Street:</label><input type="text" id="street" name="street"></div>
-			<div><label>City:</label><input type="text" id="city" name="city"></div>
-			<div><label>Postal Code:</label><input type="text" id="postal-code" name="postal-code"></div>
-			<div><label>State:</label><input type="text" id="state" name="state"></div>
+            <div><label><span style="color:red;">* </span>Last Name:</label><input type="text" id="last-name" name="last-name" required></div>
+            <div><label><span style="color:red;">* </span>Mobile Number:</label><input type="text" id="mobile-number" name="mobile-number" required></div>
+            <div><label>City:</label><input type="text" id="city" name="city"></div>
             <div>
               <label>Country:</label>
               <select id="country" name="country">
                 <option value="Australia">Australia</option>
                 <option value="UK">UK</option>
                 <option value="USA">USA</option>
-				<option value="New Zealand">New Zealand</option>
+				        <option value="New Zealand">New Zealand</option>
                 <option value="Germany">Germany</option>
                 <option value="France">France</option>
               </select>
@@ -232,16 +239,22 @@
           </div>
         </div>
       </fieldset>
-	  <fieldset>
+      <div id="organisationdetails" style="display:none;">
+	    <fieldset>
         <legend>
-          <h3>Organization Address</h3>
+          <h3>Your organisation details</h3>
         </legend>
         <div class="personal-details">
           <div>
-			<div><label>Street:</label><input type="text" id="org-street" name="org-street"></div>
-			<div><label>City:</label><input type="text" id="org-city" name="org-city"></div>
-			<div><label>Postal Code:</label><input type="text" id="org-postal-code" name="org-postal-code"></div>
-			<div><label>State:</label><input type="text" id="org-state" name="org-state"></div>
+            <div><label><span style="color:red;">* </span>Organisation Name:</label><input type="text" id="Organisation-name" name="Organisation-name"></div>
+            <div><label>Street:</label><input type="text" id="org-street" name="org-street"></div>
+            <div><label>State:</label><input type="text" id="org-state" name="org-state"></div>
+            <div><label>Postal Code:</label><input type="text" id="org-postal-code" name="org-postal-code"></div>
+            
+        </div>
+        <div>
+          <div><label><span style="color:red;">* </span>ABN Number:</label><input type="text" id="abn-number" name="abn-number" ></div>
+			  <div><label>City:</label><input type="text" id="org-city" name="org-city"></div>
             <div>
               <label>Country:</label>
               <select id="org-country" name="org-country">
@@ -256,13 +269,14 @@
           </div>
         </div>
       </fieldset>
+      </div>
       <fieldset>
         <legend>
-          <h3>Terms and Mailing</h3>
+          <h3>Terms & conditions</h3>
         </legend>
         <div class="terms-mailing">
           <div class="checkbox">
-            <input type="checkbox" name="checkbox"><span>I have read and agree to abide by the Member Undertaking. *</span>
+            <span style="color:red;">* </span><input type="checkbox" name="checkbox" required><span>I have read and agree to the <a href="www.login.salesforce.com">Terms & conditions</a></span>
           </div>
       </fieldset>
       <button type="submit" href="/">Submit</button>
