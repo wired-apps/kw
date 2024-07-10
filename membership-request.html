@@ -193,7 +193,8 @@
 
 <body>
   <div class="main-block">
-    <form action="https://wired-apa-demo.my.salesforce-sites.com/request/services/apexrest/w_pay/request" method="POST" onsubmit="submitForm(event)">
+    <!--<form action="https://wired-apa-demo.my.salesforce-sites.com/request/services/apexrest/w_pay/request" method="POST" onsubmit="submitForm(event)">-->
+    <form action="https://wired-apa-demo.my.salesforce-sites.com/request/services/apexrest/w_pay/request" method="POST">
 	<input type="hidden" id="oid" name="oid" value="00DQE000002C3Lx">
 	<input type="hidden" id="redirecturl" name="redirecturl" value="https://wired-apps.github.io/kw/membership-request-reciept.html?">    
 	<!-- <input type="hidden" id="type" name="type" value="Individual"> -->
@@ -286,13 +287,13 @@
     </form>
   </div>
   
-    <script>
+  <!-- <script>
     function submitForm(event) {
       //event.preventDefault();
       alert('Form submitted successfully!');
       //window.location.reload();
     }
-  </script>
+  </script>-->
 </body>
 
 </html>
