@@ -62,14 +62,14 @@
         var messageParagraph = document.getElementById('message');
 
         // Display the appropriate message based on the result parameter
-        if(result === 'success') {
+        if(result === 'Success') {
             messageParagraph.textContent = 'Membership request created successfully!';
             messageParagraph.classList.add('success');
-        } else if(result === 'failed') {
+        } else if(result === 'Failed') {
             messageParagraph.textContent = 'Membership request creation failed!';
             messageParagraph.classList.add('failed');
         } else {
-            messageParagraph.textContent = 'Invalid result parameter!';
+            messageParagraph.textContent = result;
         }
     </script>
 </body>
